@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setOnClickListeners() {
         binding.buttonLogin.setOnClickListener {
-            val intent = Intent(this, ProfileActivity::class.java)
+            val intent = Intent(this, NavigationHostActivity::class.java)
             startActivity(intent)
         }
 

@@ -13,6 +13,18 @@
         android:theme="@style/Theme.PotCastPlant"
         tools:targetApi="31">
         <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlantsDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationHostActivity"
+            android:exported="false" />
+        <activity
             android:name=".PasswordResetActivity"
             android:exported="false" />
         <activity

@@ -6,17 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.michael.potcastplant.databinding.ActivityProfileBinding
+import com.michael.potcastplant.databinding.ActivityFeedBinding
 
-class ProfileActivity : Fragment() {
+class FeedActivity : Fragment() {
 
-    private lateinit var binding: ActivityProfileBinding
+    private lateinit var binding : ActivityFeedBinding
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = ActivityProfileBinding.inflate(inflater, container, false)
+        binding = ActivityFeedBinding.inflate(inflater, container, false)
         return binding.root
     }
+
 }
