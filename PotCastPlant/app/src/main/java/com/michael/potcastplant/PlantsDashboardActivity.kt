@@ -1,6 +1,5 @@
 package com.michael.potcastplant
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.michael.potcastplant.databinding.ActivityPlantsDashboardBinding
 
-class PlantsDashboardActivity : Fragment() {
+class AllPlantsActivity : Fragment() {
 
     private lateinit var binding : ActivityPlantsDashboardBinding
 

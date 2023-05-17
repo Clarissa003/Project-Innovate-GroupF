@@ -3,9 +3,7 @@ package com.michael.potcastplant
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.fragment.app.commit
-import com.google.android.material.navigation.NavigationBarView
 import com.google.android.material.navigation.NavigationBarView.OnItemSelectedListener
 import com.michael.potcastplant.databinding.ActivityNavigationHostBinding
 
@@ -61,7 +59,7 @@ class NavigationHostActivity : AppCompatActivity(), OnItemSelectedListener {
 
     private fun onMyPlantClicked(): Boolean {
         supportFragmentManager.commit {
-            replace(R.id.fragment_content, PlantsDashboardActivity())
+            replace(R.id.fragment_content, AllPlantsActivity())
         }
         return true
     }

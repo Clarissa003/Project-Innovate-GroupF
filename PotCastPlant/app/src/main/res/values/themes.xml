@@ -10,6 +10,9 @@
     <style name="Theme.PotCastPlant" parent="Base.Theme.PotCastPlant">
 
         <item name="android:colorPrimaryDark">@color/dark_green</item>
+        <item name="colorPrimaryDark">@color/dark_green</item>
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorAccent">@color/light_green</item>
 
     </style>
 
