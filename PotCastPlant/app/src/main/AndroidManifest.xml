@@ -25,11 +25,13 @@
             android:name=".FeedActivity"
             android:exported="false" />
         <activity
-            android:name=".AllPlantsActivity"
+            android:name=".PlantsDashboardActivity"
             android:exported="false" />
         <activity
             android:name=".NavigationHostActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label=""
+            android:theme="@style/Base.Theme.PotCastPlantActionBar"/>
         <activity
             android:name=".PasswordResetActivity"
             android:exported="false" />
