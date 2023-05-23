@@ -14,4 +14,4 @@ git clone git@github.com:Clarissa003/Project-Innovate-GroupF.git
 
 ## Contribution
 
-Make sure to check the guidelines 
+Make sure to check the [guidelines](GUIDELINES.md).
