@@ -24,6 +24,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
+        android:id="@+id/recycler_view_plants"
         app:layout_constraintTop_toBottomOf="@+id/text_view_title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/button_addPlant"
@@ -40,6 +41,6 @@
         android:text="ADD PLANTS"
         android:backgroundTint="@color/dark_green"
         android:textColor="@color/white"/>
-    
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
