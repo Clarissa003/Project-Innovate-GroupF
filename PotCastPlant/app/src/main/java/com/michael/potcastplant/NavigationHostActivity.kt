@@ -59,7 +59,7 @@ class NavigationHostActivity : AppCompatActivity(), OnItemSelectedListener {
 
     private fun onMyPlantClicked(): Boolean {
         supportFragmentManager.commit {
-            replace(R.id.fragment_content, AllPlantsActivity())
+            replace(R.id.fragment_content, PlantsDashboardActivity())
         }
         return true
     }

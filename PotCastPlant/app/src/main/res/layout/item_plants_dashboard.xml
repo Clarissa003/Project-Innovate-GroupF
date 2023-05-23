@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="150dp"
+    android:id="@+id/card_view_plants"
     android:layout_marginBottom="32dp"
-    app:cardElevation="0dp">
+    app:cardElevation="0dp"
+    android:backgroundTint="@color/white">
 
     <ImageView
         android:layout_width="match_parent"
