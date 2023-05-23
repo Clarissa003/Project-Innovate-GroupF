@@ -8,8 +8,9 @@ Group IT1F is going to deliver a self-watering system for plants, with an applic
 
 ## Installation guide
 Clone the repository 
-
+```
 git clone git@github.com:Clarissa003/Project-Innovate-GroupF.git
+```
 
 ## Contribution
 
