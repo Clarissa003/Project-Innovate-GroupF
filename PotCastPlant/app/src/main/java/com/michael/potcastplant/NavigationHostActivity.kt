@@ -1,7 +1,10 @@
 package com.michael.potcastplant
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import android.view.MenuItem
 import androidx.fragment.app.commit
 import com.google.android.material.navigation.NavigationBarView.OnItemSelectedListener
@@ -17,6 +20,25 @@ class NavigationHostActivity : AppCompatActivity(), OnItemSelectedListener {
         setContentView(binding.root)
 
         binding.bottomNav.setOnItemSelectedListener(this)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_dashboard, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(item.itemId == R.id.menu_logout) {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+        if(item.itemId == R.id.menu_feedback) {
+            val intent = Intent(Intent.ACTION_SENDTO)
+            intent.data = Uri.parse("mailto: support@potcastplant.com")
+            intent.putExtra(Intent.EXTRA_SUBJECT, "Adding Plants")
+            startActivity(intent)
+        }
+        return super.onOptionsItemSelected(item)
     }
 
 
@@ -59,7 +81,7 @@ class NavigationHostActivity : AppCompatActivity(), OnItemSelectedListener {
 
     private fun onMyPlantClicked(): Boolean {
         supportFragmentManager.commit {
-            replace(R.id.fragment_content, AllPlantsActivity())
+            replace(R.id.fragment_content, PlantsDashboardActivity())
         }
         return true
     }
