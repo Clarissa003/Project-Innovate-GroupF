@@ -8,7 +8,18 @@
 5. [GIT](GUIDELINES.md#git)
 
 ## General
+Indentation: 4 spaces
+Charset: UTF-8
 
+Use camel case when writing code and naming files
+
+For naming variables, functions, files etc. use camel case
+
+Some camelCase examples:
+
+exampleVariable = "foo";
+functionFooBar();
+exampleFileName.kt
 
 ## PYTHON
 
