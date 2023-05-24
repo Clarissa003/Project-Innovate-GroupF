@@ -19,7 +19,7 @@ camelCase examples:
 exampleVariable = "foo";
 
 ## PYTHON
-File structure template
+### File structure template
 -	Begin with a set of comments clearly describing the purpose and assumptions of the code.
 -	Import any required library headers.
 -	Define constants.
