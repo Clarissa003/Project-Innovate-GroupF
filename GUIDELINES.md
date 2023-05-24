@@ -72,6 +72,11 @@ For defining a class and functions,the curly braces starts on the same line, whi
 The IDE used will be Android Studio only.
 
 ## JAVASCRIPT
+- Spaces around operators
+- Always end a simple statement with a semicolon
+- Indentation: 4 spaces
+- Good naming for files, variables, classes, objects or functions
+- Closing bracket on a new line
 
 ## Git
 ### Contribution
