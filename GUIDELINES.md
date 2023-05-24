@@ -19,6 +19,39 @@ camelCase examples:
 exampleVariable = "foo";
 
 ## PYTHON
+File structure template
+•	Begin with a set of comments clearly describing the purpose and assumptions of the code.
+•	Import any required library headers.
+•	Define constants.
+•	Define global variables.
+•	Define subroutines (functions).
+
+Naming Conventions
+If the variables used for the Python contain 2 words, camelCase should be used. 
+Examples:
+	leftMotor
+	rightMotor
+
+Blank Lines
+Surround top-level function and class definitions with two blank lines. Method definitions inside a class are surrounded by a single blank line. Extra blank lines may be used (sparingly) to separate groups of related functions. Blank lines may be omitted between a bunch of related one-liners (e.g. a set of dummy implementations). Use blank lines in functions, sparingly, to indicate logical sections.
+Page and File Naming
+If you are working with multiple codes, have naming that explains what each file is doing.
+
+Comments 
+If you use good descriptive names for your variables and functions, you should not need comments. Try to make your naming so good that comments are not necessary. However sometimes, especially when calling third-party libraries, you may need to add comments to explain what is happening or if you think your code is too complex. Also, you need to add comments separating all your variables to be easier to search through code if you want to change the pins.
+
+Readability Alignment and End of Statements
+For multi-line statements the first line of a statement should left-align with the last line of that statement. In the case of an if/else statement the 'else' should also left-align with the ‘if’ and the last line. If you are using curly bracket notation, then the curly brackets should align instead.
+
+Code Indentation
+Use 4 spaces per indentation level. Continuation lines should align wrapped elements either vertically using Python’s implicit line joining inside parentheses, brackets and braces, or using a hanging indent. When using a hanging indent the following should be considered; there should be no arguments on the first line and further indentation should be used to clearly distinguish itself as a continuation line.
+Spacing
+•	Spaces should be used liberally to make sure equal signs line up if there is a series of values being set.
+•	Spaces should be used around variables and periods to make lines easier to read.
+•	In general, if a space does not cause a problem, it should be inserted so developers can use the Control key with the Arrow keys to navigate.
+Applications/Other conventions
+•	The used IDE will be Thonny.
+•	The version control system will be done using GitHub.
 
 ## KOTLIN
 
