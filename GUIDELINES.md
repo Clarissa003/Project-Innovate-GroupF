@@ -20,13 +20,13 @@ exampleVariable = "foo";
 
 ## PYTHON
 File structure template
-•	Begin with a set of comments clearly describing the purpose and assumptions of the code.
-•	Import any required library headers.
-•	Define constants.
-•	Define global variables.
-•	Define subroutines (functions).
+-	Begin with a set of comments clearly describing the purpose and assumptions of the code.
+-	Import any required library headers.
+-	Define constants.
+-	Define global variables.
+-	Define subroutines (functions).
 
-Naming Conventions
+### Naming Conventions
 If the variables used for the Python contain 2 words, camelCase should be used. 
 Examples:
 -	leftMotor
