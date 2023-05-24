@@ -9,7 +9,6 @@
 
 ## General
 Indentation: 4 spaces
-Charset: UTF-8
 
 Use camel case when writing code and naming files
 
