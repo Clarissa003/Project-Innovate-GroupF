@@ -54,6 +54,19 @@ Applications/Other conventions
 •	The version control system will be done using GitHub.
 
 ## KOTLIN
+Names for classes and objects should have an uppercase for the first letter and use a camel case. Naming conventions for functions should use the camel case only.
+
+Constant Property names and variables should be in uppercase separated by underscores.
+
+Choosing good names for the contents of a file or a project is mandatory. The names of classes, objects, functions, or properties should explain what they actually do or contain.
+
+Classes with a few primary constructor parameters can be written in a single line, this include data classes as well, Classes with longer headers should be formatted so that each primary constructor parameter is in a separate line with indentation. Also, the closing parenthesis should be on a new line. If you use inheritance, the superclass constructor call or the list of implemented interfaces should be located on the same line as the parenthesis.
+
+For classes with a long supertype list, put a line break after the colon and align all supertype names horizontally.
+
+For defining a class and functions,the curly braces starts on the same line, while the closing curly braces ends on a new line.
+
+The IDE used will be Android Studio only.
 
 ## JAVASCRIPT
 
