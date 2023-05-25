@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistrationActivity">
+    tools:context=".RegistrationActivity"
+    android:background="@color/white">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp">
 
         <ImageView
             app:layout_constraintTop_toTopOf="parent"
@@ -25,115 +27,108 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="60dp"
             android:textColor="@color/white"
             android:textSize="25dp"
             android:textStyle="bold"
             android:text="Register Here"
         />
 
-        <TextView
-            android:id="@+id/tvFirstNameLabel"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_marginLeft="34dp"
             android:layout_marginTop="170dp"
-            android:text="First Name"
-        />
+            app:hintTextColor="@color/green"
+            app:boxStrokeColor="@color/green"
+            android:hint="First Name">
 
-        <EditText
-            android:id="@+id/etFirstName"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="180dp"
-            android:hint="First Name"
-        />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/dark_green"
+                tools:text="First Name" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/tvLastNameLabel"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_marginLeft="34dp"
             android:layout_marginTop="240dp"
-            android:text="Last Name"
-        />
+            app:hintTextColor="@color/green"
+            app:boxStrokeColor="@color/green"
+            android:hint="Last Name">
 
-        <EditText
-            android:id="@+id/etLastName"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="250dp"
-            android:hint="Last Name"
-        />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/dark_green"
+                tools:text="Last Name" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/tvEmailLabel"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_marginLeft="34dp"
             android:layout_marginTop="310dp"
-            android:text="Email address"
-        />
+            app:hintTextColor="@color/green"
+            app:boxStrokeColor="@color/green"
+            android:hint="Email Address">
 
-        <EditText
-            android:id="@+id/etEmail"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:inputType="textEmailAddress"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="320dp"
-            android:hint="Email Address"
-        />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/dark_green"
+                tools:text="Email address" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/tvPasswordLabel"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_marginLeft="34dp"
             android:layout_marginTop="380dp"
-            android:text="Password"
-        />
-
-        <EditText
-            android:id="@+id/etPassword"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:inputType="textPassword"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="390dp"
             android:hint="Password"
-        />
+            app:hintTextColor="@color/green"
+            app:boxStrokeColor="@color/green"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/green">
 
-        <TextView
-            android:id="@+id/tvPasswordRepeatLabel"
-            android:layout_width="wrap_content"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                android:textColor="@color/dark_green"
+                tools:text="Password" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_marginLeft="34dp"
             android:layout_marginTop="450dp"
-            android:text="Repeat password"
-        />
+            android:hint="Repeat Password"
+            app:hintTextColor="@color/green"
+            app:boxStrokeColor="@color/green"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/green">
 
-        <EditText
-            android:id="@+id/etPasswordRepeat"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:inputType="textPassword"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="460dp"
-            android:hint="Re-Password"
-        />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPasswordRepeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                android:textColor="@color/dark_green"
+                tools:text="Repeat Password" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/btnRegister"
