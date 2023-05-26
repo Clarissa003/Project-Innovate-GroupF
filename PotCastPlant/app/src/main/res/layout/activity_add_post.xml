@@ -35,10 +35,15 @@
         android:backgroundTint="@color/dark_green"
         android:textColor="@color/white" />
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="180dp"
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="390dp"
         app:hintTextColor="@color/black"
         app:boxStrokeColor="@color/green"
         android:hint="Description">
