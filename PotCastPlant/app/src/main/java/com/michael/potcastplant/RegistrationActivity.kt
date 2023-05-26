@@ -5,10 +5,12 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import com.michael.potcastplant.databinding.ActivityRegistrationBinding
 
 //creating your class for page
 class RegistrationActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityRegistrationBinding
     //override will create your page
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

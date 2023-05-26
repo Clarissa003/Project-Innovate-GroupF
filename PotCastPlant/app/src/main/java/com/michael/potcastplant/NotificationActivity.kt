@@ -11,13 +11,12 @@ import com.michael.potcastplant.databinding.ActivityNotificationBinding
 class NotificationActivity : Fragment() {
 
     private lateinit var binding: ActivityNotificationBinding
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = ActivityNotificationBinding.inflate(inflater,container, false)
+        binding = ActivityNotificationBinding.inflate(inflater, container, false)
         return binding.root
     }
 }

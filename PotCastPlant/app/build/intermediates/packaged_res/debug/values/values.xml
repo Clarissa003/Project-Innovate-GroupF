@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="dark_green">#044304</color>
+    <color name="green">#068251</color>
+    <color name="light_green">#85C485</color>
+    <color name="milk">#f4f4f4</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="app_name">PotCast Plant</string>
+    <string name="feeds">Feeds</string>
+    <string name="my_plants">My Plants</string>
+    <string name="notifications">Notifications</string>
+    <string name="profile">Profile</string>
+    <string name="title_activity_dashboard_menu">DashboardMenuActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
+    <style name="Base.Theme.PotCastPlant" parent="Theme.AppCompat.Light.NoActionBar">
+        
+        
+    </style>
+    <style name="Base.Theme.PotCastPlantActionBar" parent="Theme.AppCompat.Light">
+        
+        
+        <item name="android:colorPrimaryDark">@color/dark_green</item>
+        <item name="colorPrimaryDark">@color/dark_green</item>
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorAccent">@color/light_green</item>
+    </style>
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorPrimaryDark">#ffffff</item>
+    </style>
+    <style name="Theme.PotCastPlant" parent="Base.Theme.PotCastPlant">
+
+        <item name="android:colorPrimaryDark">@color/dark_green</item>
+        <item name="colorPrimaryDark">@color/dark_green</item>
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorAccent">@color/light_green</item>
+
+    </style>
+</resources>
