@@ -42,7 +42,7 @@
         android:text="Edit Profile"
         android:textColor="#FFFFFF"
         app:cornerRadius="5dp"
-        android:backgroundTint="#044304">
+        android:backgroundTint="#044304"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,7 +58,7 @@
             android:textSize="16dp"
             app:cornerRadius="5dp"
             android:textStyle="bold"
-            android:backgroundTint="#D9D9D9">
+            android:backgroundTint="#D9D9D9"/>
 
         <Button
             android:id="@+id/num_plants_text"
@@ -80,7 +80,7 @@
         android:id="@+id/logout_button"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="100dp"
-        android:layout_height="22dp"
+        android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="250dp"
         android:background="#AD1107"
