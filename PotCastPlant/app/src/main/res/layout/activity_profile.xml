@@ -1,18 +1,91 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/user_image"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/circle_background" />
 
     <TextView
+        android:id="@+id/name_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Main Profile Page"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:layout_marginTop="16dp"
+        android:text="Michael Naga"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="michael@nhlstenden.com"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/edit_profile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Edit Profile"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="5dp"
+        android:backgroundTint="#044304">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/num_plants_button"
+            android:layout_width="266dp"
+            android:layout_height="53dp"
+            android:text="Number of plants owned"
+            android:textColor="#044304"
+            android:textSize="16dp"
+            app:cornerRadius="5dp"
+            android:textStyle="bold"
+            android:backgroundTint="#D9D9D9">
+
+        <Button
+            android:id="@+id/num_plants_text"
+            android:layout_width="52dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="30dp"
+            android:text="3"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#044304"
+            app:cornerRadius="5dp"
+            android:backgroundTint="#D9D9D9"
+            android:layout_gravity="right" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logout_button"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="250dp"
+        android:background="#AD1107"
+        android:text="LOGOUT"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="5dp" />
+
+</LinearLayout>
