@@ -20,12 +20,15 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:background="@drawable/background_circle"
                 android:id="@+id/image_view_profile_pic"
                 android:layout_width="30dp"
+                android:scaleType="centerCrop"
                 android:layout_height="30dp"
                 android:src="@drawable/baseline_person_24" />
 
             <LinearLayout
+                android:layout_marginStart="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
