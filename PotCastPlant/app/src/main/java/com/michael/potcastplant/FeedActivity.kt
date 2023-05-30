@@ -42,9 +42,11 @@ class FeedActivity : Fragment() {
     }
 
     private fun setOnClickListener() {
-        val intent = Intent(this.context, AddPostActivity::class.java)
-        startActivity(intent)
-    }
+        binding.floatingButtonAddPost.setOnClickListener {
+            val intent = Intent(this.context, AddPostActivity::class.java)
+            startActivity(intent)
+        }
 
+    }
 
 }

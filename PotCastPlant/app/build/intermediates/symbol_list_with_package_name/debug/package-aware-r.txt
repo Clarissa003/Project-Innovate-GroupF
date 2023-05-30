@@ -2911,6 +2911,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable background_circle
 drawable background_plants_dashboard
+drawable baseline_add_24
 drawable baseline_arrow_forward_24
 drawable baseline_feed_24
 drawable baseline_local_florist_24
@@ -3177,6 +3178,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id cvNotifications
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3244,6 +3246,7 @@ id fitXY
 id fixed
 id flip
 id floating
+id floating_button_add_post
 id forever
 id fragment_container_view_tag
 id fragment_content
@@ -3553,9 +3556,13 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvAddPost
+id tvDate
 id tvEmailLabel
+id tvLogin
 id tvNotification
 id tvRegister
+id tvText
+id tvTitle
 id unchecked
 id uniform
 id unlabeled
@@ -3723,6 +3730,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout item_feeds
+layout item_notification
 layout item_plants_dashboard
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

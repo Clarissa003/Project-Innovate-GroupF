@@ -40,12 +40,16 @@ public final class ActivityRegistrationBinding implements ViewBinding {
   public final TextInputEditText etPasswordRepeat;
 
   @NonNull
+  public final TextView tvLogin;
+
+  @NonNull
   public final TextView tvRegister;
 
   private ActivityRegistrationBinding(@NonNull ScrollView rootView, @NonNull Button btnRegister,
       @NonNull TextInputEditText etEmail, @NonNull TextInputEditText etFirstName,
       @NonNull TextInputEditText etLastName, @NonNull TextInputEditText etPassword,
-      @NonNull TextInputEditText etPasswordRepeat, @NonNull TextView tvRegister) {
+      @NonNull TextInputEditText etPasswordRepeat, @NonNull TextView tvLogin,
+      @NonNull TextView tvRegister) {
     this.rootView = rootView;
     this.btnRegister = btnRegister;
     this.etEmail = etEmail;
@@ -53,6 +57,7 @@ public final class ActivityRegistrationBinding implements ViewBinding {
     this.etLastName = etLastName;
     this.etPassword = etPassword;
     this.etPasswordRepeat = etPasswordRepeat;
+    this.tvLogin = tvLogin;
     this.tvRegister = tvRegister;
   }
 
@@ -119,6 +124,12 @@ public final class ActivityRegistrationBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvLogin;
+      TextView tvLogin = ViewBindings.findChildViewById(rootView, id);
+      if (tvLogin == null) {
+        break missingId;
+      }
+
       id = R.id.tvRegister;
       TextView tvRegister = ViewBindings.findChildViewById(rootView, id);
       if (tvRegister == null) {
@@ -126,7 +137,7 @@ public final class ActivityRegistrationBinding implements ViewBinding {
       }
 
       return new ActivityRegistrationBinding((ScrollView) rootView, btnRegister, etEmail,
-          etFirstName, etLastName, etPassword, etPasswordRepeat, tvRegister);
+          etFirstName, etLastName, etPassword, etPasswordRepeat, tvLogin, tvRegister);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

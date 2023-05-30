@@ -10,6 +10,7 @@ dimen activity_horizontal_margin
 dimen activity_vertical_margin
 drawable background_circle
 drawable background_plants_dashboard
+drawable baseline_add_24
 drawable baseline_arrow_forward_24
 drawable baseline_feed_24
 drawable baseline_local_florist_24
@@ -34,6 +35,7 @@ id button_add_plant
 id button_login
 id button_submit_request
 id card_view_plants
+id cvNotifications
 id edit_profile_button
 id edit_text_email
 id edit_text_password
@@ -44,6 +46,7 @@ id etFirstName
 id etLastName
 id etPassword
 id etPasswordRepeat
+id floating_button_add_post
 id fragment_content
 id humidity
 id image_view_header
@@ -75,9 +78,13 @@ id text_view_timestamp
 id text_view_title
 id text_view_username
 id tvAddPost
+id tvDate
 id tvEmailLabel
+id tvLogin
 id tvNotification
 id tvRegister
+id tvText
+id tvTitle
 id watering
 id wlevel
 layout activity_add_plants
@@ -93,6 +100,7 @@ layout activity_profile
 layout activity_registration
 layout activity_splash_screen
 layout item_feeds
+layout item_notification
 layout item_plants_dashboard
 menu bottom_nav
 menu menu_dashboard

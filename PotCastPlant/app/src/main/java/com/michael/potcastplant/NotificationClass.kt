@@ -1,3 +1,3 @@
 package com.michael.potcastplant
 
-data class NotificationClass(var title: String, var text: String)
+data class NotificationClass(var title: String, var text: String, var date: String)

@@ -10,6 +10,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.michael.potcastplant.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -20,11 +21,15 @@ public final class ActivityFeedBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final FloatingActionButton floatingButtonAddPost;
+
+  @NonNull
   public final RecyclerView recyclerViewFeed;
 
   private ActivityFeedBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView recyclerViewFeed) {
+      @NonNull FloatingActionButton floatingButtonAddPost, @NonNull RecyclerView recyclerViewFeed) {
     this.rootView = rootView;
+    this.floatingButtonAddPost = floatingButtonAddPost;
     this.recyclerViewFeed = recyclerViewFeed;
   }
 
@@ -55,13 +60,20 @@ public final class ActivityFeedBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.floating_button_add_post;
+      FloatingActionButton floatingButtonAddPost = ViewBindings.findChildViewById(rootView, id);
+      if (floatingButtonAddPost == null) {
+        break missingId;
+      }
+
       id = R.id.recycler_view_feed;
       RecyclerView recyclerViewFeed = ViewBindings.findChildViewById(rootView, id);
       if (recyclerViewFeed == null) {
         break missingId;
       }
 
-      return new ActivityFeedBinding((ConstraintLayout) rootView, recyclerViewFeed);
+      return new ActivityFeedBinding((ConstraintLayout) rootView, floatingButtonAddPost,
+          recyclerViewFeed);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
