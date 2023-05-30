@@ -1,5 +1,6 @@
 package com.michael.potcastplant
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -33,5 +34,17 @@ class FeedActivity : Fragment() {
 
         return binding.root
     }
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setOnClickListener()
+    }
+
+    private fun setOnClickListener() {
+        val intent = Intent(this.context, AddPostActivity::class.java)
+        startActivity(intent)
+    }
+
 
 }
