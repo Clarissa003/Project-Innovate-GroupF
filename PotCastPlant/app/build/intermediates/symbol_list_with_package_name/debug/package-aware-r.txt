@@ -2909,6 +2909,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable background_circle
 drawable background_plants_dashboard
 drawable baseline_arrow_forward_24
 drawable baseline_feed_24
@@ -3129,6 +3130,9 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnRegister
+id btnReset
+id btnUpload
+id btnUploadImage
 id buttonPanel
 id button_addPlant
 id button_add_plant
@@ -3173,6 +3177,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id cvNotifications
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3207,15 +3212,18 @@ id easeInOut
 id easeOut
 id east
 id edge
+id edit_profile_button
 id edit_query
 id edit_text_email
 id edit_text_password
 id elastic
+id email_text
 id embed
 id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id etDescription
 id etEmail
 id etFirstName
 id etLastName
@@ -3256,6 +3264,7 @@ id home
 id homeAsUp
 id honorRequest
 id horizontal_only
+id humidity
 id icon
 id icon_group
 id ifRoom
@@ -3285,8 +3294,10 @@ id legacy
 id line1
 id line3
 id linear
+id linearLayout
 id listMode
 id list_item
+id logout_button
 id m3_side_sheet
 id marquee
 id masked
@@ -3318,6 +3329,7 @@ id menu_logout
 id message
 id middle
 id mini
+id moisture
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -3349,6 +3361,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name_text
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3393,6 +3406,7 @@ id pooling_container_listener_holder_tag
 id position
 id postLayout
 id pressed
+id profile_image
 id progress_circular
 id progress_horizontal
 id radio
@@ -3483,7 +3497,9 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id sunlight
 id supportScrollUp
+id switch1
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3498,6 +3514,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id temperature
 id text
 id text2
 id textEnd
@@ -3536,8 +3553,14 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvAddPost
+id tvDate
+id tvEmailLabel
+id tvLogin
 id tvNotification
 id tvRegister
+id tvText
+id tvTitle
 id unchecked
 id uniform
 id unlabeled
@@ -3552,10 +3575,12 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id watering
 id west
 id withText
 id with_icon
 id withinBounds
+id wlevel
 id wrap
 id wrap_content
 id wrap_content_constrained
@@ -3675,6 +3700,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_plants
+layout activity_add_post
 layout activity_feed
 layout activity_main
 layout activity_navigation_host
@@ -3702,6 +3728,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout item_feeds
+layout item_notification
 layout item_plants_dashboard
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

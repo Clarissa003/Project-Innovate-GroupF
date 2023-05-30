@@ -22,9 +22,9 @@ class NotificationActivity : Fragment() {
         binding.rvNotification.layoutManager = LinearLayoutManager(requireContext())
 
         val notifications = arrayOf(
-            NotificationClass("Bay Leaves", "The water level in the reservoir is low, fill it up."),
-            NotificationClass("Rose Flowers", "Your plants needs more sunlight, the average sunlight level is low, you might want to place your plant in a position to receive more sunlight"),
-            NotificationClass("Mahogany", "Your plant moisture level is low, please water your plant or turn on automatic watering feature for your plant"),
+            NotificationClass("Bay Leaves", "The water level in the reservoir is low, fill it up.", "30.05.2023"),
+            NotificationClass("Rose Flowers", "Your plants needs more sunlight, the average sunlight level is low, you might want to place your plant in a position to receive more sunlight", "28.05.2023"),
+            NotificationClass("Mahogany", "Your plant moisture level is low, please water your plant or turn on automatic watering feature for your plant", "25.05.2023"),
         )
 
         val adapterNotification = NotificationAdapter(notifications)

@@ -4,25 +4,52 @@ package com.michael.potcastplant.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.michael.potcastplant.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ActivityProfileBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final LinearLayout rootView;
 
-  private ActivityProfileBinding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final Button editProfileButton;
+
+  @NonNull
+  public final TextView emailText;
+
+  @NonNull
+  public final Button logoutButton;
+
+  @NonNull
+  public final TextView nameText;
+
+  @NonNull
+  public final ImageView profileImage;
+
+  private ActivityProfileBinding(@NonNull LinearLayout rootView, @NonNull Button editProfileButton,
+      @NonNull TextView emailText, @NonNull Button logoutButton, @NonNull TextView nameText,
+      @NonNull ImageView profileImage) {
     this.rootView = rootView;
+    this.editProfileButton = editProfileButton;
+    this.emailText = emailText;
+    this.logoutButton = logoutButton;
+    this.nameText = nameText;
+    this.profileImage = profileImage;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -43,10 +70,44 @@ public final class ActivityProfileBinding implements ViewBinding {
 
   @NonNull
   public static ActivityProfileBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.edit_profile_button;
+      Button editProfileButton = ViewBindings.findChildViewById(rootView, id);
+      if (editProfileButton == null) {
+        break missingId;
+      }
 
-    return new ActivityProfileBinding((ConstraintLayout) rootView);
+      id = R.id.email_text;
+      TextView emailText = ViewBindings.findChildViewById(rootView, id);
+      if (emailText == null) {
+        break missingId;
+      }
+
+      id = R.id.logout_button;
+      Button logoutButton = ViewBindings.findChildViewById(rootView, id);
+      if (logoutButton == null) {
+        break missingId;
+      }
+
+      id = R.id.name_text;
+      TextView nameText = ViewBindings.findChildViewById(rootView, id);
+      if (nameText == null) {
+        break missingId;
+      }
+
+      id = R.id.profile_image;
+      ImageView profileImage = ViewBindings.findChildViewById(rootView, id);
+      if (profileImage == null) {
+        break missingId;
+      }
+
+      return new ActivityProfileBinding((LinearLayout) rootView, editProfileButton, emailText,
+          logoutButton, nameText, profileImage);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

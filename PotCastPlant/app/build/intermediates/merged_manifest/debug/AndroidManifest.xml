@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.PotCastPlant" >
         <activity
+            android:name="com.michael.potcastplant.AddPostActivity"
+            android:exported="false" />
+        <activity
             android:name="com.michael.potcastplant.AddPlantsActivity"
             android:exported="false" />
         <activity
