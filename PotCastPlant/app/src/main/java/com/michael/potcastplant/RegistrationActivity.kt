@@ -1,18 +1,17 @@
 package com.michael.potcastplant
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
-import android.widget.EditText
-import com.michael.potcastplant.databinding.ActivityAddPostBinding
 import com.michael.potcastplant.databinding.ActivityRegistrationBinding
 
 //creating your class for page
 class RegistrationActivity : AppCompatActivity() {
 
-    //override will create your page
     private lateinit var binding: ActivityRegistrationBinding
+    //override will create your page
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegistrationBinding.inflate(layoutInflater)
@@ -24,10 +23,15 @@ class RegistrationActivity : AppCompatActivity() {
         binding.etPassword.text.toString()
         binding.etPasswordRepeat.text.toString()
 
-        var btnRegister = findViewById(R.id.btnRegister) as Button
-        btnRegister.setOnClickListener {
+
+        binding.btnRegister.setOnClickListener {
             //code
             Log.i("RegistrationActivity", "Information was sent!")
+        }
+
+        binding.tvLogin.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }

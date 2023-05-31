@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_person_24"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Michael Naga"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="michael@nhlstenden.com"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/edit_profile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Edit Profile"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="5dp"
+        android:backgroundTint="#044304"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="266dp"
+            android:layout_height="53dp"
+            android:backgroundTint="#D9D9D9">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Number of plants"
+                android:textColor="#044304"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="52dp"
+            android:layout_height="53dp"
+            android:backgroundTint="#D9D9D9"
+            android:layout_marginLeft="30dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3"
+                android:textColor="#044304"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logout_button"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="250dp"
+        android:background="#AD1107"
+        android:text="LOGOUT"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="5dp" />
+
+
+
+</LinearLayout>

@@ -125,7 +125,7 @@
             android:layout_height="100dp"
             app:cornerRadius="5dp"
             android:backgroundTint="#D9D9D9"
-            tools:ignore="DuplicateIds" >
+            tools:ignore="DuplicateIds">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -162,10 +162,16 @@
 
     <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/switch1"
+<<<<<<< HEAD
         android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+=======
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+>>>>>>> 143fa1f91d46c2032da608e0fd32a793b71f98bd
         android:text="Automatic watering"
         android:textSize="17sp"
         android:textStyle="bold"/>
