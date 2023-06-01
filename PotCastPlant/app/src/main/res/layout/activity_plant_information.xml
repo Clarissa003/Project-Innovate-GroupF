@@ -43,7 +43,8 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/temperature"
             android:layout_gravity="center"
-            android:layout_width="140dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
             android:layout_height="100dp"
             android:text="Temperature"
             android:textColor="#000000"
@@ -67,7 +68,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/moisture"
-            android:layout_width="140dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_marginStart="10dp"
             android:backgroundTint="#D9D9D9"
@@ -121,7 +123,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/wlevel"
-            android:layout_width="140dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="100dp"
             app:cornerRadius="5dp"
             android:backgroundTint="#D9D9D9"
@@ -140,7 +143,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/humidity"
-            android:layout_width="140dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="100dp"
             android:layout_marginStart="10dp"
             android:backgroundTint="#D9D9D9"
@@ -156,22 +160,14 @@
                 android:textSize="20sp"
                 android:layout_gravity="center"/>
         </androidx.cardview.widget.CardView>
-
-
     </LinearLayout>
 
     <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/switch1"
-<<<<<<< HEAD
         android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-=======
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
->>>>>>> 143fa1f91d46c2032da608e0fd32a793b71f98bd
         android:text="Automatic watering"
         android:textSize="17sp"
         android:textStyle="bold"/>
