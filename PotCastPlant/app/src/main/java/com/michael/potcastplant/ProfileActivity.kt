@@ -1,5 +1,6 @@
 package com.michael.potcastplant
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -18,5 +19,14 @@ class ProfileActivity : Fragment() {
     ): View? {
         binding = ActivityProfileBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.logoutButton.setOnClickListener {
+            val intent = Intent(this.context, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
