@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.michael.potcastplant.app-mergeDebugResources-33:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "outputFile": "com.michael.potcastplant.app-mergeDebugResources-38:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Naga\\.gradle\\caches\\transforms-3\\fef2914434ca37ac03f74473193f83de\\transformed\\material-1.9.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "C:\\Users\\Naga\\.gradle\\caches\\transforms-3\\8346735e1382f678526d4b0c2b20acb5\\transformed\\material-1.9.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
