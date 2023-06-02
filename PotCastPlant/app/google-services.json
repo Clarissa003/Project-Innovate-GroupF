@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "140977493605",
+    "project_id": "potcast-plant",
+    "storage_bucket": "potcast-plant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140977493605:android:623fea79bb7a5d7bf4d88c",
+        "android_client_info": {
+          "package_name": "com.michael.potcastplant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140977493605-19b5shpk9je0o0cdh1j44d9i50c325mr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBProhwe_ek_enSwBh5xjTtFJLKXXXBtGg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140977493605-19b5shpk9je0o0cdh1j44d9i50c325mr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

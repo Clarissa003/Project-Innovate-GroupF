@@ -13,6 +13,7 @@
     <string name="my_plants">My Plants</string>
     <string name="notifications">Notifications</string>
     <string name="profile">Profile</string>
+    <string name="temperature">Temperature</string>
     <string name="title_activity_dashboard_menu">DashboardMenuActivity</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_home">Home</string>
