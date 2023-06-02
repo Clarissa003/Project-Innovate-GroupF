@@ -1,9 +1,12 @@
 package com.michael.potcastplant
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.core.content.edit
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.michael.potcastplant.databinding.ActivityLoginBinding
@@ -13,6 +16,10 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var auth : FirebaseAuth
     private lateinit var firestore: FirebaseFirestore
+    private val myPreferences: SharedPreferences by lazy {
+        getSharedPreferences("myPref", Context.MODE_PRIVATE)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
@@ -54,7 +61,13 @@ class LoginActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
+
+                    val uid = auth.currentUser?.uid
+
                     Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
+                    myPreferences.edit {
+                        putString("uid", uid)
+                    }
                     val intent = Intent(this, NavigationHostActivity::class.java)
                     startActivity(intent)
                 } else {
