@@ -28,14 +28,18 @@ public final class ActivityPlantsDashboardBinding implements ViewBinding {
   public final RecyclerView recyclerViewPlants;
 
   @NonNull
+  public final TextView textViewNoPlantsYet;
+
+  @NonNull
   public final TextView textViewTitle;
 
   private ActivityPlantsDashboardBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button buttonAddPlant, @NonNull RecyclerView recyclerViewPlants,
-      @NonNull TextView textViewTitle) {
+      @NonNull TextView textViewNoPlantsYet, @NonNull TextView textViewTitle) {
     this.rootView = rootView;
     this.buttonAddPlant = buttonAddPlant;
     this.recyclerViewPlants = recyclerViewPlants;
+    this.textViewNoPlantsYet = textViewNoPlantsYet;
     this.textViewTitle = textViewTitle;
   }
 
@@ -78,6 +82,12 @@ public final class ActivityPlantsDashboardBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.text_view_no_plants_yet;
+      TextView textViewNoPlantsYet = ViewBindings.findChildViewById(rootView, id);
+      if (textViewNoPlantsYet == null) {
+        break missingId;
+      }
+
       id = R.id.text_view_title;
       TextView textViewTitle = ViewBindings.findChildViewById(rootView, id);
       if (textViewTitle == null) {
@@ -85,7 +95,7 @@ public final class ActivityPlantsDashboardBinding implements ViewBinding {
       }
 
       return new ActivityPlantsDashboardBinding((ConstraintLayout) rootView, buttonAddPlant,
-          recyclerViewPlants, textViewTitle);
+          recyclerViewPlants, textViewNoPlantsYet, textViewTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

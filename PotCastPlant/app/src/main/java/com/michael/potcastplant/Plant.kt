@@ -9,5 +9,6 @@ data class Plant (
     var sunlight_max: Int,
     var sunlight_min: Int,
     var moisture_max: Int,
-    var moisture_min: Int
+    var moisture_min: Int,
+    var image_url: String
 )

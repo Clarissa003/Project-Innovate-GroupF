@@ -1,43 +1,51 @@
-com.michael.potcastplant.app-lifecycle-runtime-2.5.1-0 C:\Users\Naga\.gradle\caches\transforms-3\0a2e76b293e5c4a59f921c5ff2c9a7d9\transformed\lifecycle-runtime-2.5.1\res
-com.michael.potcastplant.app-constraintlayout-2.1.4-1 C:\Users\Naga\.gradle\caches\transforms-3\127196899adbfd128784816b1be72f52\transformed\constraintlayout-2.1.4\res
-com.michael.potcastplant.app-savedstate-ktx-1.2.0-2 C:\Users\Naga\.gradle\caches\transforms-3\2979db4740490c19ebe573f816d7e6b6\transformed\savedstate-ktx-1.2.0\res
-com.michael.potcastplant.app-emoji2-views-helper-1.2.0-3 C:\Users\Naga\.gradle\caches\transforms-3\2ce662fd20a9447fb8e878c305184dbc\transformed\emoji2-views-helper-1.2.0\res
-com.michael.potcastplant.app-customview-poolingcontainer-1.0.0-4 C:\Users\Naga\.gradle\caches\transforms-3\345a42db1bf429dccbcffc533df6971a\transformed\customview-poolingcontainer-1.0.0\res
-com.michael.potcastplant.app-startup-runtime-1.1.1-5 C:\Users\Naga\.gradle\caches\transforms-3\37b71af0bc9deda145d2d027954b5c42\transformed\startup-runtime-1.1.1\res
-com.michael.potcastplant.app-emoji2-1.2.0-6 C:\Users\Naga\.gradle\caches\transforms-3\3ea275dff85316234d64d5c17e2d8770\transformed\emoji2-1.2.0\res
-com.michael.potcastplant.app-lifecycle-viewmodel-savedstate-2.5.1-7 C:\Users\Naga\.gradle\caches\transforms-3\3fe9d6c2849cf1748221b5c35b24fb7e\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
+com.michael.potcastplant.app-constraintlayout-2.1.4-0 C:\Users\Naga\.gradle\caches\transforms-3\127196899adbfd128784816b1be72f52\transformed\constraintlayout-2.1.4\res
+com.michael.potcastplant.app-emoji2-views-helper-1.2.0-1 C:\Users\Naga\.gradle\caches\transforms-3\2ce662fd20a9447fb8e878c305184dbc\transformed\emoji2-views-helper-1.2.0\res
+com.michael.potcastplant.app-customview-poolingcontainer-1.0.0-2 C:\Users\Naga\.gradle\caches\transforms-3\345a42db1bf429dccbcffc533df6971a\transformed\customview-poolingcontainer-1.0.0\res
+com.michael.potcastplant.app-savedstate-1.2.1-3 C:\Users\Naga\.gradle\caches\transforms-3\35ddc19f1fabbde84ddf76f31925be3f\transformed\savedstate-1.2.1\res
+com.michael.potcastplant.app-startup-runtime-1.1.1-4 C:\Users\Naga\.gradle\caches\transforms-3\37b71af0bc9deda145d2d027954b5c42\transformed\startup-runtime-1.1.1\res
+com.michael.potcastplant.app-emoji2-1.2.0-5 C:\Users\Naga\.gradle\caches\transforms-3\3ea275dff85316234d64d5c17e2d8770\transformed\emoji2-1.2.0\res
+com.michael.potcastplant.app-lifecycle-runtime-ktx-2.6.1-6 C:\Users\Naga\.gradle\caches\transforms-3\3ff6a70992daea0bfd36929b8f2a94d5\transformed\lifecycle-runtime-ktx-2.6.1\res
+com.michael.potcastplant.app-window-1.0.0-7 C:\Users\Naga\.gradle\caches\transforms-3\4126fce3e0da0f32ff3914759f2f237b\transformed\window-1.0.0\res
 com.michael.potcastplant.app-viewpager2-1.0.0-8 C:\Users\Naga\.gradle\caches\transforms-3\44d3107f74417d3295bbcb767820d83d\transformed\viewpager2-1.0.0\res
-com.michael.potcastplant.app-recyclerview-1.3.0-9 C:\Users\Naga\.gradle\caches\transforms-3\47cab2fe282ae493f9a936fbc75288e7\transformed\recyclerview-1.3.0\res
-com.michael.potcastplant.app-browser-1.4.0-10 C:\Users\Naga\.gradle\caches\transforms-3\4cdc0c6cd2ec8309a9917a0cd4f0b601\transformed\browser-1.4.0\res
-com.michael.potcastplant.app-cardview-1.0.0-11 C:\Users\Naga\.gradle\caches\transforms-3\4fa19abdc9fb3742e467a057765a739a\transformed\cardview-1.0.0\res
-com.michael.potcastplant.app-lifecycle-viewmodel-ktx-2.5.1-12 C:\Users\Naga\.gradle\caches\transforms-3\50956d7c1d2ad87e39fc758206659be6\transformed\lifecycle-viewmodel-ktx-2.5.1\res
-com.michael.potcastplant.app-lifecycle-viewmodel-2.5.1-13 C:\Users\Naga\.gradle\caches\transforms-3\534b7105da2b20f80030ef13db3634e6\transformed\lifecycle-viewmodel-2.5.1\res
-com.michael.potcastplant.app-annotation-experimental-1.3.0-14 C:\Users\Naga\.gradle\caches\transforms-3\551a69fdb6258fdd07aa00ab4e980112\transformed\annotation-experimental-1.3.0\res
-com.michael.potcastplant.app-play-services-base-18.0.1-15 C:\Users\Naga\.gradle\caches\transforms-3\5d4f0baf67b2a44fdbfab6b24281e643\transformed\play-services-base-18.0.1\res
-com.michael.potcastplant.app-lifecycle-process-2.4.1-16 C:\Users\Naga\.gradle\caches\transforms-3\5e88de1d94d9252d239814f03f72f30b\transformed\lifecycle-process-2.4.1\res
-com.michael.potcastplant.app-savedstate-1.2.0-17 C:\Users\Naga\.gradle\caches\transforms-3\5ea834076ff9b41e9c6d960fd18d699d\transformed\savedstate-1.2.0\res
-com.michael.potcastplant.app-appcompat-1.6.1-18 C:\Users\Naga\.gradle\caches\transforms-3\6749e82180bec1f2db8e601d0b6ac361\transformed\appcompat-1.6.1\res
-com.michael.potcastplant.app-drawerlayout-1.1.1-19 C:\Users\Naga\.gradle\caches\transforms-3\67cf516d8ad016e4471b6cc4170c954f\transformed\drawerlayout-1.1.1\res
-com.michael.potcastplant.app-core-ktx-1.10.1-20 C:\Users\Naga\.gradle\caches\transforms-3\6ec88a09a6923a391f86eedf1972e341\transformed\core-ktx-1.10.1\res
-com.michael.potcastplant.app-fragment-1.5.7-21 C:\Users\Naga\.gradle\caches\transforms-3\7c3cd19ea46e96321cfe28465154b397\transformed\fragment-1.5.7\res
-com.michael.potcastplant.app-activity-1.6.0-22 C:\Users\Naga\.gradle\caches\transforms-3\7c852c872ca1bb4f1b0cc719e62e2f4b\transformed\activity-1.6.0\res
-com.michael.potcastplant.app-material-1.9.0-23 C:\Users\Naga\.gradle\caches\transforms-3\8346735e1382f678526d4b0c2b20acb5\transformed\material-1.9.0\res
-com.michael.potcastplant.app-lifecycle-runtime-ktx-2.5.1-24 C:\Users\Naga\.gradle\caches\transforms-3\85cb420f62da55943d2ee85f89d1efb6\transformed\lifecycle-runtime-ktx-2.5.1\res
-com.michael.potcastplant.app-fragment-ktx-1.5.7-25 C:\Users\Naga\.gradle\caches\transforms-3\86939d6864cc8e2c709fcd63f1e0998c\transformed\fragment-ktx-1.5.7\res
-com.michael.potcastplant.app-lifecycle-livedata-core-2.5.1-26 C:\Users\Naga\.gradle\caches\transforms-3\8fde6865c09b2cdeef80123f1edd912a\transformed\lifecycle-livedata-core-2.5.1\res
-com.michael.potcastplant.app-core-1.10.1-27 C:\Users\Naga\.gradle\caches\transforms-3\a197831e9bdb79abd7f7d499aa9bad55\transformed\core-1.10.1\res
-com.michael.potcastplant.app-play-services-basement-18.1.0-28 C:\Users\Naga\.gradle\caches\transforms-3\b9d0344364cb797cae21e7f49407fa91\transformed\play-services-basement-18.1.0\res
-com.michael.potcastplant.app-activity-ktx-1.6.0-29 C:\Users\Naga\.gradle\caches\transforms-3\b9e029423c37de06a1167c16ff760546\transformed\activity-ktx-1.6.0\res
-com.michael.potcastplant.app-lifecycle-livedata-core-ktx-2.5.1-30 C:\Users\Naga\.gradle\caches\transforms-3\c870726206afa05ab37fef1c23b61e98\transformed\lifecycle-livedata-core-ktx-2.5.1\res
-com.michael.potcastplant.app-firebase-common-20.3.2-31 C:\Users\Naga\.gradle\caches\transforms-3\ce386c086cbb66a333155fa21c4873c9\transformed\firebase-common-20.3.2\res
-com.michael.potcastplant.app-appcompat-resources-1.6.1-32 C:\Users\Naga\.gradle\caches\transforms-3\e4c17b656a7fc8819010656e5583bc4f\transformed\appcompat-resources-1.6.1\res
-com.michael.potcastplant.app-coordinatorlayout-1.1.0-33 C:\Users\Naga\.gradle\caches\transforms-3\f1d67c120261a6a4b8fb26c2d31951f1\transformed\coordinatorlayout-1.1.0\res
-com.michael.potcastplant.app-transition-1.2.0-34 C:\Users\Naga\.gradle\caches\transforms-3\f48a683faccadcefb6bb614c6ceec609\transformed\transition-1.2.0\res
-com.michael.potcastplant.app-google-services-35 C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\build\generated\res\google-services\debug
-com.michael.potcastplant.app-pngs-36 C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\build\generated\res\pngs\debug
-com.michael.potcastplant.app-resValues-37 C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\build\generated\res\resValues\debug
-com.michael.potcastplant.app-packageDebugResources-38 C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.michael.potcastplant.app-packageDebugResources-39 C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.michael.potcastplant.app-merged_res-40 C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\build\intermediates\merged_res\debug
-com.michael.potcastplant.app-debug-41 C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\debug\res
-com.michael.potcastplant.app-main-42 C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\res
+com.michael.potcastplant.app-glide-4.15.1-9 C:\Users\Naga\.gradle\caches\transforms-3\47ae2771e2cd96c58d258029225ac1f6\transformed\glide-4.15.1\res
+com.michael.potcastplant.app-recyclerview-1.3.0-10 C:\Users\Naga\.gradle\caches\transforms-3\47cab2fe282ae493f9a936fbc75288e7\transformed\recyclerview-1.3.0\res
+com.michael.potcastplant.app-browser-1.4.0-11 C:\Users\Naga\.gradle\caches\transforms-3\4cdc0c6cd2ec8309a9917a0cd4f0b601\transformed\browser-1.4.0\res
+com.michael.potcastplant.app-cardview-1.0.0-12 C:\Users\Naga\.gradle\caches\transforms-3\4fa19abdc9fb3742e467a057765a739a\transformed\cardview-1.0.0\res
+com.michael.potcastplant.app-annotation-experimental-1.3.0-13 C:\Users\Naga\.gradle\caches\transforms-3\551a69fdb6258fdd07aa00ab4e980112\transformed\annotation-experimental-1.3.0\res
+com.michael.potcastplant.app-play-services-base-18.0.1-14 C:\Users\Naga\.gradle\caches\transforms-3\5d4f0baf67b2a44fdbfab6b24281e643\transformed\play-services-base-18.0.1\res
+com.michael.potcastplant.app-lifecycle-viewmodel-ktx-2.6.1-15 C:\Users\Naga\.gradle\caches\transforms-3\66d5e774b70ee09dacea6bb67cdcf5c7\transformed\lifecycle-viewmodel-ktx-2.6.1\res
+com.michael.potcastplant.app-appcompat-1.6.1-16 C:\Users\Naga\.gradle\caches\transforms-3\6749e82180bec1f2db8e601d0b6ac361\transformed\appcompat-1.6.1\res
+com.michael.potcastplant.app-transition-1.4.1-17 C:\Users\Naga\.gradle\caches\transforms-3\67acdfedb6d777bc94f45e24d08e078d\transformed\transition-1.4.1\res
+com.michael.potcastplant.app-drawerlayout-1.1.1-18 C:\Users\Naga\.gradle\caches\transforms-3\67cf516d8ad016e4471b6cc4170c954f\transformed\drawerlayout-1.1.1\res
+com.michael.potcastplant.app-core-ktx-1.10.1-19 C:\Users\Naga\.gradle\caches\transforms-3\6ec88a09a6923a391f86eedf1972e341\transformed\core-ktx-1.10.1\res
+com.michael.potcastplant.app-activity-1.6.0-20 C:\Users\Naga\.gradle\caches\transforms-3\7c852c872ca1bb4f1b0cc719e62e2f4b\transformed\activity-1.6.0\res
+com.michael.potcastplant.app-profileinstaller-1.3.0-21 C:\Users\Naga\.gradle\caches\transforms-3\823a727112a93750c5e36780fa55f439\transformed\profileinstaller-1.3.0\res
+com.michael.potcastplant.app-material-1.9.0-22 C:\Users\Naga\.gradle\caches\transforms-3\8346735e1382f678526d4b0c2b20acb5\transformed\material-1.9.0\res
+com.michael.potcastplant.app-lifecycle-livedata-core-ktx-2.6.1-23 C:\Users\Naga\.gradle\caches\transforms-3\95eda1e1b1fb5ccfff2af52a3d16141b\transformed\lifecycle-livedata-core-ktx-2.6.1\res
+com.michael.potcastplant.app-core-1.10.1-24 C:\Users\Naga\.gradle\caches\transforms-3\a197831e9bdb79abd7f7d499aa9bad55\transformed\core-1.10.1\res
+com.michael.potcastplant.app-lifecycle-viewmodel-savedstate-2.6.1-25 C:\Users\Naga\.gradle\caches\transforms-3\aeeb501a82b13c31895fc88914f456c7\transformed\lifecycle-viewmodel-savedstate-2.6.1\res
+com.michael.potcastplant.app-lifecycle-runtime-2.6.1-26 C:\Users\Naga\.gradle\caches\transforms-3\af283e33d399aca014986c01321113e5\transformed\lifecycle-runtime-2.6.1\res
+com.michael.potcastplant.app-slidingpanelayout-1.2.0-27 C:\Users\Naga\.gradle\caches\transforms-3\b3f0386844d26824f36e1d415d7e0fb6\transformed\slidingpanelayout-1.2.0\res
+com.michael.potcastplant.app-lifecycle-livedata-2.6.1-28 C:\Users\Naga\.gradle\caches\transforms-3\b83497f4f492fcab60ae49f1eadced2c\transformed\lifecycle-livedata-2.6.1\res
+com.michael.potcastplant.app-play-services-basement-18.1.0-29 C:\Users\Naga\.gradle\caches\transforms-3\b9d0344364cb797cae21e7f49407fa91\transformed\play-services-basement-18.1.0\res
+com.michael.potcastplant.app-activity-ktx-1.6.0-30 C:\Users\Naga\.gradle\caches\transforms-3\b9e029423c37de06a1167c16ff760546\transformed\activity-ktx-1.6.0\res
+com.michael.potcastplant.app-preference-1.2.0-31 C:\Users\Naga\.gradle\caches\transforms-3\bb1747aae6273ecfd506b647e63b3af1\transformed\preference-1.2.0\res
+com.michael.potcastplant.app-preference-ktx-1.2.0-32 C:\Users\Naga\.gradle\caches\transforms-3\bf8541cd73cd0a51ea59f5b4d5047951\transformed\preference-ktx-1.2.0\res
+com.michael.potcastplant.app-core-runtime-2.2.0-33 C:\Users\Naga\.gradle\caches\transforms-3\c4a21ebfb5ffa9c1d159849ad7083c9a\transformed\core-runtime-2.2.0\res
+com.michael.potcastplant.app-fragment-1.6.0-34 C:\Users\Naga\.gradle\caches\transforms-3\c8c89d84162a1d9d5c79e289c2f88152\transformed\fragment-1.6.0\res
+com.michael.potcastplant.app-firebase-common-20.3.2-35 C:\Users\Naga\.gradle\caches\transforms-3\ce386c086cbb66a333155fa21c4873c9\transformed\firebase-common-20.3.2\res
+com.michael.potcastplant.app-lifecycle-livedata-core-2.6.1-36 C:\Users\Naga\.gradle\caches\transforms-3\cfe66ffc6c84ef43d7f91bae50fab9e1\transformed\lifecycle-livedata-core-2.6.1\res
+com.michael.potcastplant.app-savedstate-ktx-1.2.1-37 C:\Users\Naga\.gradle\caches\transforms-3\e02a2f6d02b0b58b06daa1ae0a181c41\transformed\savedstate-ktx-1.2.1\res
+com.michael.potcastplant.app-appcompat-resources-1.6.1-38 C:\Users\Naga\.gradle\caches\transforms-3\e4c17b656a7fc8819010656e5583bc4f\transformed\appcompat-resources-1.6.1\res
+com.michael.potcastplant.app-lifecycle-viewmodel-2.6.1-39 C:\Users\Naga\.gradle\caches\transforms-3\e5ed51fb297feaf886ccedc714932792\transformed\lifecycle-viewmodel-2.6.1\res
+com.michael.potcastplant.app-lifecycle-process-2.6.1-40 C:\Users\Naga\.gradle\caches\transforms-3\ec4d46d70fe1fdd5abf97941e0c195ed\transformed\lifecycle-process-2.6.1\res
+com.michael.potcastplant.app-coordinatorlayout-1.1.0-41 C:\Users\Naga\.gradle\caches\transforms-3\f1d67c120261a6a4b8fb26c2d31951f1\transformed\coordinatorlayout-1.1.0\res
+com.michael.potcastplant.app-fragment-ktx-1.6.0-42 C:\Users\Naga\.gradle\caches\transforms-3\fd8dda2f84660672f89fb7393dd8438f\transformed\fragment-ktx-1.6.0\res
+com.michael.potcastplant.app-google-services-43 C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\build\generated\res\google-services\debug
+com.michael.potcastplant.app-pngs-44 C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\build\generated\res\pngs\debug
+com.michael.potcastplant.app-resValues-45 C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\build\generated\res\resValues\debug
+com.michael.potcastplant.app-packageDebugResources-46 C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.michael.potcastplant.app-packageDebugResources-47 C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.michael.potcastplant.app-merged_res-48 C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\build\intermediates\merged_res\debug
+com.michael.potcastplant.app-debug-49 C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\debug\res
+com.michael.potcastplant.app-main-50 C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\res

@@ -13,7 +13,7 @@
         <shape
             android:shape="rectangle">
 
-            <solid android:color="@color/light_green"/>
+            <gradient android:startColor="@color/green" android:endColor="@color/light_green"/>
             <corners
                 android:bottomRightRadius="250dp"
                 android:topRightRadius="250dp" />

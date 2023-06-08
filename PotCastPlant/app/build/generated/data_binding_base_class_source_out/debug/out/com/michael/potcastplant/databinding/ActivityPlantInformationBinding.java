@@ -32,7 +32,7 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
   public final TextView nameText;
 
   @NonNull
-  public final ImageView profileImage;
+  public final ImageView plantImage;
 
   @NonNull
   public final CardView sunlight;
@@ -44,23 +44,45 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
   public final CardView temperature;
 
   @NonNull
+  public final TextView textViewHumidity;
+
+  @NonNull
+  public final TextView textViewSoilMoisture;
+
+  @NonNull
+  public final TextView textViewSunlight;
+
+  @NonNull
+  public final TextView textViewTemperature;
+
+  @NonNull
+  public final TextView textViewWaterLevel;
+
+  @NonNull
   public final TextView watering;
 
   @NonNull
   public final CardView wlevel;
 
   private ActivityPlantInformationBinding(@NonNull ScrollView rootView, @NonNull CardView humidity,
-      @NonNull CardView moisture, @NonNull TextView nameText, @NonNull ImageView profileImage,
+      @NonNull CardView moisture, @NonNull TextView nameText, @NonNull ImageView plantImage,
       @NonNull CardView sunlight, @NonNull SwitchMaterial switch1, @NonNull CardView temperature,
-      @NonNull TextView watering, @NonNull CardView wlevel) {
+      @NonNull TextView textViewHumidity, @NonNull TextView textViewSoilMoisture,
+      @NonNull TextView textViewSunlight, @NonNull TextView textViewTemperature,
+      @NonNull TextView textViewWaterLevel, @NonNull TextView watering, @NonNull CardView wlevel) {
     this.rootView = rootView;
     this.humidity = humidity;
     this.moisture = moisture;
     this.nameText = nameText;
-    this.profileImage = profileImage;
+    this.plantImage = plantImage;
     this.sunlight = sunlight;
     this.switch1 = switch1;
     this.temperature = temperature;
+    this.textViewHumidity = textViewHumidity;
+    this.textViewSoilMoisture = textViewSoilMoisture;
+    this.textViewSunlight = textViewSunlight;
+    this.textViewTemperature = textViewTemperature;
+    this.textViewWaterLevel = textViewWaterLevel;
     this.watering = watering;
     this.wlevel = wlevel;
   }
@@ -110,9 +132,9 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.profile_image;
-      ImageView profileImage = ViewBindings.findChildViewById(rootView, id);
-      if (profileImage == null) {
+      id = R.id.plant_image;
+      ImageView plantImage = ViewBindings.findChildViewById(rootView, id);
+      if (plantImage == null) {
         break missingId;
       }
 
@@ -134,6 +156,36 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.text_view_humidity;
+      TextView textViewHumidity = ViewBindings.findChildViewById(rootView, id);
+      if (textViewHumidity == null) {
+        break missingId;
+      }
+
+      id = R.id.text_view_soil_moisture;
+      TextView textViewSoilMoisture = ViewBindings.findChildViewById(rootView, id);
+      if (textViewSoilMoisture == null) {
+        break missingId;
+      }
+
+      id = R.id.text_view_sunlight;
+      TextView textViewSunlight = ViewBindings.findChildViewById(rootView, id);
+      if (textViewSunlight == null) {
+        break missingId;
+      }
+
+      id = R.id.text_view_temperature;
+      TextView textViewTemperature = ViewBindings.findChildViewById(rootView, id);
+      if (textViewTemperature == null) {
+        break missingId;
+      }
+
+      id = R.id.text_view_water_level;
+      TextView textViewWaterLevel = ViewBindings.findChildViewById(rootView, id);
+      if (textViewWaterLevel == null) {
+        break missingId;
+      }
+
       id = R.id.watering;
       TextView watering = ViewBindings.findChildViewById(rootView, id);
       if (watering == null) {
@@ -147,7 +199,9 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
       }
 
       return new ActivityPlantInformationBinding((ScrollView) rootView, humidity, moisture,
-          nameText, profileImage, sunlight, switch1, temperature, watering, wlevel);
+          nameText, plantImage, sunlight, switch1, temperature, textViewHumidity,
+          textViewSoilMoisture, textViewSunlight, textViewTemperature, textViewWaterLevel, watering,
+          wlevel);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
