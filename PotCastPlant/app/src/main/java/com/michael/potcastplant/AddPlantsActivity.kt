@@ -24,6 +24,17 @@ class AddPlantsActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, plants.map { it.plant_name })
         binding.spinnerPlants.adapter = adapter
 
+        binding.buttonAddPlant.setOnClickListener {
+            val potId = binding.editTextEmail.text.toString()
+            val selectedPlant = binding.spinnerPlants.selectedItem.toString()
+
+            // TODO: Handle adding the plant with potId and selectedPlant
+
+            //Example
+
+            println("Pot ID: $potId, Selected Plant: $selectedPlant")
+        }
+
 
         binding.buttonSubmitRequest.setOnClickListener {
             val intent = Intent(Intent.ACTION_SENDTO)
