@@ -27,7 +27,6 @@ drawable potcast_logo
 drawable top_background
 id bottom_nav
 id btnRegister
-id btnReset
 id btnUpload
 id btnUploadImage
 id button_addPlant
@@ -53,7 +52,6 @@ id image_view_header
 id image_view_plant
 id image_view_post_img
 id image_view_profile_pic
-id linearLayout
 id logout_button
 id menu_feedback
 id menu_logout
@@ -79,7 +77,6 @@ id text_view_title
 id text_view_username
 id tvAddPost
 id tvDate
-id tvEmailLabel
 id tvLogin
 id tvNotification
 id tvRegister
@@ -111,6 +108,7 @@ string feeds
 string my_plants
 string notifications
 string profile
+string temperature
 string title_activity_dashboard_menu
 string title_dashboard
 string title_home

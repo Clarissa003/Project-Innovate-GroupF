@@ -6,154 +6,154 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml
+8-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml
+9-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml
 10
 11    <permission
-11-->[androidx.core:core:1.10.1] C:\Users\Naga\.gradle\caches\transforms-3\7810e8761aa3025c239028b0b49ad789\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+11-->[androidx.core:core:1.10.1] C:\Users\clari\.gradle\caches\transforms-3\7810e8761aa3025c239028b0b49ad789\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
 12        android:name="com.michael.potcastplant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.10.1] C:\Users\Naga\.gradle\caches\transforms-3\7810e8761aa3025c239028b0b49ad789\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+12-->[androidx.core:core:1.10.1] C:\Users\clari\.gradle\caches\transforms-3\7810e8761aa3025c239028b0b49ad789\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
 13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.10.1] C:\Users\Naga\.gradle\caches\transforms-3\7810e8761aa3025c239028b0b49ad789\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+13-->[androidx.core:core:1.10.1] C:\Users\clari\.gradle\caches\transforms-3\7810e8761aa3025c239028b0b49ad789\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
 14
 15    <uses-permission android:name="com.michael.potcastplant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.10.1] C:\Users\Naga\.gradle\caches\transforms-3\7810e8761aa3025c239028b0b49ad789\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.10.1] C:\Users\Naga\.gradle\caches\transforms-3\7810e8761aa3025c239028b0b49ad789\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+15-->[androidx.core:core:1.10.1] C:\Users\clari\.gradle\caches\transforms-3\7810e8761aa3025c239028b0b49ad789\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.10.1] C:\Users\clari\.gradle\caches\transforms-3\7810e8761aa3025c239028b0b49ad789\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:5:5-60:19
+17-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:5:5-60:19
 18        android:allowBackup="true"
-18-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:6:9-35
+18-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.10.1] C:\Users\Naga\.gradle\caches\transforms-3\7810e8761aa3025c239028b0b49ad789\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+19-->[androidx.core:core:1.10.1] C:\Users\clari\.gradle\caches\transforms-3\7810e8761aa3025c239028b0b49ad789\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
 20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:7:9-65
+20-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:7:9-65
 21        android:debuggable="true"
 22        android:extractNativeLibs="false"
 23        android:fullBackupContent="@xml/backup_rules"
-23-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:8:9-54
+23-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:8:9-54
 24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:9:9-43
+24-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:9:9-43
 25        android:label="@string/app_name"
-25-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:10:9-41
+25-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:10:9-41
 26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:11:9-54
+26-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:11:9-54
 27        android:supportsRtl="true"
-27-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:12:9-35
+27-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:12:9-35
 28        android:testOnly="true"
 29        android:theme="@style/Theme.PotCastPlant" >
-29-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:13:9-50
+29-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:13:9-50
 30        <activity
-30-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:15:9-17:40
+30-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:15:9-17:40
 31            android:name="com.michael.potcastplant.AddPostActivity"
-31-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:16:13-44
+31-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:16:13-44
 32            android:exported="false" />
-32-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:17:13-37
+32-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:17:13-37
 33        <activity
-33-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:18:9-20:40
+33-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:18:9-20:40
 34            android:name="com.michael.potcastplant.AddPlantsActivity"
-34-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:19:13-46
+34-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:19:13-46
 35            android:exported="false" />
-35-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:20:13-37
+35-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:20:13-37
 36        <activity
-36-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:21:9-23:40
+36-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:21:9-23:40
 37            android:name="com.michael.potcastplant.PlantInformationActivity"
-37-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:22:13-53
+37-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:22:13-53
 38            android:exported="false" />
-38-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:23:13-37
+38-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:23:13-37
 39        <activity
-39-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:24:9-26:40
+39-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:24:9-26:40
 40            android:name="com.michael.potcastplant.NotificationActivity"
-40-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:25:13-49
+40-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:25:13-49
 41            android:exported="false" />
-41-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:26:13-37
+41-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:26:13-37
 42        <activity
-42-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:27:9-29:40
+42-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:27:9-29:40
 43            android:name="com.michael.potcastplant.FeedActivity"
-43-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:28:13-41
+43-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:28:13-41
 44            android:exported="false" />
-44-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:29:13-37
+44-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:29:13-37
 45        <activity
-45-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:30:9-32:40
+45-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:30:9-32:40
 46            android:name="com.michael.potcastplant.PlantsDashboardActivity"
-46-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:31:13-52
+46-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:31:13-52
 47            android:exported="false" />
-47-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:32:13-37
+47-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:32:13-37
 48        <activity
-48-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:33:9-37:71
+48-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:33:9-37:71
 49            android:name="com.michael.potcastplant.NavigationHostActivity"
-49-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:34:13-51
+49-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:34:13-51
 50            android:exported="false"
-50-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:35:13-37
+50-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:35:13-37
 51            android:label=""
-51-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:36:13-29
+51-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:36:13-29
 52            android:theme="@style/Base.Theme.PotCastPlantActionBar" />
-52-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:37:13-68
+52-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:37:13-68
 53        <activity
-53-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:38:9-40:40
+53-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:38:9-40:40
 54            android:name="com.michael.potcastplant.PasswordResetActivity"
-54-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:39:13-50
+54-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:39:13-50
 55            android:exported="false" />
-55-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:40:13-37
+55-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:40:13-37
 56        <activity
-56-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:41:9-43:40
+56-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:41:9-43:40
 57            android:name="com.michael.potcastplant.ProfileActivity"
-57-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:42:13-44
+57-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:42:13-44
 58            android:exported="false" />
-58-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:43:13-37
+58-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:43:13-37
 59        <activity
-59-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:44:9-46:40
+59-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:44:9-46:40
 60            android:name="com.michael.potcastplant.RegistrationActivity"
-60-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:45:13-49
+60-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:45:13-49
 61            android:exported="false" />
-61-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:46:13-37
+61-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:46:13-37
 62        <activity
-62-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:47:9-49:39
+62-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:47:9-49:39
 63            android:name="com.michael.potcastplant.MainActivity"
-63-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:48:13-41
+63-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:48:13-41
 64            android:exported="true" />
-64-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:49:13-36
+64-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:49:13-36
 65        <activity
-65-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:50:9-59:20
+65-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:50:9-59:20
 66            android:name="com.michael.potcastplant.SplashScreenActivity"
-66-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:51:13-49
+66-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:51:13-49
 67            android:exported="true"
-67-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:52:13-36
+67-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:52:13-36
 68            android:theme="@style/SplashTheme" >
-68-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:53:13-47
+68-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:53:13-47
 69            <intent-filter>
-69-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:54:13-58:29
+69-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:54:13-58:29
 70                <action android:name="android.intent.action.MAIN" />
-70-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:55:17-69
-70-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:55:25-66
+70-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:55:17-69
+70-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:55:25-66
 71
 72                <category android:name="android.intent.category.LAUNCHER" />
-72-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:57:17-77
-72-->C:\Users\Naga\Desktop\Project Innovate\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:57:27-74
+72-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:57:17-77
+72-->C:\Users\clari\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:57:27-74
 73            </intent-filter>
 74        </activity>
 75
 76        <provider
-76-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Naga\.gradle\caches\transforms-3\d1735c872afea04148904d9dcaaead07\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+76-->[androidx.emoji2:emoji2:1.2.0] C:\Users\clari\.gradle\caches\transforms-3\d1735c872afea04148904d9dcaaead07\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 77            android:name="androidx.startup.InitializationProvider"
-77-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Naga\.gradle\caches\transforms-3\d1735c872afea04148904d9dcaaead07\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+77-->[androidx.emoji2:emoji2:1.2.0] C:\Users\clari\.gradle\caches\transforms-3\d1735c872afea04148904d9dcaaead07\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
 78            android:authorities="com.michael.potcastplant.androidx-startup"
-78-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Naga\.gradle\caches\transforms-3\d1735c872afea04148904d9dcaaead07\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+78-->[androidx.emoji2:emoji2:1.2.0] C:\Users\clari\.gradle\caches\transforms-3\d1735c872afea04148904d9dcaaead07\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
 79            android:exported="false" >
-79-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Naga\.gradle\caches\transforms-3\d1735c872afea04148904d9dcaaead07\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+79-->[androidx.emoji2:emoji2:1.2.0] C:\Users\clari\.gradle\caches\transforms-3\d1735c872afea04148904d9dcaaead07\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
 80            <meta-data
-80-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Naga\.gradle\caches\transforms-3\d1735c872afea04148904d9dcaaead07\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+80-->[androidx.emoji2:emoji2:1.2.0] C:\Users\clari\.gradle\caches\transforms-3\d1735c872afea04148904d9dcaaead07\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
 81                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-81-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Naga\.gradle\caches\transforms-3\d1735c872afea04148904d9dcaaead07\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+81-->[androidx.emoji2:emoji2:1.2.0] C:\Users\clari\.gradle\caches\transforms-3\d1735c872afea04148904d9dcaaead07\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
 82                android:value="androidx.startup" />
-82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Naga\.gradle\caches\transforms-3\d1735c872afea04148904d9dcaaead07\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\clari\.gradle\caches\transforms-3\d1735c872afea04148904d9dcaaead07\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 83            <meta-data
-83-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Naga\.gradle\caches\transforms-3\13e497b7eaaadcc2b20f8c9992f4a897\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+83-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\clari\.gradle\caches\transforms-3\13e497b7eaaadcc2b20f8c9992f4a897\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
 84                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-84-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Naga\.gradle\caches\transforms-3\13e497b7eaaadcc2b20f8c9992f4a897\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+84-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\clari\.gradle\caches\transforms-3\13e497b7eaaadcc2b20f8c9992f4a897\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
 85                android:value="androidx.startup" />
-85-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Naga\.gradle\caches\transforms-3\13e497b7eaaadcc2b20f8c9992f4a897\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+85-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\clari\.gradle\caches\transforms-3\13e497b7eaaadcc2b20f8c9992f4a897\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
 86        </provider>
 87    </application>
 88

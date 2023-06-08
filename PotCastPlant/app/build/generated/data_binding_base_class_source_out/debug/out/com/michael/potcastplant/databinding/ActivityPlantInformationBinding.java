@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,7 +20,7 @@ import java.lang.String;
 
 public final class ActivityPlantInformationBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final CardView humidity;
@@ -49,10 +49,10 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
   @NonNull
   public final CardView wlevel;
 
-  private ActivityPlantInformationBinding(@NonNull LinearLayout rootView,
-      @NonNull CardView humidity, @NonNull CardView moisture, @NonNull TextView nameText,
-      @NonNull ImageView profileImage, @NonNull CardView sunlight, @NonNull SwitchMaterial switch1,
-      @NonNull CardView temperature, @NonNull TextView watering, @NonNull CardView wlevel) {
+  private ActivityPlantInformationBinding(@NonNull ScrollView rootView, @NonNull CardView humidity,
+      @NonNull CardView moisture, @NonNull TextView nameText, @NonNull ImageView profileImage,
+      @NonNull CardView sunlight, @NonNull SwitchMaterial switch1, @NonNull CardView temperature,
+      @NonNull TextView watering, @NonNull CardView wlevel) {
     this.rootView = rootView;
     this.humidity = humidity;
     this.moisture = moisture;
@@ -67,7 +67,7 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -146,7 +146,7 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPlantInformationBinding((LinearLayout) rootView, humidity, moisture,
+      return new ActivityPlantInformationBinding((ScrollView) rootView, humidity, moisture,
           nameText, profileImage, sunlight, switch1, temperature, watering, wlevel);
     }
     String missingId = rootView.getResources().getResourceName(id);

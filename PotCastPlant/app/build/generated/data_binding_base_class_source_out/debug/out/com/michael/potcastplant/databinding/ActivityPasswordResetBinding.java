@@ -5,14 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.ScrollView;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.textfield.TextInputEditText;
 import com.michael.potcastplant.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -23,25 +21,16 @@ public final class ActivityPasswordResetBinding implements ViewBinding {
   private final ScrollView rootView;
 
   @NonNull
-  public final Button btnReset;
+  public final Button buttonLogin;
 
   @NonNull
-  public final EditText etEmail;
+  public final TextInputEditText editTextEmail;
 
-  @NonNull
-  public final LinearLayout linearLayout;
-
-  @NonNull
-  public final TextView tvEmailLabel;
-
-  private ActivityPasswordResetBinding(@NonNull ScrollView rootView, @NonNull Button btnReset,
-      @NonNull EditText etEmail, @NonNull LinearLayout linearLayout,
-      @NonNull TextView tvEmailLabel) {
+  private ActivityPasswordResetBinding(@NonNull ScrollView rootView, @NonNull Button buttonLogin,
+      @NonNull TextInputEditText editTextEmail) {
     this.rootView = rootView;
-    this.btnReset = btnReset;
-    this.etEmail = etEmail;
-    this.linearLayout = linearLayout;
-    this.tvEmailLabel = tvEmailLabel;
+    this.buttonLogin = buttonLogin;
+    this.editTextEmail = editTextEmail;
   }
 
   @Override
@@ -71,32 +60,19 @@ public final class ActivityPasswordResetBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnReset;
-      Button btnReset = ViewBindings.findChildViewById(rootView, id);
-      if (btnReset == null) {
+      id = R.id.button_login;
+      Button buttonLogin = ViewBindings.findChildViewById(rootView, id);
+      if (buttonLogin == null) {
         break missingId;
       }
 
-      id = R.id.etEmail;
-      EditText etEmail = ViewBindings.findChildViewById(rootView, id);
-      if (etEmail == null) {
+      id = R.id.edit_text_email;
+      TextInputEditText editTextEmail = ViewBindings.findChildViewById(rootView, id);
+      if (editTextEmail == null) {
         break missingId;
       }
 
-      id = R.id.linearLayout;
-      LinearLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout == null) {
-        break missingId;
-      }
-
-      id = R.id.tvEmailLabel;
-      TextView tvEmailLabel = ViewBindings.findChildViewById(rootView, id);
-      if (tvEmailLabel == null) {
-        break missingId;
-      }
-
-      return new ActivityPasswordResetBinding((ScrollView) rootView, btnReset, etEmail,
-          linearLayout, tvEmailLabel);
+      return new ActivityPasswordResetBinding((ScrollView) rootView, buttonLogin, editTextEmail);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

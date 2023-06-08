@@ -3131,7 +3131,6 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnRegister
-id btnReset
 id btnUpload
 id btnUploadImage
 id buttonPanel
@@ -3296,7 +3295,6 @@ id legacy
 id line1
 id line3
 id linear
-id linearLayout
 id listMode
 id list_item
 id logout_button
@@ -3557,7 +3555,6 @@ id transition_transform
 id triangle
 id tvAddPost
 id tvDate
-id tvEmailLabel
 id tvLogin
 id tvNotification
 id tvRegister
@@ -3968,6 +3965,7 @@ string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string temperature
 string title_activity_dashboard_menu
 string title_dashboard
 string title_home
