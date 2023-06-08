@@ -45,7 +45,7 @@
             android:name=".RegistrationActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true" />
         <activity
             android:name=".SplashScreenActivity"

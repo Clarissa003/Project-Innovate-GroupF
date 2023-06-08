@@ -29,7 +29,7 @@ class NavigationHostActivity : AppCompatActivity(), OnItemSelectedListener {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(item.itemId == R.id.menu_logout) {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
         if(item.itemId == R.id.menu_feedback) {

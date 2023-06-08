@@ -33,6 +33,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_view_title" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/text_view_no_plants_yet"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/recycler_view_plants"
+        app:layout_constraintBottom_toTopOf="@+id/button_addPlant"
+        android:text="You don't have any plant yet"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
 
     <Button
         android:id="@+id/button_addPlant"

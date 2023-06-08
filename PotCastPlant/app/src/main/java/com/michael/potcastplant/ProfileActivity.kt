@@ -1,7 +1,6 @@
 package com.michael.potcastplant
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -25,7 +24,7 @@ class ProfileActivity : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.logoutButton.setOnClickListener {
-            val intent = Intent(this.context, MainActivity::class.java)
+            val intent = Intent(this.context, LoginActivity::class.java)
             startActivity(intent)
         }
     }

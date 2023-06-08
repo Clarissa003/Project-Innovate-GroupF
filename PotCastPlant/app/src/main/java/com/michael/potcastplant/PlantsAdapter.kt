@@ -8,8 +8,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 
-class PlantsAdapter(private var plants : Array<PlantDashboardClass>) : RecyclerView.Adapter<PlantsAdapter.ViewHolder>() {
+class PlantsAdapter(private var plants : MutableList<PlantDashboardClass>) : RecyclerView.Adapter<PlantsAdapter.ViewHolder>() {
 
     override fun getItemCount(): Int {
         return plants.size
@@ -24,9 +25,11 @@ class PlantsAdapter(private var plants : Array<PlantDashboardClass>) : RecyclerV
 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val PlantDashboardClass = plants[position]
-        holder.imageView.setImageResource(PlantDashboardClass.image_url)
-        holder.textView.text = PlantDashboardClass.title
+        val plantDashboard = plants[position]
+        Glide.with(holder.itemView)
+            .load(plantDashboard.image_url)
+            .into(holder.imageView)
+        holder.textView.text = plantDashboard.title
 
         holder.cardView.setOnClickListener {
             val context = holder.itemView.context
@@ -39,5 +42,9 @@ class PlantsAdapter(private var plants : Array<PlantDashboardClass>) : RecyclerV
         val imageView: ImageView = itemView.findViewById(R.id.image_view_plant)
         val textView: TextView = itemView.findViewById(R.id.text_view_title)
         val cardView: CardView = itemView.findViewById(R.id.card_view_plants)
+    }
+
+    fun addPlant(plantDetails: PlantDashboardClass) {
+        plants.add(plantDetails)
     }
 }

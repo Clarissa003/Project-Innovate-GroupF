@@ -15,10 +15,10 @@ class AddPlantsActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         var plants = arrayOf(
-            Plant(1, "Bay Leaves", "A very nice Bay Leave",10, 10, 10, 10, 10, 10),
-            Plant(2, "Rose Flower", "A very nice Rose Flower",10, 10, 10, 10, 10, 10),
-            Plant(3, "Mahogany", "A very nice Mahogany",10, 10, 10, 10, 10, 10),
-            Plant(4, "Normal Flower", "A very nice Normal Flower",10, 10, 10, 10, 10, 10),
+            Plant(1, "Bay Leaves", "A very nice Bay Leave",10, 10, 10, 10, 10, 10, ""),
+            Plant(2, "Rose Flower", "A very nice Rose Flower",10, 10, 10, 10, 10, 10, ""),
+            Plant(3, "Mahogany", "A very nice Mahogany",10, 10, 10, 10, 10, 10, ""),
+            Plant(4, "Normal Flower", "A very nice Normal Flower",10, 10, 10, 10, 10, 10, ""),
         )
 
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, plants.map { it.plant_name })
