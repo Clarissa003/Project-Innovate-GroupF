@@ -30,8 +30,9 @@ class AddPlantsActivity : AppCompatActivity() {
 
             // TODO: Handle adding the plant with potId and selectedPlant
 
-            //Example
+            //Add plant to database
 
+            addPlantToDb (potId, selectedPlant)
             println("Pot ID: $potId, Selected Plant: $selectedPlant")
         }
 
@@ -42,5 +43,12 @@ class AddPlantsActivity : AppCompatActivity() {
             intent.putExtra(Intent.EXTRA_SUBJECT, "Adding Plants")
             startActivity(intent)
         }
+    }
+
+    private fun addPlantToDb(potId: String, selectedPlant: String) {
+        //operation to add plants to database
+
+        println("Adding Plant to Database - Pot ID: $potId, Selected Plant: $selectedPlant")
+
     }
 }
