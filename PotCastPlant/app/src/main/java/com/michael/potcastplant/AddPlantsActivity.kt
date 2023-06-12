@@ -24,6 +24,18 @@ class AddPlantsActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, plants.map { it.plant_name })
         binding.spinnerPlants.adapter = adapter
 
+        binding.buttonAddPlant.setOnClickListener {
+            val potId = binding.editTextEmail.text.toString()
+            val selectedPlant = binding.spinnerPlants.selectedItem.toString()
+
+            // TODO: Handle adding the plant with potId and selectedPlant
+
+            //Add plant to database
+
+            addPlantToDb (potId, selectedPlant)
+            println("Pot ID: $potId, Selected Plant: $selectedPlant")
+        }
+
 
         binding.buttonSubmitRequest.setOnClickListener {
             val intent = Intent(Intent.ACTION_SENDTO)
@@ -31,5 +43,12 @@ class AddPlantsActivity : AppCompatActivity() {
             intent.putExtra(Intent.EXTRA_SUBJECT, "Adding Plants")
             startActivity(intent)
         }
+    }
+
+    private fun addPlantToDb(potId: String, selectedPlant: String) {
+        //operation to add plants to database
+
+        println("Adding Plant to Database - Pot ID: $potId, Selected Plant: $selectedPlant")
+
     }
 }
