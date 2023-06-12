@@ -1,93 +1,121 @@
-package com.michael.potcastplant
-
 import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
-import com.michael.potcastplant.R.*
-import android.content.Intent
+import android.widget.Toast
+import com.michael.potcastplant.R
+import android.graphics.drawable.BitmapDrawable
 import android.graphics.Bitmap
 import android.os.Environment
-import androidx.core.content.FileProvider
-import androidx.core.graphics.drawable.toBitmap
+import com.michael.potcastplant.FeedsPostClass
 import java.io.File
 import java.io.FileOutputStream
-import android.net.Uri
+
 
 class AddPostActivity : AppCompatActivity() {
 
     private lateinit var etDescription: EditText
     private lateinit var imageView: ImageView
     private val PICK_IMAGE_REQUEST = 1
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(layout.activity_add_post)
+        setContentView(R.layout.activity_add_post)
 
-        //Find views by their IDs
-        val btnUploadImage: Button = findViewById(id.btnUploadImage)
-        val btnUpload: Button = findViewById(id.btnUpload)
-        etDescription = findViewById(id.etDescription)
-        val imageView: ImageView = findViewById(id.imageView)
+        // Find views by their IDs
+        val btnUploadImage: Button = findViewById(R.id.btnUploadImage)
+        val btnUpload: Button = findViewById(R.id.btnUpload)
+        etDescription = findViewById(R.id.etDescription)
+        imageView = findViewById(R.id.image_view_plant)
 
-
-        //Set click listener for upload img button
+        // Set click listener for upload img button
         btnUploadImage.setOnClickListener {
-            // Launch img picker
-
+            // Launch the image picker
             val intent = Intent(Intent.ACTION_PICK)
             intent.type = "image/*"
             startActivityForResult(intent, PICK_IMAGE_REQUEST)
-
         }
 
-        //Set click listener for upload button
+        // Set click listener for upload button
         btnUpload.setOnClickListener {
             val description = etDescription.text.toString()
             val imageUri = getImageUri()
-            // TODO: Implement logic
-            if(imageUri != null){
-                //Upload img and description
-                uploadPost(imageUri, description)
-            }
 
+            if (imageUri != null) {
+                // Upload the post to the database
+                uploadPostToDatabase(imageUri, description)
+            }
         }
     }
 
     private fun getImageUri(): Uri? {
         val drawable = imageView.drawable
-        return if (drawable != null){
-            val imageBitmap = drawable.toBitmap()
-            val imageFile = createImageFile (imageBitmap)
-            FileProvider.getUriForFile(this, "com.michael.potcastplant.fileprovider", imageFile)
+        return if (drawable != null) {
+            // Convert the ImageView drawable to a Bitmap
+            val imageBitmap = (drawable as BitmapDrawable).bitmap
+            // Save the Bitmap to a file and return its Uri
+            saveBitmapToFile(imageBitmap)
         } else {
             null
         }
     }
 
-    private fun createImageFile(bitmap: Bitmap): File {
+    private fun saveBitmapToFile(bitmap: Bitmap): Uri {
         val storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
         val imageFile = File.createTempFile(
             "image_${System.currentTimeMillis()}",
             ".jpg",
-            storageDir /*directory*/
+            storageDir                               /* directory */
         )
         val outputStream = FileOutputStream(imageFile)
         bitmap.compress(Bitmap.CompressFormat.JPEG, 90, outputStream)
         outputStream.close()
-        return imageFile
+        return Uri.fromFile(imageFile)
     }
 
-    private fun uploadPost (ImageUri: Uri, description: String) {
-        // TODO: Implement Upload logic
-        // Upload post (img and description) to database
+    private fun uploadPostToDatabase(imageUri: Uri, description: String) {
+        // TODO: Implement your database upload logic here
+        // Use imageUri and description to upload the post to a database
+
+        // Example code for uploading to Firebase Realtime Database
+      /*  val database = FirebaseDatabase.getInstance()
+        val postsRef = database.getReference("posts")
+
+        val post = FeedsPostClass(imageUri.toString(), description)
+        val postKey = postsRef.push().key
+        if (postKey != null) {
+            postsRef.child(postKey).setValue(post)
+                .addOnSuccessListener {
+                    // Post uploaded successfully
+                    showToast("Post uploaded successfully")
+                    finish()
+                }
+                .addOnFailureListener { e: Exception ->
+                    // Handle upload failure
+                    showToast("Post upload failed: ${e.message}")
+                }
+        } else {
+            // Handle error when generating post key
+            showToast("Failed to generate post key")
+        }
     }
-    override fun onActivityResult (requestCode: Int, resultCode: Int, data: Intent?){
+
+    private fun FeedsPostClass(username: String, profilePic: String): FeedsPostClass {
+
+    }
+
+    private fun showToast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
+*/
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null){
+        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null) {
             val imageUri = data.data
-            // Set selected img to ImageView
             imageView.setImageURI(imageUri)
         }
     }

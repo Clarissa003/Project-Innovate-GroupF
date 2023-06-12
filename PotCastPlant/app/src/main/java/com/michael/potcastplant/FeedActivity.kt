@@ -1,7 +1,7 @@
 package com.michael.potcastplant
 
+import AddPostActivity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,8 +9,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.Recycler
 import com.michael.potcastplant.databinding.ActivityFeedBinding
+import android.widget.TextView
+import android.widget.ImageView
+import androidx.core.content.ContextCompat
+
 
 class FeedActivity : Fragment() {
 
@@ -64,7 +67,7 @@ class FeedActivity : Fragment() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             // Create and return the ViewHolder
-            val view = LayoutInflater.from(parent.context).inflate(R.layout.item_feed, parent, false)
+            val view = LayoutInflater.from(parent.context).inflate(R.layout.item_feeds, parent, false)
             return ViewHolder(view)
         }
 
@@ -72,11 +75,11 @@ class FeedActivity : Fragment() {
             // Bind data to the ViewHolder
             val post = posts[position]
             // Set the values to the corresponding views in the item_feed layout
-            // holder.textViewUsername.text = post.username
-            // holder.imageViewProfilePic.setImageResource(post.profilePic)
-            // holder.imageViewPostImg.setImageResource(post.postImg)
-            // holder.textViewDescription.text = post.description
-            // holder.textViewTimestamp.text = post.timestamp
+            holder.textViewUsername.text = post.username
+            holder.imageViewProfilePic.setImageResource(post.profilePic)
+            holder.imageViewPostImg.setImageResource(post.postImage)
+            holder.textViewDescription.text = post.description
+            holder.textViewTimestamp.text = post.timestamp.toString()
         }
 
         override fun getItemCount(): Int {
@@ -86,22 +89,12 @@ class FeedActivity : Fragment() {
 
         inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             // Define the views in the item_feed layout here
-            // val textViewUsername: TextView = itemView.findViewById(R.id.text_view_username)
-            // val imageViewProfilePic: ImageView = itemView.findViewById(R.id.image_view_profile_pic)
-            // val imageViewPostImg: ImageView = itemView.findViewById(R.id.image_view_post_img)
-            // val textViewDescription: TextView = itemView.findViewById(R.id.text_view_description)
-            // val textViewTimestamp: TextView = itemView.findViewById(R.id.text_view_timestamp)
+             val textViewUsername: TextView = itemView.findViewById(R.id.text_view_username)
+             val imageViewProfilePic: ImageView = itemView.findViewById(R.id.image_view_profile_pic)
+             val imageViewPostImg: ImageView = itemView.findViewById(R.id.image_view_post_img)
+             val textViewDescription: TextView = itemView.findViewById(R.id.text_view_description)
+             val textViewTimestamp: TextView = itemView.findViewById(R.id.text_view_timestamp)
+
         }
     }
-}
-
-
-
-
-
-
-
-
-
-
 }
