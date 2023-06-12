@@ -3442,6 +3442,7 @@ id legacy
 id light
 id line1
 id line3
+id line_chart
 id linear
 id listMode
 id list_item
@@ -3691,7 +3692,6 @@ id text_view_humidity
 id text_view_no_plants_yet
 id text_view_register_redirect
 id text_view_soil_moisture
-id text_view_sunlight
 id text_view_temperature
 id text_view_timestamp
 id text_view_title

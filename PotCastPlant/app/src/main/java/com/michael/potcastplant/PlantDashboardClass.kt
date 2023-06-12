@@ -1,3 +1,5 @@
 package com.michael.potcastplant
 
-data class PlantDashboardClass (var title: String, var image_url : String)
+import java.io.Serializable
+
+data class PlantDashboardClass (var title: String, var image_url : String, var potId : Long) : Serializable

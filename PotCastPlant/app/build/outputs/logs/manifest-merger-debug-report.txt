@@ -62,6 +62,7 @@ MERGED from [androidx.core:core:1.10.1] C:\Users\Naga\.gradle\caches\transforms-
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] C:\Users\Naga\.gradle\caches\transforms-3\af283e33d399aca014986c01321113e5\transformed\lifecycle-runtime-2.6.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1] C:\Users\Naga\.gradle\caches\transforms-3\95eda1e1b1fb5ccfff2af52a3d16141b\transformed\lifecycle-livedata-core-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] C:\Users\Naga\.gradle\caches\transforms-3\66d5e774b70ee09dacea6bb67cdcf5c7\transformed\lifecycle-viewmodel-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] C:\Users\Naga\.gradle\caches\transforms-3\a4f41faec2de1c10c57e63faa2c29852\transformed\MPAndroidChart-v3.1.0\AndroidManifest.xml:2:1-20:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Naga\.gradle\caches\transforms-3\4fa19abdc9fb3742e467a057765a739a\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Naga\.gradle\caches\transforms-3\8f26e9fb5ff00f6ac2f3860d82f6c881\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\Naga\.gradle\caches\transforms-3\43cc763d2bb52f9968c45e500652bbf7\transformed\firebase-components-17.1.0\AndroidManifest.xml:15:1-22:12
@@ -374,6 +375,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1] C:\Users\Naga
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1] C:\Users\Naga\.gradle\caches\transforms-3\95eda1e1b1fb5ccfff2af52a3d16141b\transformed\lifecycle-livedata-core-ktx-2.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] C:\Users\Naga\.gradle\caches\transforms-3\66d5e774b70ee09dacea6bb67cdcf5c7\transformed\lifecycle-viewmodel-ktx-2.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] C:\Users\Naga\.gradle\caches\transforms-3\66d5e774b70ee09dacea6bb67cdcf5c7\transformed\lifecycle-viewmodel-ktx-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] C:\Users\Naga\.gradle\caches\transforms-3\a4f41faec2de1c10c57e63faa2c29852\transformed\MPAndroidChart-v3.1.0\AndroidManifest.xml:16:5-18:41
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] C:\Users\Naga\.gradle\caches\transforms-3\a4f41faec2de1c10c57e63faa2c29852\transformed\MPAndroidChart-v3.1.0\AndroidManifest.xml:16:5-18:41
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Naga\.gradle\caches\transforms-3\4fa19abdc9fb3742e467a057765a739a\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Naga\.gradle\caches\transforms-3\4fa19abdc9fb3742e467a057765a739a\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Naga\.gradle\caches\transforms-3\8f26e9fb5ff00f6ac2f3860d82f6c881\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44

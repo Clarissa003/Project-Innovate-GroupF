@@ -34,6 +34,7 @@ class PlantsAdapter(private var plants : MutableList<PlantDashboardClass>) : Rec
         holder.cardView.setOnClickListener {
             val context = holder.itemView.context
             val intent = Intent(context, PlantInformationActivity::class.java)
+            intent.putExtra("plant", plantDashboard)
             context.startActivity(intent)
         }
     }
