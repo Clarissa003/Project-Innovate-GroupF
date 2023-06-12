@@ -62,6 +62,7 @@ id image_view_header
 id image_view_plant
 id image_view_post_img
 id image_view_profile_pic
+id line_chart
 id logout_button
 id menu_feedback
 id menu_logout
@@ -86,7 +87,6 @@ id text_view_humidity
 id text_view_no_plants_yet
 id text_view_register_redirect
 id text_view_soil_moisture
-id text_view_sunlight
 id text_view_temperature
 id text_view_timestamp
 id text_view_title

@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.github.mikephil.charting.charts.LineChart;
 import com.google.android.material.switchmaterial.SwitchMaterial;
 import com.michael.potcastplant.R;
 import java.lang.NullPointerException;
@@ -24,6 +25,9 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
 
   @NonNull
   public final CardView humidity;
+
+  @NonNull
+  public final LineChart lineChart;
 
   @NonNull
   public final CardView moisture;
@@ -50,9 +54,6 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
   public final TextView textViewSoilMoisture;
 
   @NonNull
-  public final TextView textViewSunlight;
-
-  @NonNull
   public final TextView textViewTemperature;
 
   @NonNull
@@ -65,13 +66,14 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
   public final CardView wlevel;
 
   private ActivityPlantInformationBinding(@NonNull ScrollView rootView, @NonNull CardView humidity,
-      @NonNull CardView moisture, @NonNull TextView nameText, @NonNull ImageView plantImage,
-      @NonNull CardView sunlight, @NonNull SwitchMaterial switch1, @NonNull CardView temperature,
-      @NonNull TextView textViewHumidity, @NonNull TextView textViewSoilMoisture,
-      @NonNull TextView textViewSunlight, @NonNull TextView textViewTemperature,
+      @NonNull LineChart lineChart, @NonNull CardView moisture, @NonNull TextView nameText,
+      @NonNull ImageView plantImage, @NonNull CardView sunlight, @NonNull SwitchMaterial switch1,
+      @NonNull CardView temperature, @NonNull TextView textViewHumidity,
+      @NonNull TextView textViewSoilMoisture, @NonNull TextView textViewTemperature,
       @NonNull TextView textViewWaterLevel, @NonNull TextView watering, @NonNull CardView wlevel) {
     this.rootView = rootView;
     this.humidity = humidity;
+    this.lineChart = lineChart;
     this.moisture = moisture;
     this.nameText = nameText;
     this.plantImage = plantImage;
@@ -80,7 +82,6 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
     this.temperature = temperature;
     this.textViewHumidity = textViewHumidity;
     this.textViewSoilMoisture = textViewSoilMoisture;
-    this.textViewSunlight = textViewSunlight;
     this.textViewTemperature = textViewTemperature;
     this.textViewWaterLevel = textViewWaterLevel;
     this.watering = watering;
@@ -117,6 +118,12 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
       id = R.id.humidity;
       CardView humidity = ViewBindings.findChildViewById(rootView, id);
       if (humidity == null) {
+        break missingId;
+      }
+
+      id = R.id.line_chart;
+      LineChart lineChart = ViewBindings.findChildViewById(rootView, id);
+      if (lineChart == null) {
         break missingId;
       }
 
@@ -168,12 +175,6 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.text_view_sunlight;
-      TextView textViewSunlight = ViewBindings.findChildViewById(rootView, id);
-      if (textViewSunlight == null) {
-        break missingId;
-      }
-
       id = R.id.text_view_temperature;
       TextView textViewTemperature = ViewBindings.findChildViewById(rootView, id);
       if (textViewTemperature == null) {
@@ -198,10 +199,9 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPlantInformationBinding((ScrollView) rootView, humidity, moisture,
-          nameText, plantImage, sunlight, switch1, temperature, textViewHumidity,
-          textViewSoilMoisture, textViewSunlight, textViewTemperature, textViewWaterLevel, watering,
-          wlevel);
+      return new ActivityPlantInformationBinding((ScrollView) rootView, humidity, lineChart,
+          moisture, nameText, plantImage, sunlight, switch1, temperature, textViewHumidity,
+          textViewSoilMoisture, textViewTemperature, textViewWaterLevel, watering, wlevel);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

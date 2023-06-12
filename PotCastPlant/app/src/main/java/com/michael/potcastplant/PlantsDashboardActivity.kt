@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -63,9 +64,11 @@ class PlantsDashboardActivity : Fragment() {
 
                 } else {
                     // Handle document not found or other errors
+                    Toast.makeText(this.context, "Unable to Retrieve Plant details", Toast.LENGTH_SHORT).show()
                 }
             }.addOnFailureListener { exception ->
                 // Handle exceptions
+                Toast.makeText(this.context, "Unable to Retrieve Plant details", Toast.LENGTH_SHORT).show()
             }
         }
 //        Log.d("Setting Adapter", "retrieving the pot")
@@ -88,20 +91,22 @@ class PlantsDashboardActivity : Fragment() {
                     if (plantId != null) {
                         // Call a function to retrieve plant details using the plantId
                         Log.d("retrieving Plant", "retrieving the plant")
-                        retrievePlantDetails(plantId)
+                        retrievePlantDetails(plantId, potId)
                     }
                 } else {
-                    // Handle pot document not found or other errors
+                   Toast.makeText(this.context, "Unable to Retrieve Plant details", Toast.LENGTH_SHORT).show()
                 }
             }.addOnFailureListener { exception ->
                 // Handle exceptions
+                Toast.makeText(this.context, "Unable to Retrieve Plant details", Toast.LENGTH_SHORT).show()
             }
         }
     }
 
 
-    private fun retrievePlantDetails(plantId: Long) {
+    private fun retrievePlantDetails(plantId: Long, potId: Long) {
         val id = plantId.toString()
+        Log.d("plantID", "plant id is $id")
         val plantDocumentRef = FirebaseFirestore.getInstance().collection("plants").document(id)
         plantDocumentRef.get().addOnSuccessListener { plantDocument ->
             if (plantDocument.exists()) {
@@ -113,7 +118,7 @@ class PlantsDashboardActivity : Fragment() {
 
                 if (title != null && plantImageUrl != null) {
                     val plantDetails = PlantDashboardClass(
-                       title, plantImageUrl
+                       title, plantImageUrl, potId
                     )
                     // Add the plant details to a list in your RecyclerView adapter
                     adapter.addPlant(plantDetails)
@@ -123,9 +128,11 @@ class PlantsDashboardActivity : Fragment() {
             } else {
                 // Handle plant document not found or other errors
                 Log.d("error", "document not found")
+                Toast.makeText(this.context, "Unable to Retrieve Plant details", Toast.LENGTH_SHORT).show()
             }
         }.addOnFailureListener { exception ->
             // Handle exceptions
+            Toast.makeText(this.context, "Unable to Retrieve Plant details", Toast.LENGTH_SHORT).show()
         }
     }
 
