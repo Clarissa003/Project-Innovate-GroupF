@@ -3418,6 +3418,7 @@ int id ifRoom 0x7f0800f9
 int id ignore 0x7f0800fa
 int id ignoreRequest 0x7f0800fb
 int id image 0x7f0800fc
+int id image_view 0x7f08024b
 int id image_view_header 0x7f0800fd
 int id image_view_plant 0x7f0800fe
 int id image_view_post_img 0x7f0800ff

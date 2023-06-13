@@ -23,15 +23,13 @@ class ProfileActivity : Fragment() {
         return binding.root
     }
     
-    var sharedPreferences: SharedPreferences = getSharedPreferences("MyDatabase", Context.MODE_PRIVATE)
+    var sharedPreferences: SharedPreferences = requireContext().getSharedPreferences("myPref", Context.MODE_PRIVATE)
 
     var nameData = sharedPreferences.getString("key", "Your name")
     val name = binding.nameText.text.toString()
-    name.setText(nameData)
 
     var emailData = sharedPreferences.getString("key", "Your email")
     val email = binding.emailText.text.toString()
-    name.setText(emailData)
 
     val picture = binding.profileImage
 

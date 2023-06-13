@@ -58,6 +58,7 @@ id etPasswordRepeat
 id floating_button_add_post
 id fragment_content
 id humidity
+id image_view
 id image_view_header
 id image_view_plant
 id image_view_post_img

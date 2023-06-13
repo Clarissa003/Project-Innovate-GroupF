@@ -28,7 +28,6 @@ class AddPostActivity : AppCompatActivity() {
         val btnUploadImage: Button = findViewById(id.btnUploadImage)
         val btnUpload: Button = findViewById(id.btnUpload)
         etDescription = findViewById(id.etDescription)
-        val imageView: ImageView = findViewById(id.imageView)
 
 
         //Set click listener for upload img button

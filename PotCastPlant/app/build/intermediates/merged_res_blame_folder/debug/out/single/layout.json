@@ -8,8 +8,8 @@
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_password_reset.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_plant_information.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_plant_information.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_add_post.xml",
+        "source": "com.michael.potcastplant.app-main-50:/layout/activity_add_post.xml"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-mergeDebugResources-47:\\layout\\activity_feed.xml",

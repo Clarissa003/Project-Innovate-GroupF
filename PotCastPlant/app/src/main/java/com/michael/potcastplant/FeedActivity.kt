@@ -10,6 +10,8 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Recycler
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.michael.potcastplant.databinding.ActivityFeedBinding
 
 class FeedActivity : Fragment() {
@@ -64,7 +66,7 @@ class FeedActivity : Fragment() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             // Create and return the ViewHolder
-            val view = LayoutInflater.from(parent.context).inflate(R.layout.item_feed, parent, false)
+            val view = LayoutInflater.from(parent.context).inflate(R.layout.item_feeds, parent, false)
             return ViewHolder(view)
         }
 
@@ -93,15 +95,4 @@ class FeedActivity : Fragment() {
             // val textViewTimestamp: TextView = itemView.findViewById(R.id.text_view_timestamp)
         }
     }
-}
-
-
-
-
-
-
-
-
-
-
 }
