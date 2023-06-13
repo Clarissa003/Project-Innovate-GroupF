@@ -36,6 +36,19 @@ class ProfileActivity : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+<<<<<<< Updated upstream
+=======
+        auth = FirebaseAuth.getInstance()
+        firestore = FirebaseFirestore.getInstance()
+
+        var sharedPreferences: SharedPreferences = requireContext().getSharedPreferences("MyPref",Context.MODE_PRIVATE)
+        val uid = sharedPreferences.getString("uid", null) ?: ""
+
+        val name = binding.nameText.text.toString()
+        val profilePic = binding.profileImage
+        val email = binding.emailText.text.toString()
+
+>>>>>>> Stashed changes
         binding.editProfileButton.setOnClickListener {
             // Edit profile button click
 

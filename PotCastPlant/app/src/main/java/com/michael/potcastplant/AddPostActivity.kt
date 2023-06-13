@@ -81,7 +81,7 @@ class AddPostActivity : AppCompatActivity() {
         // Use imageUri and description to upload the post to a database
 
         // Example code for uploading to Firebase Realtime Database
-      /*  val database = FirebaseDatabase.getInstance()
+        /*  val database = FirebaseDatabase.getInstance()
         val postsRef = database.getReference("posts")
 
         val post = FeedsPostClass(imageUri.toString(), description)
@@ -111,12 +111,13 @@ class AddPostActivity : AppCompatActivity() {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 */
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
+        override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+            super.onActivityResult(requestCode, resultCode, data)
 
-        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null) {
-            val imageUri = data.data
-            imageView.setImageURI(imageUri)
+            if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null) {
+                val imageUri = data.data
+                imageView.setImageURI(imageUri)
+            }
         }
     }
 }
