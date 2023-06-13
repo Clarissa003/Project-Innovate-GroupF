@@ -4,7 +4,7 @@
             "outputFile": "com.michael.potcastplant.app-mergeDebugResources-46:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Naga\\.gradle\\caches\\transforms-3\\6749e82180bec1f2db8e601d0b6ac361\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\clari\\.gradle\\caches\\transforms-3\\6749e82180bec1f2db8e601d0b6ac361\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

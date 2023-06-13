@@ -13,6 +13,8 @@ import com.michael.potcastplant.databinding.ActivityFeedBinding
 import android.widget.TextView
 import android.widget.ImageView
 import androidx.core.content.ContextCompat
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 
 class FeedActivity : Fragment() {
@@ -88,7 +90,7 @@ class FeedActivity : Fragment() {
         }
 
         inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-            // Define the views in the item_feed layout here
+            // Define the views in the item_feed layout
              val textViewUsername: TextView = itemView.findViewById(R.id.text_view_username)
              val imageViewProfilePic: ImageView = itemView.findViewById(R.id.image_view_profile_pic)
              val imageViewPostImg: ImageView = itemView.findViewById(R.id.image_view_post_img)

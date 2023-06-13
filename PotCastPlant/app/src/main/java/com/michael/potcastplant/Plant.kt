@@ -1,14 +1,14 @@
 package com.michael.potcastplant
 
-data class Plant (
-    var plant_id : Int,
+data class Plant(
+    var plant_id: Long,
     var plant_name: String,
     var description: String,
-    var humidity_max: Int,
-    var humidity_min: Int,
-    var sunlight_max: Int,
-    var sunlight_min: Int,
-    var moisture_max: Int,
-    var moisture_min: Int,
+    var humidity_max: Long,
+    var humidity_min: Long,
+    var sunlight_max: Long,
+    var sunlight_min: Long,
+    var moisture_max: Long,
+    var moisture_min: Long,
     var image_url: String
 )
