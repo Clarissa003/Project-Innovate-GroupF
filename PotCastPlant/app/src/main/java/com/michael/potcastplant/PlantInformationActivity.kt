@@ -12,6 +12,8 @@ import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
+import com.github.mikephil.charting.formatter.DefaultValueFormatter
+import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
 import com.google.common.io.Resources
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -26,6 +28,7 @@ class PlantInformationActivity : AppCompatActivity() {
     private lateinit var firestore: FirebaseFirestore
     private lateinit var plantInfo: PlantDashboardClass
     private lateinit var potId : String
+    var entries = ArrayList<Entry>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -92,7 +95,6 @@ class PlantInformationActivity : AppCompatActivity() {
             if(documentSnapshot.exists()) {
                 val temperature = documentSnapshot.getLong("temperature")
                 val moisture = documentSnapshot.getLong("moisture")
-                val sunlight = documentSnapshot.getLong("sunlight")
                 val waterlevel = documentSnapshot.getLong("waterlevel")
                 val humidity = documentSnapshot.getLong("humidity")
                 val automaticWatering = documentSnapshot.getString("automaticWatering")
@@ -108,29 +110,31 @@ class PlantInformationActivity : AppCompatActivity() {
             }
         }
 
-        setLineChart()
+        readSunlightDataFromFirestore()
     }
 
-    private fun setLineChart() {
+    private fun setLineChart(sunlightArray: ArrayList<Float>) {
         val lineChart = binding.lineChart
 
-        val entries = listOf(
-            Entry(0f, 20f),
-            Entry(2f, 200f),
-            Entry(3f, 400f),
-            Entry(4f, 600f),
-            Entry(5f, 800f),
-            Entry(6f, 800f),
-            Entry(7f, 1000f),
-            Entry(8f, 800f),
-        )
+        val xAxisLabels = arrayOf("24hrs", "20hrs", "16hrs", "12hrs", "8hrs", "4hrs", "0hr")
+
+        for (i in 0 until 7) {
+            val xValue = i
+            val yValue = sunlightArray[i]
+            val entry = Entry(xValue.toFloat(), yValue)
+            entries.add(entry)
+        }
 
         val dataSet = LineDataSet(entries, "Sunlight Values")
         dataSet.color = Color.WHITE
+        dataSet.valueTextColor = Color.WHITE
         dataSet.setDrawValues(false) // Disable value labels on data points
         dataSet.setDrawCircles(false)
         dataSet.mode = LineDataSet.Mode.CUBIC_BEZIER
         dataSet.lineWidth = 3F
+        dataSet.valueTextSize = 12f // Set the text size for the dataset label
+        dataSet.valueFormatter = DefaultValueFormatter(2) // Set the formatter for the dataset label
+        lineChart.setExtraOffsets(0f, 0f, 0f, 10f) // Add bottom margin between chart and label
 
 
         val lineData = LineData(dataSet)
@@ -138,7 +142,7 @@ class PlantInformationActivity : AppCompatActivity() {
         lineChart.apply {
             description.isEnabled = false // Disable chart description
             setDrawGridBackground(false) // Disable grid background
-            axisRight.isEnabled = false // Disable left axis
+            axisRight.isEnabled = false // Disable left` axis
             xAxis.position = XAxis.XAxisPosition.BOTTOM // X-axis position
             xAxis.granularity = 1f // X-axis label spacing
             axisLeft.setDrawGridLines(false) // Disable left axis grid lines
@@ -159,9 +163,28 @@ class PlantInformationActivity : AppCompatActivity() {
 
         lineChart.data = lineData
         lineChart.invalidate() // Refresh the chart
+
+        // Set custom labels for the x-axis
+        lineChart.xAxis.valueFormatter = IndexAxisValueFormatter(xAxisLabels)
     }
 
     private fun getPlantInformation() {
         plantInfo = intent.getSerializableExtra("plant") as PlantDashboardClass
     }
+
+    fun readSunlightDataFromFirestore() {
+        firestore.collection("pots")
+            .document(potId)
+            .get()
+            .addOnSuccessListener { document ->
+                if (document != null && document.exists()) {
+                        val sunlightArray= document.get("sunlight") as ArrayList<Float>
+                    setLineChart(sunlightArray)
+                }
+            }
+            .addOnFailureListener {exception ->
+                // Handle any errors that occur during data retrieval
+            }
+    }
+
 }

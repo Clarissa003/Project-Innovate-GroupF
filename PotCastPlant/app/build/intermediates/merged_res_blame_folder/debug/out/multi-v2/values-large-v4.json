@@ -4,7 +4,7 @@
             "outputFile": "com.michael.potcastplant.app-mergeDebugResources-46:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\clari\\.gradle\\caches\\transforms-3\\6749e82180bec1f2db8e601d0b6ac361\\transformed\\appcompat-1.6.1\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\catea\\.gradle\\caches\\transforms-3\\6749e82180bec1f2db8e601d0b6ac361\\transformed\\appcompat-1.6.1\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\clari\\.gradle\\caches\\transforms-3\\8346735e1382f678526d4b0c2b20acb5\\transformed\\material-1.9.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\catea\\.gradle\\caches\\transforms-3\\8346735e1382f678526d4b0c2b20acb5\\transformed\\material-1.9.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,10",
                         "startColumns": "4,4,4,4",

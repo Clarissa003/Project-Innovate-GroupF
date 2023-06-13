@@ -16,8 +16,8 @@ import com.michael.potcastplant.databinding.ActivityProfileBinding
 class ProfileActivity : Fragment() {
 
     private lateinit var binding: ActivityProfileBinding
-    private lateinit var auth : FirebaseAuth
-    private lateinit var firestore : FirebaseFirestore
+    private lateinit var auth: FirebaseAuth
+    private lateinit var firestore: FirebaseFirestore
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -41,9 +41,8 @@ class ProfileActivity : Fragment() {
         val profilePic = binding.profileImage
         val email = binding.emailText.text.toString()
 
-
         binding.editProfileButton.setOnClickListener {
-            // Edit profile button after click
+            // Edit profile button click
 
         }
 
