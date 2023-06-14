@@ -49,14 +49,17 @@ class EditProfileActivity : AppCompatActivity() {
         }
     }
 
-    private fun displayInfo() {
+    private fun displayInfo() {3
         val uid = sharedPreferences.getString("uid", null) ?: ""
         val document = firestore.collection("users").document(uid)
         document.get().addOnSuccessListener { document ->
             if(document.exists()) {
                 val data = document.data
-                binding.editTextFirstName.setText(data?.get("firstname").toString())
-                binding.editTextLastName.setText(data?.get("lastname").toString())
+                if (data != null) {
+                    binding.editTextFirstName.setText(data.get("firstName").toString())
+                    binding.editTextLastName.setText(data.get("lastName").toString())
+                }
+
             }
         }
     }
@@ -69,14 +72,15 @@ class EditProfileActivity : AppCompatActivity() {
         val document = firestore.collection("users").document(uid)
 
         val updates = hashMapOf<String, Any>(
-            "firstname" to firstName,
-            "lastname" to lastName
+            "firstName" to firstName,
+            "lastName" to lastName
         )
 
         document.update(updates).addOnSuccessListener {
             Toast
                 .makeText(this, "Details Updated Successfully", Toast.LENGTH_SHORT)
                 .show()
+            finish()
         }.addOnFailureListener {
             Toast
                 .makeText(this, "Update Failed", Toast.LENGTH_SHORT)

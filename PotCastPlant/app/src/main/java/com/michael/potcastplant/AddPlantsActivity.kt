@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 import com.michael.potcastplant.databinding.ActivityAddPlantsBinding
 
@@ -20,8 +21,6 @@ class AddPlantsActivity : AppCompatActivity() {
     private lateinit var firestore: FirebaseFirestore
     private val sharedPreferences: SharedPreferences by lazy { getSharedPreferences("myPref", Context.MODE_PRIVATE) }
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAddPlantsBinding.inflate(layoutInflater)
@@ -30,11 +29,8 @@ class AddPlantsActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
 
-        binding.buttonAddPlant.setOnClickListener {
 
-        }
-
-        val plants = mutableListOf<Plant>()
+        val plants = mutableListOf<Pair<Plant, String>>()
 
         // Retrieve all plants from the database
         firestore.collection("plants")
@@ -53,14 +49,17 @@ class AddPlantsActivity : AppCompatActivity() {
                         document.getLong("moistureMin") ?: 0,
                         document.getString("image_url") ?: ""
                     )
-                    plants.add(allPlants)
+                    val plantName = document.getString("name") ?: ""
+                    plants.add(Pair(allPlants, plantName))
                 }
+
 
                 val adapter = ArrayAdapter(
                     this,
                     R.layout.simple_spinner_dropdown_item,
-                    plants.map { it.plant_name }
+                    plants.map { it.second }
                 )
+
                 binding.spinnerPlants.adapter = adapter
             }
             .addOnFailureListener { e: Exception ->
@@ -75,46 +74,21 @@ class AddPlantsActivity : AppCompatActivity() {
         }
 
         binding.buttonAddPlant.setOnClickListener {
-            val potId = binding.editTextPot.text.toString()
-            val selectedPlant = binding.spinnerPlants.selectedItem as? Plant
+            val potId = binding.editTextPot.text.toString().toInt()
+            val selectedPlantName = binding.spinnerPlants.selectedItem as String
+            val selectedPlant = plants.find { it.second == selectedPlantName }?.first
 
             if (selectedPlant != null) {
                 updatePlantInDb(potId, selectedPlant)
                 println("Pot ID: $potId, Selected Plant: $selectedPlant")
             } else {
-                println("Error: Invalid selected plant.")
+                Toast.makeText(this, "You must Add a Pot", Toast.LENGTH_SHORT).show()
             }
         }
+
     }
 
-   /* private fun addPlantToDb(potId: String, selectedPlant: Plant) {
-        // Operation to add plants to the database
-        val plantData = hashMapOf(
-            "potId" to potId,
-            "name" to selectedPlant.plant_name,
-            "description" to selectedPlant.description,
-            "humidityMax" to selectedPlant.humidity_max,
-            "humidityMin" to selectedPlant.humidity_min,
-            "sunlightMax" to selectedPlant.sunlight_max,
-            "sunlightMin" to selectedPlant.sunlight_min,
-            "moistureMax" to selectedPlant.moisture_max,
-            "moistureMin" to selectedPlant.moisture_min,
-            "image_url" to selectedPlant.image_url
-        )
-
-        firestore.collection("plants")
-            .add(plantData)
-            .addOnSuccessListener { documentReference ->
-                println("Plant added successfully - Document ID: ${documentReference.id}")
-            }
-            .addOnFailureListener { e: Exception ->
-                println("Error adding plant to the database: ${e.message}")
-            }
-
-        println("Adding Plant to Database - Pot ID: $potId, Selected Plant: $selectedPlant")
-    }
-*/
-    private fun updatePlantInDb(potId: String, selectedPlant: Plant) {
+    private fun updatePlantInDb(potId: Int, selectedPlant: Plant) {
        // val uid = auth.currentUser?.uid ?: ""
         val uid = sharedPreferences.getString("uid", null) ?: ""
         val document = firestore.collection("users").document(uid)
@@ -123,7 +97,7 @@ class AddPlantsActivity : AppCompatActivity() {
        Log.d("plantId", plantId.toString())
        Log.d("potId", potId.toString())
         val updates = hashMapOf<String, Any>(
-            "potId" to potId
+            "potId" to FieldValue.arrayUnion(potId)
         )
 
         document.update(updates)
@@ -131,10 +105,11 @@ class AddPlantsActivity : AppCompatActivity() {
                 println("Name updated successfully in the database.")
             }
             .addOnFailureListener { e: Exception ->
+                Toast.makeText(this, "Couldn't update Plant", Toast.LENGTH_SHORT).show()
                 println("Error updating name in the database: ${e.message}")
             }
 
-        val documentPot = firestore.collection("pots").document(potId)
+        val documentPot = firestore.collection("pots").document(potId.toString())
 
         val updatePot = hashMapOf<String, Any>(
             "plantId" to plantId
@@ -142,7 +117,7 @@ class AddPlantsActivity : AppCompatActivity() {
 
         documentPot.update(updatePot)
             .addOnSuccessListener {
-                Toast.makeText(this, "pot updated successfully", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Plant Updated successfully", Toast.LENGTH_SHORT).show()
             }
             .addOnFailureListener { e: Exception ->
                 Toast.makeText(this, "pot failed to update", Toast.LENGTH_SHORT).show()

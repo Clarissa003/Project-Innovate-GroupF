@@ -22,19 +22,18 @@ class ProfileActivity : Fragment() {
         binding = ActivityProfileBinding.inflate(inflater, container, false)
         return binding.root
     }
-    
-    var sharedPreferences: SharedPreferences = requireContext().getSharedPreferences("myPref", Context.MODE_PRIVATE)
 
-    var nameData = sharedPreferences.getString("key", "Your name")
-    val name = binding.nameText.text.toString()
-
-    var emailData = sharedPreferences.getString("key", "Your email")
-    val email = binding.emailText.text.toString()
-
-    val picture = binding.profileImage
+//    var nameData = sharedPreferences.getString("key", "Your name")
+//    val name = binding.nameText.text.toString()
+//
+//    var emailData = sharedPreferences.getString("key", "Your email")
+//    val email = binding.emailText.text.toString()
+//
+//    val picture = binding.profileImage
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        var sharedPreferences: SharedPreferences = requireContext().getSharedPreferences("myPref", Context.MODE_PRIVATE)
 
         binding.editProfileButton.setOnClickListener {
             // Edit profile button click

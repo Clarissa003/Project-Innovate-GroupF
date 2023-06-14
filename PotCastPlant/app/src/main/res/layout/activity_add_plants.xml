@@ -61,13 +61,14 @@
             <Spinner
                 android:id="@+id/spinner_plants"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
                 android:foregroundTint="@color/dark_green"
                 android:backgroundTint="@color/light_green"
                 android:backgroundTintMode="add"
                 android:foregroundTintMode="add"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                />
+                android:spinnerMode="dropdown" />
+
 
 
             <Button
