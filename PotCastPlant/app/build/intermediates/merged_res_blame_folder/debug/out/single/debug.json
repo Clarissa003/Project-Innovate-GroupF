@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_plant_information.xml.flat",
@@ -14,10 +14,6 @@
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_water_24.xml.flat",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\baseline_water_24.xml"
-    },
-    {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_add_plants.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_add_plants.xml"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_background_circle.xml.flat",
@@ -36,20 +32,24 @@
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_add_plants.xml"
     },
     {
+        "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_gradient_lightblue.xml.flat",
+        "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\gradient_lightblue.xml"
+    },
+    {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_gradient_orange.xml.flat",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\gradient_orange.xml"
     },
     {
-        "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_gradient_lightblue.xml.flat",
-        "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\gradient_lightblue.xml"
+        "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_air_24.xml.flat",
+        "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\baseline_air_24.xml"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_air_24.xml.flat",
-        "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\baseline_air_24.xml"
+        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-xxhdpi_potcast_logo.png.flat",
+        "source": "com.michael.potcastplant.app-main-50:/mipmap-xxhdpi/potcast_logo.png"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_notification.xml.flat",
@@ -68,12 +68,12 @@
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\menu_menu_dashboard.xml.flat",
-        "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\menu\\menu_dashboard.xml"
-    },
-    {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\menu_menu_dashboard.xml.flat",
+        "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\menu\\menu_dashboard.xml"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_grass_24.xml.flat",
@@ -118,6 +118,10 @@
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable-nodpi_plants.png.flat",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable-nodpi\\plants.png"
+    },
+    {
+        "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_spinner_item.xml.flat",
+        "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\spinner_item.xml"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_gradient_green.xml.flat",
@@ -176,6 +180,10 @@
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_profile.xml"
     },
     {
+        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-mdpi_potcast_logo.png.flat",
+        "source": "com.michael.potcastplant.app-main-50:/mipmap-mdpi/potcast_logo.png"
+    },
+    {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_background_plants_dashboard.xml.flat",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\background_plants_dashboard.xml"
     },
@@ -188,12 +196,20 @@
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-xxxhdpi_potcast_logo.png.flat",
+        "source": "com.michael.potcastplant.app-main-50:/mipmap-xxxhdpi/potcast_logo.png"
+    },
+    {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_spinner_selected_item.xml.flat",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\spinner_selected_item.xml"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-xhdpi_potcast_logo.png.flat",
+        "source": "com.michael.potcastplant.app-main-50:/mipmap-xhdpi/potcast_logo.png"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_arrow_forward_24.xml.flat",
@@ -218,6 +234,10 @@
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_ic_notifications_black_24dp.xml.flat",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-hdpi_potcast_logo.png.flat",
+        "source": "com.michael.potcastplant.app-main-50:/mipmap-hdpi/potcast_logo.png"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_ic_dashboard_black_24dp.xml.flat",
@@ -246,9 +266,5 @@
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_add_post.xml.flat",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_add_post.xml"
-    },
-    {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_spinner_item.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/spinner_item.xml"
     }
 ]

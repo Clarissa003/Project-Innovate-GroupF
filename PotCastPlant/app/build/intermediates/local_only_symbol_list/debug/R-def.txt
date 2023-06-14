@@ -126,11 +126,11 @@ layout activity_splash_screen
 layout item_feeds
 layout item_notification
 layout item_plants_dashboard
-layout spinner_item
 menu bottom_nav
 menu menu_dashboard
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap potcast_logo
 string app_name
 string default_web_client_id
 string feeds

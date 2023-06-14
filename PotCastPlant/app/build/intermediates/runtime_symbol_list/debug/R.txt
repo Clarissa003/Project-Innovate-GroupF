@@ -3988,12 +3988,12 @@ int layout preference_widget_switch_compat 0x7f0b0088
 int layout select_dialog_item_material 0x7f0b0089
 int layout select_dialog_multichoice_material 0x7f0b008a
 int layout select_dialog_singlechoice_material 0x7f0b008b
-int layout spinner_item 0x7f0b008d
 int layout support_simple_spinner_dropdown_item 0x7f0b008c
 int menu bottom_nav 0x7f0d0000
 int menu menu_dashboard 0x7f0d0001
 int mipmap ic_launcher 0x7f0e0000
 int mipmap ic_launcher_round 0x7f0e0001
+int mipmap potcast_logo 0x7f0e0002
 int plurals mtrl_badge_content_description 0x7f0f0000
 int raw firebase_common_keep 0x7f100000
 int string abc_action_bar_home_description 0x7f110000
