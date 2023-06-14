@@ -4,20 +4,18 @@ import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
-import android.content.Intent
 import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
-import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.michael.potcastplant.databinding.ActivityNotificationBinding
+
 
 class NotificationActivity : Fragment() {
 
@@ -48,7 +46,8 @@ class NotificationActivity : Fragment() {
         binding.rvNotification.adapter = adapterNotification
 
         // How to tell the user that something has happened in the background.
-        notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        val notificationManager =
+            requireContext().getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             notificationChannel = NotificationChannel(channelId, description, NotificationManager.IMPORTANCE_HIGH)
@@ -57,14 +56,18 @@ class NotificationActivity : Fragment() {
             notificationChannel.enableVibration(false)
             notificationManager.createNotificationChannel(notificationChannel)
 
-            builder = Notification.Builder(this, channelId)
+            builder = Notification.Builder(context, channelId)
                 .setSmallIcon(R.drawable.ic_launcher_background)
-                .setLargeIcon(BitmapFactory.decodeResource(this.resources, R.drawable.ic_launcher_background))
+                .setLargeIcon(BitmapFactory.decodeResource(context?.getResources(), R.drawable.ic_launcher_background))
+                .setContentTitle("Hello")
+                .setContentText("Your plants need attention")
         }
         else {
-            builder = Notification.Builder(this)
+            builder = Notification.Builder(context, channelId)
                 .setSmallIcon(R.drawable.ic_launcher_background)
                 .setLargeIcon(BitmapFactory.decodeResource(this.resources, R.drawable.ic_launcher_background))
+                .setContentTitle("Hello")
+                .setContentText("Your plants need attention")
         }
         notificationManager.notify(1234, builder.build())
 

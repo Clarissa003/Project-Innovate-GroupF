@@ -1,11 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-63:12
-INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-63:12
-INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-63:12
-INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-63:12
+ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-66:12
 MERGED from [androidx.databinding:viewbinding:8.0.0] C:\Users\catea\.gradle\caches\transforms-3\1392572284649373fb804f9b9403a10f\transformed\viewbinding-8.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\catea\.gradle\caches\transforms-3\9d601244bc5612c52a22b52cc9f5e72e\transformed\firebase-auth-ktx-22.0.0\AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.firebase:firebase-database-ktx:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\ef4cf3e5e9e6a98d56b217c60c018c13\transformed\firebase-database-ktx-20.2.2\AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\catea\.gradle\caches\transforms-3\47109d15a827818b7dd570e710f154c4\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\catea\.gradle\caches\transforms-3\39ba4d5015aa43348d3f269a7706692e\transformed\firebase-auth-22.0.0\AndroidManifest.xml:17:1-75:12
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\catea\.gradle\caches\transforms-3\852b54f7e6803f9c0a2979963ec64f88\transformed\recaptcha-18.1.2\AndroidManifest.xml:2:1-10:12
@@ -19,13 +20,14 @@ MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\catea\.gradle\cach
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\catea\.gradle\caches\transforms-3\44d3107f74417d3295bbcb767820d83d\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-firestore:24.6.1] C:\Users\catea\.gradle\caches\transforms-3\7f4ea87fa99be5841be691fc85d97ee3\transformed\firebase-firestore-24.6.1\AndroidManifest.xml:2:1-25:12
 MERGED from [com.google.firebase:firebase-storage:20.2.0] C:\Users\catea\.gradle\caches\transforms-3\4ec4ea0607de67d2587236be156a031e\transformed\firebase-storage-20.2.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\a58540dfeed0d965c2a2cff98932581f\transformed\firebase-database-20.2.2\AndroidManifest.xml:15:1-37:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\catea\.gradle\caches\transforms-3\e1ff398045163d25b8505be3b3fd1d3f\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\catea\.gradle\caches\transforms-3\ce386c086cbb66a333155fa21c4873c9\transformed\firebase-common-20.3.2\AndroidManifest.xml:15:1-39:12
-MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\catea\.gradle\caches\transforms-3\ac0a89dfeb20920d4bbc9750e549e485\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\catea\.gradle\caches\transforms-3\f010faf60fc0e4a76b0d80889fc19b4d\transformed\firebase-appcheck-interop-17.0.0\AndroidManifest.xml:15:1-25:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\catea\.gradle\caches\transforms-3\ccd7cc8548e512c0b622b1e13bf18730\transformed\play-services-auth-api-phone-17.4.0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\catea\.gradle\caches\transforms-3\5d4f0baf67b2a44fdbfab6b24281e643\transformed\play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.android.play:integrity:1.1.0] C:\Users\catea\.gradle\caches\transforms-3\15a2a1ae5572db6d65757b9b4d122813\transformed\integrity-1.1.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.1] C:\Users\catea\.gradle\caches\transforms-3\79e2a621e3fc34599d07b86f08d090a7\transformed\firebase-appcheck-interop-17.0.1\AndroidManifest.xml:15:1-25:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\catea\.gradle\caches\transforms-3\ac0a89dfeb20920d4bbc9750e549e485\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\catea\.gradle\caches\transforms-3\c581f8843247c91cecf5f241b6dd70ac\transformed\play-services-base-18.1.0\AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\catea\.gradle\caches\transforms-3\bc097d15e509a65889ed104b061065de\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\catea\.gradle\caches\transforms-3\b9d0344364cb797cae21e7f49407fa91\transformed\play-services-basement-18.1.0\AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.fragment:fragment:1.6.0] C:\Users\catea\.gradle\caches\transforms-3\c8c89d84162a1d9d5c79e289c2f88152\transformed\fragment-1.6.0\AndroidManifest.xml:17:1-22:12
@@ -80,22 +82,22 @@ MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\catea\.gradle\cache
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\catea\.gradle\caches\transforms-3\551a69fdb6258fdd07aa00ab4e980112\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
 MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\catea\.gradle\caches\transforms-3\0fcf97b5dd42725b281aef0baa38e7cb\transformed\grpc-android-1.52.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\catea\.gradle\caches\transforms-3\d53355a776945830daa86c6e3fd42fdb\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-63:12
-INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-63:12
-INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-66:12
 	package
 		INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-63:12
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-66:12
 		INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-63:12
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-66:12
 		INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-63:12
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:1-66:12
 		INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:2:11-69
@@ -104,9 +106,11 @@ ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant
 	android:name
 		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:5:22-74
 application
-ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:6:5-61:19
+ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:6:5-64:19
 MERGED from [com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\catea\.gradle\caches\transforms-3\9d601244bc5612c52a22b52cc9f5e72e\transformed\firebase-auth-ktx-22.0.0\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\catea\.gradle\caches\transforms-3\9d601244bc5612c52a22b52cc9f5e72e\transformed\firebase-auth-ktx-22.0.0\AndroidManifest.xml:7:5-15:19
+MERGED from [com.google.firebase:firebase-database-ktx:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\ef4cf3e5e9e6a98d56b217c60c018c13\transformed\firebase-database-ktx-20.2.2\AndroidManifest.xml:10:5-18:19
+MERGED from [com.google.firebase:firebase-database-ktx:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\ef4cf3e5e9e6a98d56b217c60c018c13\transformed\firebase-database-ktx-20.2.2\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\catea\.gradle\caches\transforms-3\47109d15a827818b7dd570e710f154c4\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\catea\.gradle\caches\transforms-3\47109d15a827818b7dd570e710f154c4\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\catea\.gradle\caches\transforms-3\39ba4d5015aa43348d3f269a7706692e\transformed\firebase-auth-22.0.0\AndroidManifest.xml:28:5-73:19
@@ -121,16 +125,18 @@ MERGED from [com.google.firebase:firebase-firestore:24.6.1] C:\Users\catea\.grad
 MERGED from [com.google.firebase:firebase-firestore:24.6.1] C:\Users\catea\.gradle\caches\transforms-3\7f4ea87fa99be5841be691fc85d97ee3\transformed\firebase-firestore-24.6.1\AndroidManifest.xml:15:5-23:19
 MERGED from [com.google.firebase:firebase-storage:20.2.0] C:\Users\catea\.gradle\caches\transforms-3\4ec4ea0607de67d2587236be156a031e\transformed\firebase-storage-20.2.0\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-storage:20.2.0] C:\Users\catea\.gradle\caches\transforms-3\4ec4ea0607de67d2587236be156a031e\transformed\firebase-storage-20.2.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\a58540dfeed0d965c2a2cff98932581f\transformed\firebase-database-20.2.2\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\a58540dfeed0d965c2a2cff98932581f\transformed\firebase-database-20.2.2\AndroidManifest.xml:27:5-35:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\catea\.gradle\caches\transforms-3\e1ff398045163d25b8505be3b3fd1d3f\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\catea\.gradle\caches\transforms-3\e1ff398045163d25b8505be3b3fd1d3f\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\catea\.gradle\caches\transforms-3\ce386c086cbb66a333155fa21c4873c9\transformed\firebase-common-20.3.2\AndroidManifest.xml:24:5-37:19
 MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\catea\.gradle\caches\transforms-3\ce386c086cbb66a333155fa21c4873c9\transformed\firebase-common-20.3.2\AndroidManifest.xml:24:5-37:19
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\catea\.gradle\caches\transforms-3\f010faf60fc0e4a76b0d80889fc19b4d\transformed\firebase-appcheck-interop-17.0.0\AndroidManifest.xml:23:5-20
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\catea\.gradle\caches\transforms-3\f010faf60fc0e4a76b0d80889fc19b4d\transformed\firebase-appcheck-interop-17.0.0\AndroidManifest.xml:23:5-20
-MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\catea\.gradle\caches\transforms-3\5d4f0baf67b2a44fdbfab6b24281e643\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\catea\.gradle\caches\transforms-3\5d4f0baf67b2a44fdbfab6b24281e643\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.play:integrity:1.1.0] C:\Users\catea\.gradle\caches\transforms-3\15a2a1ae5572db6d65757b9b4d122813\transformed\integrity-1.1.0\AndroidManifest.xml:5:5-6:19
 MERGED from [com.google.android.play:integrity:1.1.0] C:\Users\catea\.gradle\caches\transforms-3\15a2a1ae5572db6d65757b9b4d122813\transformed\integrity-1.1.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.1] C:\Users\catea\.gradle\caches\transforms-3\79e2a621e3fc34599d07b86f08d090a7\transformed\firebase-appcheck-interop-17.0.1\AndroidManifest.xml:23:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.1] C:\Users\catea\.gradle\caches\transforms-3\79e2a621e3fc34599d07b86f08d090a7\transformed\firebase-appcheck-interop-17.0.1\AndroidManifest.xml:23:5-20
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\catea\.gradle\caches\transforms-3\c581f8843247c91cecf5f241b6dd70ac\transformed\play-services-base-18.1.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\catea\.gradle\caches\transforms-3\c581f8843247c91cecf5f241b6dd70ac\transformed\play-services-base-18.1.0\AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\catea\.gradle\caches\transforms-3\bc097d15e509a65889ed104b061065de\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\catea\.gradle\caches\transforms-3\bc097d15e509a65889ed104b061065de\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\catea\.gradle\caches\transforms-3\b9d0344364cb797cae21e7f49407fa91\transformed\play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
@@ -171,94 +177,100 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ca
 		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:14:9-50
 	android:dataExtractionRules
 		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:8:9-65
-activity#com.michael.potcastplant.AddPostActivity
+activity#com.michael.potcastplant.EditProfileActivity
 ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:16:9-18:40
 	android:exported
 		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:18:13-37
 	android:name
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:17:13-44
-activity#com.michael.potcastplant.AddPlantsActivity
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:17:13-48
+activity#com.michael.potcastplant.AddPostActivity
 ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:19:9-21:40
 	android:exported
 		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:20:13-46
-activity#com.michael.potcastplant.PlantInformationActivity
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:20:13-44
+activity#com.michael.potcastplant.AddPlantsActivity
 ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:22:9-24:40
 	android:exported
 		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:23:13-53
-activity#com.michael.potcastplant.NotificationActivity
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:23:13-46
+activity#com.michael.potcastplant.PlantInformationActivity
 ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:25:9-27:40
 	android:exported
 		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:26:13-49
-activity#com.michael.potcastplant.FeedActivity
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:26:13-53
+activity#com.michael.potcastplant.NotificationActivity
 ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:28:9-30:40
 	android:exported
 		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:29:13-41
-activity#com.michael.potcastplant.PlantsDashboardActivity
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:29:13-49
+activity#com.michael.potcastplant.FeedActivity
 ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:31:9-33:40
 	android:exported
 		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:33:13-37
 	android:name
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:32:13-52
-activity#com.michael.potcastplant.NavigationHostActivity
-ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:34:9-38:71
-	android:label
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:37:13-29
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:32:13-41
+activity#com.michael.potcastplant.PlantsDashboardActivity
+ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:34:9-36:40
 	android:exported
 		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:36:13-37
-	android:theme
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:38:13-68
 	android:name
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:35:13-51
-activity#com.michael.potcastplant.PasswordResetActivity
-ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:39:9-41:40
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:35:13-52
+activity#com.michael.potcastplant.NavigationHostActivity
+ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:37:9-41:71
+	android:label
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:40:13-29
 	android:exported
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:41:13-37
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:39:13-37
+	android:theme
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:41:13-68
 	android:name
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:40:13-50
-activity#com.michael.potcastplant.ProfileActivity
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:38:13-51
+activity#com.michael.potcastplant.PasswordResetActivity
 ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:42:9-44:40
 	android:exported
 		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:44:13-37
 	android:name
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:43:13-44
-activity#com.michael.potcastplant.RegistrationActivity
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:43:13-50
+activity#com.michael.potcastplant.ProfileActivity
 ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:45:9-47:40
 	android:exported
 		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:46:13-49
-activity#com.michael.potcastplant.LoginActivity
-ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:48:9-50:39
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:46:13-44
+activity#com.michael.potcastplant.RegistrationActivity
+ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:48:9-50:40
 	android:exported
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:50:13-36
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:50:13-37
 	android:name
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:49:13-42
-activity#com.michael.potcastplant.SplashScreenActivity
-ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:51:9-60:20
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:49:13-49
+activity#com.michael.potcastplant.LoginActivity
+ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:51:9-53:39
 	android:exported
 		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:53:13-36
+	android:name
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:52:13-42
+activity#com.michael.potcastplant.SplashScreenActivity
+ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:54:9-63:20
+	android:exported
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:56:13-36
 	android:theme
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:54:13-47
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:57:13-47
 	android:name
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:52:13-49
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:55:13-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:55:13-59:29
+ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:58:13-62:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:56:17-69
+ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:59:17-69
 	android:name
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:56:25-66
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:59:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:58:17-77
+ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:61:17-77
 	android:name
-		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:58:27-74
+		ADDED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml:61:27-74
 uses-sdk
 INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml
@@ -267,6 +279,8 @@ MERGED from [androidx.databinding:viewbinding:8.0.0] C:\Users\catea\.gradle\cach
 MERGED from [androidx.databinding:viewbinding:8.0.0] C:\Users\catea\.gradle\caches\transforms-3\1392572284649373fb804f9b9403a10f\transformed\viewbinding-8.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\catea\.gradle\caches\transforms-3\9d601244bc5612c52a22b52cc9f5e72e\transformed\firebase-auth-ktx-22.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\catea\.gradle\caches\transforms-3\9d601244bc5612c52a22b52cc9f5e72e\transformed\firebase-auth-ktx-22.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-ktx:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\ef4cf3e5e9e6a98d56b217c60c018c13\transformed\firebase-database-ktx-20.2.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-ktx:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\ef4cf3e5e9e6a98d56b217c60c018c13\transformed\firebase-database-ktx-20.2.2\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\catea\.gradle\caches\transforms-3\47109d15a827818b7dd570e710f154c4\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\catea\.gradle\caches\transforms-3\47109d15a827818b7dd570e710f154c4\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\catea\.gradle\caches\transforms-3\39ba4d5015aa43348d3f269a7706692e\transformed\firebase-auth-22.0.0\AndroidManifest.xml:21:5-23:64
@@ -293,20 +307,22 @@ MERGED from [com.google.firebase:firebase-firestore:24.6.1] C:\Users\catea\.grad
 MERGED from [com.google.firebase:firebase-firestore:24.6.1] C:\Users\catea\.gradle\caches\transforms-3\7f4ea87fa99be5841be691fc85d97ee3\transformed\firebase-firestore-24.6.1\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-storage:20.2.0] C:\Users\catea\.gradle\caches\transforms-3\4ec4ea0607de67d2587236be156a031e\transformed\firebase-storage-20.2.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-storage:20.2.0] C:\Users\catea\.gradle\caches\transforms-3\4ec4ea0607de67d2587236be156a031e\transformed\firebase-storage-20.2.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\a58540dfeed0d965c2a2cff98932581f\transformed\firebase-database-20.2.2\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\a58540dfeed0d965c2a2cff98932581f\transformed\firebase-database-20.2.2\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\catea\.gradle\caches\transforms-3\e1ff398045163d25b8505be3b3fd1d3f\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\catea\.gradle\caches\transforms-3\e1ff398045163d25b8505be3b3fd1d3f\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\catea\.gradle\caches\transforms-3\ce386c086cbb66a333155fa21c4873c9\transformed\firebase-common-20.3.2\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\catea\.gradle\caches\transforms-3\ce386c086cbb66a333155fa21c4873c9\transformed\firebase-common-20.3.2\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\catea\.gradle\caches\transforms-3\ac0a89dfeb20920d4bbc9750e549e485\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\catea\.gradle\caches\transforms-3\ac0a89dfeb20920d4bbc9750e549e485\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\catea\.gradle\caches\transforms-3\f010faf60fc0e4a76b0d80889fc19b4d\transformed\firebase-appcheck-interop-17.0.0\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\catea\.gradle\caches\transforms-3\f010faf60fc0e4a76b0d80889fc19b4d\transformed\firebase-appcheck-interop-17.0.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\catea\.gradle\caches\transforms-3\ccd7cc8548e512c0b622b1e13bf18730\transformed\play-services-auth-api-phone-17.4.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\catea\.gradle\caches\transforms-3\ccd7cc8548e512c0b622b1e13bf18730\transformed\play-services-auth-api-phone-17.4.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\catea\.gradle\caches\transforms-3\5d4f0baf67b2a44fdbfab6b24281e643\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\catea\.gradle\caches\transforms-3\5d4f0baf67b2a44fdbfab6b24281e643\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.play:integrity:1.1.0] C:\Users\catea\.gradle\caches\transforms-3\15a2a1ae5572db6d65757b9b4d122813\transformed\integrity-1.1.0\AndroidManifest.xml:4:5-44
 MERGED from [com.google.android.play:integrity:1.1.0] C:\Users\catea\.gradle\caches\transforms-3\15a2a1ae5572db6d65757b9b4d122813\transformed\integrity-1.1.0\AndroidManifest.xml:4:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.1] C:\Users\catea\.gradle\caches\transforms-3\79e2a621e3fc34599d07b86f08d090a7\transformed\firebase-appcheck-interop-17.0.1\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.1] C:\Users\catea\.gradle\caches\transforms-3\79e2a621e3fc34599d07b86f08d090a7\transformed\firebase-appcheck-interop-17.0.1\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\catea\.gradle\caches\transforms-3\ac0a89dfeb20920d4bbc9750e549e485\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\catea\.gradle\caches\transforms-3\ac0a89dfeb20920d4bbc9750e549e485\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\catea\.gradle\caches\transforms-3\c581f8843247c91cecf5f241b6dd70ac\transformed\play-services-base-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\catea\.gradle\caches\transforms-3\c581f8843247c91cecf5f241b6dd70ac\transformed\play-services-base-18.1.0\AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\catea\.gradle\caches\transforms-3\bc097d15e509a65889ed104b061065de\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\catea\.gradle\caches\transforms-3\bc097d15e509a65889ed104b061065de\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\catea\.gradle\caches\transforms-3\b9d0344364cb797cae21e7f49407fa91\transformed\play-services-basement-18.1.0\AndroidManifest.xml:18:5-43
@@ -429,6 +445,8 @@ INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPl
 		INJECTED from C:\Users\catea\Desktop\Project 4\Project-Innovate-GroupF\PotCastPlant\app\src\main\AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\catea\.gradle\caches\transforms-3\9d601244bc5612c52a22b52cc9f5e72e\transformed\firebase-auth-ktx-22.0.0\AndroidManifest.xml:8:9-14:19
+MERGED from [com.google.firebase:firebase-database-ktx:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\ef4cf3e5e9e6a98d56b217c60c018c13\transformed\firebase-database-ktx-20.2.2\AndroidManifest.xml:11:9-17:19
+MERGED from [com.google.firebase:firebase-database-ktx:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\ef4cf3e5e9e6a98d56b217c60c018c13\transformed\firebase-database-ktx-20.2.2\AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\catea\.gradle\caches\transforms-3\47109d15a827818b7dd570e710f154c4\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\catea\.gradle\caches\transforms-3\47109d15a827818b7dd570e710f154c4\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\catea\.gradle\caches\transforms-3\39ba4d5015aa43348d3f269a7706692e\transformed\firebase-auth-22.0.0\AndroidManifest.xml:66:9-72:19
@@ -437,6 +455,8 @@ MERGED from [com.google.firebase:firebase-firestore:24.6.1] C:\Users\catea\.grad
 MERGED from [com.google.firebase:firebase-firestore:24.6.1] C:\Users\catea\.gradle\caches\transforms-3\7f4ea87fa99be5841be691fc85d97ee3\transformed\firebase-firestore-24.6.1\AndroidManifest.xml:16:9-22:19
 MERGED from [com.google.firebase:firebase-storage:20.2.0] C:\Users\catea\.gradle\caches\transforms-3\4ec4ea0607de67d2587236be156a031e\transformed\firebase-storage-20.2.0\AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-storage:20.2.0] C:\Users\catea\.gradle\caches\transforms-3\4ec4ea0607de67d2587236be156a031e\transformed\firebase-storage-20.2.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\a58540dfeed0d965c2a2cff98932581f\transformed\firebase-database-20.2.2\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\a58540dfeed0d965c2a2cff98932581f\transformed\firebase-database-20.2.2\AndroidManifest.xml:28:9-34:19
 MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\catea\.gradle\caches\transforms-3\ce386c086cbb66a333155fa21c4873c9\transformed\firebase-common-20.3.2\AndroidManifest.xml:32:9-36:35
 MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\catea\.gradle\caches\transforms-3\ce386c086cbb66a333155fa21c4873c9\transformed\firebase-common-20.3.2\AndroidManifest.xml:32:9-36:35
 	android:exported
@@ -453,6 +473,12 @@ ADDED from [com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\catea\.gradle
 		ADDED from [com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\catea\.gradle\caches\transforms-3\9d601244bc5612c52a22b52cc9f5e72e\transformed\firebase-auth-ktx-22.0.0\AndroidManifest.xml:13:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth-ktx:22.0.0] C:\Users\catea\.gradle\caches\transforms-3\9d601244bc5612c52a22b52cc9f5e72e\transformed\firebase-auth-ktx-22.0.0\AndroidManifest.xml:12:17-116
+meta-data#com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar
+ADDED from [com.google.firebase:firebase-database-ktx:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\ef4cf3e5e9e6a98d56b217c60c018c13\transformed\firebase-database-ktx-20.2.2\AndroidManifest.xml:14:13-16:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database-ktx:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\ef4cf3e5e9e6a98d56b217c60c018c13\transformed\firebase-database-ktx-20.2.2\AndroidManifest.xml:16:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database-ktx:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\ef4cf3e5e9e6a98d56b217c60c018c13\transformed\firebase-database-ktx-20.2.2\AndroidManifest.xml:15:17-124
 meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar
 ADDED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\catea\.gradle\caches\transforms-3\47109d15a827818b7dd570e710f154c4\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:14:13-16:85
 	android:value
@@ -467,6 +493,8 @@ MERGED from [com.google.firebase:firebase-firestore:24.6.1] C:\Users\catea\.grad
 MERGED from [com.google.firebase:firebase-firestore:24.6.1] C:\Users\catea\.gradle\caches\transforms-3\7f4ea87fa99be5841be691fc85d97ee3\transformed\firebase-firestore-24.6.1\AndroidManifest.xml:13:5-67
 MERGED from [com.google.firebase:firebase-storage:20.2.0] C:\Users\catea\.gradle\caches\transforms-3\4ec4ea0607de67d2587236be156a031e\transformed\firebase-storage-20.2.0\AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-storage:20.2.0] C:\Users\catea\.gradle\caches\transforms-3\4ec4ea0607de67d2587236be156a031e\transformed\firebase-storage-20.2.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\a58540dfeed0d965c2a2cff98932581f\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\a58540dfeed0d965c2a2cff98932581f\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:5-67
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\catea\.gradle\caches\transforms-3\39ba4d5015aa43348d3f269a7706692e\transformed\firebase-auth-22.0.0\AndroidManifest.xml:25:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
@@ -477,6 +505,8 @@ MERGED from [com.google.firebase:firebase-firestore:24.6.1] C:\Users\catea\.grad
 MERGED from [com.google.firebase:firebase-firestore:24.6.1] C:\Users\catea\.gradle\caches\transforms-3\7f4ea87fa99be5841be691fc85d97ee3\transformed\firebase-firestore-24.6.1\AndroidManifest.xml:12:5-79
 MERGED from [com.google.firebase:firebase-storage:20.2.0] C:\Users\catea\.gradle\caches\transforms-3\4ec4ea0607de67d2587236be156a031e\transformed\firebase-storage-20.2.0\AndroidManifest.xml:25:5-79
 MERGED from [com.google.firebase:firebase-storage:20.2.0] C:\Users\catea\.gradle\caches\transforms-3\4ec4ea0607de67d2587236be156a031e\transformed\firebase-storage-20.2.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\a58540dfeed0d965c2a2cff98932581f\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\a58540dfeed0d965c2a2cff98932581f\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:5-79
 MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\catea\.gradle\caches\transforms-3\0fcf97b5dd42725b281aef0baa38e7cb\transformed\grpc-android-1.52.1\AndroidManifest.xml:9:5-79
 MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\catea\.gradle\caches\transforms-3\0fcf97b5dd42725b281aef0baa38e7cb\transformed\grpc-android-1.52.1\AndroidManifest.xml:9:5-79
 	android:name
@@ -547,6 +577,12 @@ ADDED from [com.google.firebase:firebase-storage:20.2.0] C:\Users\catea\.gradle\
 		ADDED from [com.google.firebase:firebase-storage:20.2.0] C:\Users\catea\.gradle\caches\transforms-3\4ec4ea0607de67d2587236be156a031e\transformed\firebase-storage-20.2.0\AndroidManifest.xml:34:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-storage:20.2.0] C:\Users\catea\.gradle\caches\transforms-3\4ec4ea0607de67d2587236be156a031e\transformed\firebase-storage-20.2.0\AndroidManifest.xml:33:17-107
+meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
+ADDED from [com.google.firebase:firebase-database:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\a58540dfeed0d965c2a2cff98932581f\transformed\firebase-database-20.2.2\AndroidManifest.xml:31:13-33:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\a58540dfeed0d965c2a2cff98932581f\transformed\firebase-database-20.2.2\AndroidManifest.xml:33:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:20.2.2] C:\Users\catea\.gradle\caches\transforms-3\a58540dfeed0d965c2a2cff98932581f\transformed\firebase-database-20.2.2\AndroidManifest.xml:32:17-109
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:20.3.2] C:\Users\catea\.gradle\caches\transforms-3\ce386c086cbb66a333155fa21c4873c9\transformed\firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
 	android:authorities
@@ -560,13 +596,13 @@ ADDED from [com.google.firebase:firebase-common:20.3.2] C:\Users\catea\.gradle\c
 	android:name
 		ADDED from [com.google.firebase:firebase-common:20.3.2] C:\Users\catea\.gradle\caches\transforms-3\ce386c086cbb66a333155fa21c4873c9\transformed\firebase-common-20.3.2\AndroidManifest.xml:26:13-77
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\catea\.gradle\caches\transforms-3\5d4f0baf67b2a44fdbfab6b24281e643\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\catea\.gradle\caches\transforms-3\c581f8843247c91cecf5f241b6dd70ac\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\catea\.gradle\caches\transforms-3\5d4f0baf67b2a44fdbfab6b24281e643\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\catea\.gradle\caches\transforms-3\c581f8843247c91cecf5f241b6dd70ac\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\catea\.gradle\caches\transforms-3\5d4f0baf67b2a44fdbfab6b24281e643\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\catea\.gradle\caches\transforms-3\c581f8843247c91cecf5f241b6dd70ac\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\catea\.gradle\caches\transforms-3\5d4f0baf67b2a44fdbfab6b24281e643\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\catea\.gradle\caches\transforms-3\c581f8843247c91cecf5f241b6dd70ac\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
 meta-data#com.google.android.gms.version
 ADDED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\catea\.gradle\caches\transforms-3\b9d0344364cb797cae21e7f49407fa91\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
 	android:value

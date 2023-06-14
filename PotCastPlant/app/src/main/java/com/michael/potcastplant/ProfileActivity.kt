@@ -43,7 +43,8 @@ class ProfileActivity : Fragment() {
 
         binding.editProfileButton.setOnClickListener {
             // Edit profile button click
-
+            val intent = Intent(this.context, EditProfileActivity::class.java)
+            startActivity(intent)
         }
 
         binding.logoutButton.setOnClickListener {

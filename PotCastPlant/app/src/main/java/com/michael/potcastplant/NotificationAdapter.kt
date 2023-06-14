@@ -23,10 +23,14 @@ class NotificationAdapter(private var notification: Array<NotificationClass>) : 
     override fun onBindViewHolder(holder: NotificationAdapter.ViewHolder, position: Int) {
         val NotificationClass = notification[position]
         holder.title.setText(NotificationClass.title)
+        holder.text.setText(NotificationClass.text)
+        holder.date.setText(NotificationClass.date)
     }
 
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val cardView: CardView = itemView.findViewById(R.id.cvNotifications)
         val title : TextView = itemView.findViewById(R.id.tvTitle)
+        val text : TextView = itemView.findViewById(R.id.tvText)
+        val date : TextView = itemView.findViewById(R.id.tvDate)
     }
 }

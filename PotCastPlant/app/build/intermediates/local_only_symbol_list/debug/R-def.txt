@@ -41,12 +41,17 @@ id btnUpload
 id btnUploadImage
 id button_addPlant
 id button_add_plant
+id button_confirm
 id button_login
 id button_submit_request
+id button_update_names
+id button_upload
 id card_view_plants
 id cvNotifications
 id edit_profile_button
 id edit_text_email
+id edit_text_firstName
+id edit_text_lastName
 id edit_text_password
 id email_text
 id etDescription
@@ -62,6 +67,7 @@ id image_view
 id image_view_header
 id image_view_plant
 id image_view_post_img
+id image_view_preview
 id image_view_profile_pic
 id line_chart
 id logout_button
@@ -104,6 +110,7 @@ id watering
 id wlevel
 layout activity_add_plants
 layout activity_add_post
+layout activity_edit_profile
 layout activity_feed
 layout activity_login
 layout activity_navigation_host
