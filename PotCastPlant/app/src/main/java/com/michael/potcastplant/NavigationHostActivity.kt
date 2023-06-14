@@ -1,11 +1,14 @@
 package com.michael.potcastplant
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.core.content.edit
 import androidx.fragment.app.commit
 import com.google.android.material.navigation.NavigationBarView.OnItemSelectedListener
 import com.michael.potcastplant.databinding.ActivityNavigationHostBinding
@@ -13,6 +16,9 @@ import com.michael.potcastplant.databinding.ActivityNavigationHostBinding
 class NavigationHostActivity : AppCompatActivity(), OnItemSelectedListener {
 
     private lateinit var binding: ActivityNavigationHostBinding
+    private val myPreferences: SharedPreferences by lazy {
+        getSharedPreferences("myPref", Context.MODE_PRIVATE)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +35,10 @@ class NavigationHostActivity : AppCompatActivity(), OnItemSelectedListener {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(item.itemId == R.id.menu_logout) {
+            myPreferences.edit {
+                clear()
+                apply()
+            }
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }

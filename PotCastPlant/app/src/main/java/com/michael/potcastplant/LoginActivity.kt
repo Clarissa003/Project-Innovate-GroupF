@@ -28,6 +28,15 @@ class LoginActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
 
+
+        val uid = myPreferences.getString("uid", null)
+        if (uid != null) {
+            val intent = Intent(this, NavigationHostActivity::class.java)
+            startActivity(intent)
+            finish()
+            return
+        }
+
         setOnClickListeners()
     }
 

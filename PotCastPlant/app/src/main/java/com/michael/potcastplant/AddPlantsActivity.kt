@@ -14,7 +14,7 @@ class AddPlantsActivity : AppCompatActivity() {
         binding = ActivityAddPlantsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var plants = arrayOf(
+        val plants = arrayOf(
             Plant(1, "Bay Leaves", "A very nice Bay Leave",10, 10, 10, 10, 10, 10, ""),
             Plant(2, "Rose Flower", "A very nice Rose Flower",10, 10, 10, 10, 10, 10, ""),
             Plant(3, "Mahogany", "A very nice Mahogany",10, 10, 10, 10, 10, 10, ""),

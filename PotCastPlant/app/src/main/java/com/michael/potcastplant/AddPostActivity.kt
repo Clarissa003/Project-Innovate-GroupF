@@ -29,7 +29,6 @@ class AddPostActivity : AppCompatActivity() {
         val btnUploadImage: Button = findViewById(R.id.btnUploadImage)
         val btnUpload: Button = findViewById(R.id.btnUpload)
         etDescription = findViewById(R.id.etDescription)
-        imageView = findViewById(R.id.image_view_plant)
 
         // Set click listener for upload img button
         btnUploadImage.setOnClickListener {
@@ -81,7 +80,7 @@ class AddPostActivity : AppCompatActivity() {
         // Use imageUri and description to upload the post to a database
 
         // Example code for uploading to Firebase Realtime Database
-      /*  val database = FirebaseDatabase.getInstance()
+        /*  val database = FirebaseDatabase.getInstance()
         val postsRef = database.getReference("posts")
 
         val post = FeedsPostClass(imageUri.toString(), description)
@@ -111,6 +110,8 @@ class AddPostActivity : AppCompatActivity() {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 */
+    }
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 

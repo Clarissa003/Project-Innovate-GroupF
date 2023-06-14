@@ -16,8 +16,8 @@
         "source": "com.michael.potcastplant.app-main-50:/layout/activity_add_post.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_add_post.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_add_post.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_plant_information.xml",
+        "source": "com.michael.potcastplant.app-main-50:/layout/activity_plant_information.xml"
     },
     {
         "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_login.xml",
@@ -38,6 +38,10 @@
     {
         "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_navigation_host.xml",
         "source": "com.michael.potcastplant.app-main-50:/layout/activity_navigation_host.xml"
+    },
+    {
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_edit_profile.xml",
+        "source": "com.michael.potcastplant.app-main-50:/layout/activity_edit_profile.xml"
     },
     {
         "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_profile.xml",
