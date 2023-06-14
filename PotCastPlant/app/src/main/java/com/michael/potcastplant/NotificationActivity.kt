@@ -17,7 +17,6 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.michael.potcastplant.databinding.ActivityNotificationBinding
 
-
 class NotificationActivity : Fragment() {
 
     private lateinit var binding: ActivityNotificationBinding

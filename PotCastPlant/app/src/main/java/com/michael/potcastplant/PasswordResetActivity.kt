@@ -11,14 +11,15 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.michael.potcastplant.databinding.ActivityLoginBinding
 import com.michael.potcastplant.databinding.ActivityPasswordResetBinding
+import com.michael.potcastplant.databinding.ActivityProfileBinding
 
 class PasswordResetActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPasswordResetBinding
     private lateinit var auth: FirebaseAuth
-    private lateinit var firestore: FirebaseFirestore}
+    private lateinit var firestore: FirebaseFirestore
 
-   override fun onCreate(savedInstanceState: Bundle?) {
+    fun onCreateView(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityPasswordResetBinding.inflate(layoutInflater)
         setContentView(binding.root)

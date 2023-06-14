@@ -34,12 +34,13 @@ class ProfileActivity : Fragment() {
         auth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
 
-        var sharedPreferences: SharedPreferences = requireContext().getSharedPreferences("MyPref",Context.MODE_PRIVATE)
+        var sharedPreferences: SharedPreferences =
+            requireContext().getSharedPreferences("MyPref", Context.MODE_PRIVATE)
         val uid = sharedPreferences.getString("uid", null) ?: ""
 
         val document = firestore.collection("users").document(uid)
-        document.get().addOnSuccessListener {documentSnapshot ->
-            if(documentSnapshot.exists()) {
+        document.get().addOnSuccessListener { documentSnapshot ->
+            if (documentSnapshot.exists()) {
                 val firstName = documentSnapshot.getString("firstName")
                 val lastName = documentSnapshot.getString("lastName")
                 //val email = documentSnapshot.getString("email")
@@ -52,15 +53,16 @@ class ProfileActivity : Fragment() {
                 // val email = binding.emailText.text.toString()
             }
 
-        binding.editProfileButton.setOnClickListener {
-            // Edit profile button click
-            val intent = Intent(this.context, EditProfileActivity::class.java)
-            startActivity(intent)
-        }
+            binding.editProfileButton.setOnClickListener {
+                // Edit profile button click
+                val intent = Intent(this.context, EditProfileActivity::class.java)
+                startActivity(intent)
+            }
 
-        binding.logoutButton.setOnClickListener {
-            val intent = Intent(this.context, LoginActivity::class.java)
-            startActivity(intent)
+            binding.logoutButton.setOnClickListener {
+                val intent = Intent(this.context, LoginActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 }
