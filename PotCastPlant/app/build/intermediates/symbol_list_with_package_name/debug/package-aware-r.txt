@@ -3279,8 +3279,11 @@ id btnUploadImage
 id buttonPanel
 id button_addPlant
 id button_add_plant
+id button_confirm
 id button_login
 id button_submit_request
+id button_update_names
+id button_upload
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3359,7 +3362,10 @@ id edge
 id edit_profile_button
 id edit_query
 id edit_text_email
+id edit_text_firstName
+id edit_text_lastName
 id edit_text_password
+id edit_text_pot
 id elastic
 id email_text
 id embed
@@ -3423,6 +3429,7 @@ id image_view
 id image_view_header
 id image_view_plant
 id image_view_post_img
+id image_view_preview
 id image_view_profile_pic
 id immediateStop
 id included
@@ -3871,6 +3878,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_plants
 layout activity_add_post
+layout activity_edit_profile
 layout activity_feed
 layout activity_login
 layout activity_navigation_host

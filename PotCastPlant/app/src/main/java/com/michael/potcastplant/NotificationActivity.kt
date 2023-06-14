@@ -26,7 +26,7 @@ class NotificationActivity : Fragment() {
     private lateinit var notificationChannel: NotificationChannel
     private lateinit var builder: Notification.Builder
     private val channelId = "i.apps.notifications"
-    private val description = "Test notification"
+    private val description = "Test notification"}
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreateView(
@@ -48,7 +48,7 @@ class NotificationActivity : Fragment() {
         binding.rvNotification.adapter = adapterNotification
 
         // How to tell the user that something has happened in the background.
-        notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+       // notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             notificationChannel = NotificationChannel(channelId, description, NotificationManager.IMPORTANCE_HIGH)
