@@ -29,7 +29,7 @@ public final class ActivityAddPlantsBinding implements ViewBinding {
   public final Button buttonSubmitRequest;
 
   @NonNull
-  public final TextInputEditText editTextEmail;
+  public final TextInputEditText editTextPot;
 
   @NonNull
   public final ImageView imageViewHeader;
@@ -39,12 +39,12 @@ public final class ActivityAddPlantsBinding implements ViewBinding {
 
   private ActivityAddPlantsBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button buttonAddPlant, @NonNull Button buttonSubmitRequest,
-      @NonNull TextInputEditText editTextEmail, @NonNull ImageView imageViewHeader,
+      @NonNull TextInputEditText editTextPot, @NonNull ImageView imageViewHeader,
       @NonNull Spinner spinnerPlants) {
     this.rootView = rootView;
     this.buttonAddPlant = buttonAddPlant;
     this.buttonSubmitRequest = buttonSubmitRequest;
-    this.editTextEmail = editTextEmail;
+    this.editTextPot = editTextPot;
     this.imageViewHeader = imageViewHeader;
     this.spinnerPlants = spinnerPlants;
   }
@@ -88,9 +88,9 @@ public final class ActivityAddPlantsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.edit_text_email;
-      TextInputEditText editTextEmail = ViewBindings.findChildViewById(rootView, id);
-      if (editTextEmail == null) {
+      id = R.id.edit_text_pot;
+      TextInputEditText editTextPot = ViewBindings.findChildViewById(rootView, id);
+      if (editTextPot == null) {
         break missingId;
       }
 
@@ -107,7 +107,7 @@ public final class ActivityAddPlantsBinding implements ViewBinding {
       }
 
       return new ActivityAddPlantsBinding((ConstraintLayout) rootView, buttonAddPlant,
-          buttonSubmitRequest, editTextEmail, imageViewHeader, spinnerPlants);
+          buttonSubmitRequest, editTextPot, imageViewHeader, spinnerPlants);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -34,16 +34,20 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final TextView nameText;
 
   @NonNull
+  public final TextView plantNumberTextView;
+
+  @NonNull
   public final ImageView profileImage;
 
   private ActivityProfileBinding(@NonNull LinearLayout rootView, @NonNull Button editProfileButton,
       @NonNull TextView emailText, @NonNull Button logoutButton, @NonNull TextView nameText,
-      @NonNull ImageView profileImage) {
+      @NonNull TextView plantNumberTextView, @NonNull ImageView profileImage) {
     this.rootView = rootView;
     this.editProfileButton = editProfileButton;
     this.emailText = emailText;
     this.logoutButton = logoutButton;
     this.nameText = nameText;
+    this.plantNumberTextView = plantNumberTextView;
     this.profileImage = profileImage;
   }
 
@@ -98,6 +102,12 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.plant_number_text_view;
+      TextView plantNumberTextView = ViewBindings.findChildViewById(rootView, id);
+      if (plantNumberTextView == null) {
+        break missingId;
+      }
+
       id = R.id.profile_image;
       ImageView profileImage = ViewBindings.findChildViewById(rootView, id);
       if (profileImage == null) {
@@ -105,7 +115,7 @@ public final class ActivityProfileBinding implements ViewBinding {
       }
 
       return new ActivityProfileBinding((LinearLayout) rootView, editProfileButton, emailText,
-          logoutButton, nameText, profileImage);
+          logoutButton, nameText, plantNumberTextView, profileImage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

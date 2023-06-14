@@ -1,3 +1,4 @@
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
 import android.net.Uri
@@ -10,28 +11,43 @@ import com.michael.potcastplant.R
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.Bitmap
 import android.os.Environment
+/*<<<<<<< HEAD
+=======
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.firestore.FirebaseFirestore
+>>>>>>> 4b59306ab6be328a30f20e26edbb00e98451c327
 import com.michael.potcastplant.FeedsPostClass
+
+ */
 import java.io.File
 import java.io.FileOutputStream
-
+import com.michael.potcastplant.databinding.ActivityAddPostBinding
 
 class AddPostActivity : AppCompatActivity() {
 
     private lateinit var etDescription: EditText
     private lateinit var imageView: ImageView
     private val PICK_IMAGE_REQUEST = 1
+    private lateinit var binding: ActivityAddPostBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_post)
+        binding = ActivityAddPostBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         // Find views by their IDs
+/*<<<<<<< HEAD
         val btnUploadImage: Button = findViewById(R.id.btnUploadImage)
         val btnUpload: Button = findViewById(R.id.btnUpload)
         etDescription = findViewById(R.id.etDescription)
-
+        //imageView = findViewById(R.id.image_view_pla)
+=======
+        etDescription = binding.etDescription
+        imageView = binding.imageView
+>>>>>>> 4b59306ab6be328a30f20e26edbb00e98451c327
+ */
         // Set click listener for upload img button
-        btnUploadImage.setOnClickListener {
+        binding.btnUploadImage.setOnClickListener {
             // Launch the image picker
             val intent = Intent(Intent.ACTION_PICK)
             intent.type = "image/*"
@@ -39,7 +55,7 @@ class AddPostActivity : AppCompatActivity() {
         }
 
         // Set click listener for upload button
-        btnUpload.setOnClickListener {
+        binding.btnUpload.setOnClickListener {
             val description = etDescription.text.toString()
             val imageUri = getImageUri()
 
@@ -76,16 +92,17 @@ class AddPostActivity : AppCompatActivity() {
     }
 
     private fun uploadPostToDatabase(imageUri: Uri, description: String) {
-        // TODO: Implement your database upload logic here
+        // TODO: Implement database upload logic here
         // Use imageUri and description to upload the post to a database
 
+//<<<<<<< HEAD
         // Example code for uploading to Firebase Realtime Database
-        /*  val database = FirebaseDatabase.getInstance()
-        val postsRef = database.getReference("posts")
+       // val database = FirebaseData.getInstance()
+       // val postsRef = database.getReference("posts")
 
-        val post = FeedsPostClass(imageUri.toString(), description)
-        val postKey = postsRef.push().key
-        if (postKey != null) {
+        // val post = FeedsPostClass(imageUri.toString(), description)
+        //val postKey = postsRef.push().key
+        /* if (postKey != null) {
             postsRef.child(postKey).setValue(post)
                 .addOnSuccessListener {
                     // Post uploaded successfully
@@ -102,22 +119,55 @@ class AddPostActivity : AppCompatActivity() {
         }
     }
 
-    private fun FeedsPostClass(username: String, profilePic: String): FeedsPostClass {
+         */
+
+        /*private fun FeedsPostClass(username: String, profilePic: String): FeedsPostClass {
 
     }
 
-    private fun showToast(message: String) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
-    }
-*/
-    }
+     */
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-
-        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null) {
-            val imageUri = data.data
-            imageView.setImageURI(imageUri)
+        /*private fun showToast(message: String) {
+            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
         }
+
+        override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+            super.onActivityResult(requestCode, resultCode, data)
+
+            if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null) {
+                val imageUri = data.data
+                imageView.setImageURI(imageUri)
+            }
+        }
+
+         */
+//=======
+        // Example code for uploading to Firebase Firestore Database
+        //val firestore = FirebaseFirestore.getInstance()
+        //val postsCollection = firestore.collection("posts")
+
+        val post = hashMapOf(
+            "imageUri" to imageUri.toString(),
+            "description" to description
+        )}}
+
+       /* postsCollection.add(post)
+            .addOnSuccessListener {
+                // Post uploaded successfully
+                showToast(applicationContext, "Post uploaded successfully")
+                finish()
+            }
+            .addOnFailureListener {
+                // Handle upload failure
+                showToast(applicationContext, "Post failed to upload")
+            }
+    }
+
+    private fun showToast(context: Context, message: String) {
+        Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
+>>>>>>> 4b59306ab6be328a30f20e26edbb00e98451c327
     }
 }
+
+
+        */

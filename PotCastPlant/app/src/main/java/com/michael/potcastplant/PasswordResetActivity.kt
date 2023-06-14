@@ -3,28 +3,45 @@ package com.michael.potcastplant
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
+import com.michael.potcastplant.databinding.ActivityLoginBinding
+import com.michael.potcastplant.databinding.ActivityPasswordResetBinding
+import com.michael.potcastplant.databinding.ActivityProfileBinding
 
 class PasswordResetActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+
+    private lateinit var binding: ActivityPasswordResetBinding
+    private lateinit var auth: FirebaseAuth
+    private lateinit var firestore: FirebaseFirestore
+
+    fun onCreateView(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_password_reset)
-    }
+        binding = ActivityPasswordResetBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-    /*try {
-        val result = Amplify.Auth.resetPassword("email")
-        Log.i("AuthQuickstart", "Password reset OK: $result")
-    }
-    catch (error: AuthException) {
-        Log.e("AuthQuickstart", "Password reset failed", error)
-    }
+        auth = FirebaseAuth.getInstance()
+        firestore = FirebaseFirestore.getInstance()
+        val email = binding.editTextEmail.text.toString()
+        Log.d("email", email)
 
-    try {
-        Amplify.Auth.confirmResetPassword("email", "NewPassword123", "code you received")
-        Log.i("AuthQuickstart", "New password confirmed")
+        fun setOnClickListeners() {
+            binding.buttonLogin.setOnClickListener {
+                auth!!.sendPasswordResetEmail(email).addOnCompleteListener {
+                    Toast.makeText(this, "Done sent", Toast.LENGTH_LONG).show();
+                }
+                    .addOnFailureListener { exception ->
+                        Toast.makeText(
+                            this@PasswordResetActivity,
+                            "Error Occurred",
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
+            }
+        }
     }
-    catch (error: AuthException) {
-        Log.e("AuthQuickstart", "Failed to confirm password reset", error)
-    }
-
-    */
 }
