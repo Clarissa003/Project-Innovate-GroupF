@@ -53,6 +53,7 @@ id edit_text_email
 id edit_text_firstName
 id edit_text_lastName
 id edit_text_password
+id edit_text_pot
 id email_text
 id etDescription
 id etEmail
@@ -80,6 +81,7 @@ id navigation_myplant
 id navigation_notification
 id navigation_profile
 id plant_image
+id plant_number_text_view
 id profile_image
 id recycler_view_feed
 id recycler_view_plants

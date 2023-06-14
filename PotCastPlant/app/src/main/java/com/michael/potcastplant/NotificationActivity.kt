@@ -12,6 +12,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.michael.potcastplant.databinding.ActivityNotificationBinding
@@ -24,10 +25,10 @@ class NotificationActivity : Fragment() {
     private lateinit var notificationChannel: NotificationChannel
     private lateinit var builder: Notification.Builder
     private val channelId = "i.apps.notifications"
-    private val description = "Test notification"
+    private val description = "Test notification"}
 
     @RequiresApi(Build.VERSION_CODES.O)
-    override fun onCreateView(
+    fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -73,4 +74,3 @@ class NotificationActivity : Fragment() {
 
         return binding.root
     }
-}

@@ -1,18 +1,27 @@
 package com.michael.potcastplant
 
+import android.R
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.ArrayAdapter
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.michael.potcastplant.databinding.ActivityAddPlantsBinding
 
 class AddPlantsActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityAddPlantsBinding
+    private lateinit var binding: ActivityAddPlantsBinding
     private lateinit var auth: FirebaseAuth
-    private lateinit var firestore : FirebaseFirestore
+    private lateinit var firestore: FirebaseFirestore
+    private val sharedPreferences: SharedPreferences by lazy { getSharedPreferences("myPref", Context.MODE_PRIVATE) }
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAddPlantsBinding.inflate(layoutInflater)
@@ -21,70 +30,42 @@ class AddPlantsActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
 
-      /* var plants = arrayOf(
-            Plant(1, "Bay Leaves", "A very nice Bay Leave",10, 10, 10, 10, 10, 10, ""),
-            Plant(2, "Rose Flower", "A very nice Rose Flower",10, 10, 10, 10, 10, 10, ""),
-            Plant(3, "Mahogany", "A very nice Mahogany",10, 10, 10, 10, 10, 10, ""),
-            Plant(4, "Normal Flower", "A very nice Normal Flower",10, 10, 10, 10, 10, 10, ""),
-        ) */
+        binding.buttonAddPlant.setOnClickListener {
 
+        }
 
-        var plants = mutableListOf<Plant>()
+        val plants = mutableListOf<Plant>()
 
-        //Retrieve all plants from the database
+        // Retrieve all plants from the database
         firestore.collection("plants")
             .get()
             .addOnSuccessListener { result ->
                 for (document in result) {
                     val allPlants = Plant(
-                        document.data["id"] as Long,
-                        document.data["name"] as String,
-                        document.data["description"] as String,
-                        document.data["humidityMax"] as Long,
-                        document.data["humidityMin"] as Long,
-                        document.data["sunlightMax"] as Long,
-                        document.data["sunlightMin"] as Long,
-                        document.data["moistureMax"] as Long,
-                        document.data["moistureMin"] as Long,
-                        document.data["image_url"] as String
+                        document.getLong("id") ?: 0,
+                        document.getString("name") ?: "",
+                        document.getString("description") ?: "",
+                        document.getLong("humidityMax") ?: 0,
+                        document.getLong("humidityMin") ?: 0,
+                        document.getLong("sunlightMax") ?: 0,
+                        document.getLong("sunlightMin") ?: 0,
+                        document.getLong("moistureMax") ?: 0,
+                        document.getLong("moistureMin") ?: 0,
+                        document.getString("image_url") ?: ""
                     )
                     plants.add(allPlants)
-
-                 /*   //process data
-                    plantData.get("id").toString()
-                    val plantName = plantData ["name"] as Plant
-                    val plantDescription = plantData ["description"] as String
-                    val plantHumidityMax = plantData ["humidityMax"] as Int
-                    val plantHumidityMin = plantData ["humidityMin"] as Int
-                    val plantSunlightMax = plantData ["sunlightMax"] as Int
-                    val plantSunlightMin = plantData ["sunlightMin"] as Int
-                    val plantMoistureMax = plantData ["moistureMax"] as Int
-                    val plantMoistureMin = plantData ["moistureMin"] as Int
-                    val imageUrl = plantData ["imageUrl"] as String */
-
-
                 }
+
+                val adapter = ArrayAdapter(
+                    this,
+                    R.layout.simple_spinner_dropdown_item,
+                    plants.map { it.plant_name }
+                )
+                binding.spinnerPlants.adapter = adapter
             }
             .addOnFailureListener { e: Exception ->
-                println ("Error retrieving plants: ${e.message}")
+                println("Error retrieving plants: ${e.message}")
             }
-
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, plants.map { it.plant_name })
-        binding.spinnerPlants.adapter = adapter
-
-
-        binding.buttonAddPlant.setOnClickListener {
-            val potId = binding.editTextEmail.text.toString()
-            val selectedPlant : Plant= binding.spinnerPlants.selectedItem as Plant
-
-            // TODO: Handle adding the plant with potId and selectedPlant
-
-            //Add plant to database
-
-            addPlantToDb(potId, selectedPlant)
-            println("Pot ID: $potId, Selected Plant: $selectedPlant")
-        }
-
 
         binding.buttonSubmitRequest.setOnClickListener {
             val intent = Intent(Intent.ACTION_SENDTO)
@@ -92,10 +73,22 @@ class AddPlantsActivity : AppCompatActivity() {
             intent.putExtra(Intent.EXTRA_SUBJECT, "Adding Plants")
             startActivity(intent)
         }
+
+        binding.buttonAddPlant.setOnClickListener {
+            val potId = binding.editTextPot.text.toString()
+            val selectedPlant = binding.spinnerPlants.selectedItem as? Plant
+
+            if (selectedPlant != null) {
+                updatePlantInDb(potId, selectedPlant)
+                println("Pot ID: $potId, Selected Plant: $selectedPlant")
+            } else {
+                println("Error: Invalid selected plant.")
+            }
+        }
     }
 
-    private fun addPlantToDb(potId: String, selectedPlant: Plant) {
-        //operation to add plants to database
+   /* private fun addPlantToDb(potId: String, selectedPlant: Plant) {
+        // Operation to add plants to the database
         val plantData = hashMapOf(
             "potId" to potId,
             "name" to selectedPlant.plant_name,
@@ -117,7 +110,44 @@ class AddPlantsActivity : AppCompatActivity() {
             .addOnFailureListener { e: Exception ->
                 println("Error adding plant to the database: ${e.message}")
             }
+
         println("Adding Plant to Database - Pot ID: $potId, Selected Plant: $selectedPlant")
+    }
+*/
+    private fun updatePlantInDb(potId: String, selectedPlant: Plant) {
+       // val uid = auth.currentUser?.uid ?: ""
+        val uid = sharedPreferences.getString("uid", null) ?: ""
+        val document = firestore.collection("users").document(uid)
+        val plantId = selectedPlant.plant_id
+
+       Log.d("plantId", plantId.toString())
+       Log.d("potId", potId.toString())
+        val updates = hashMapOf<String, Any>(
+            "potId" to potId
+        )
+
+        document.update(updates)
+            .addOnSuccessListener {
+                println("Name updated successfully in the database.")
+            }
+            .addOnFailureListener { e: Exception ->
+                println("Error updating name in the database: ${e.message}")
+            }
+
+        val documentPot = firestore.collection("pots").document(potId)
+
+        val updatePot = hashMapOf<String, Any>(
+            "plantId" to plantId
+        )
+
+        documentPot.update(updatePot)
+            .addOnSuccessListener {
+                Toast.makeText(this, "pot updated successfully", Toast.LENGTH_SHORT).show()
+            }
+            .addOnFailureListener { e: Exception ->
+                Toast.makeText(this, "pot failed to update", Toast.LENGTH_SHORT).show()
+            }
+
 
     }
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Wed Jun 14 11:47:20 CEST 2023
 base.0=C\:\\Users\\catea\\Desktop\\Project 4\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\catea\\Desktop\\Project 4\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
@@ -5,6 +6,15 @@ base.2=C\:\\Users\\catea\\Desktop\\Project 4\\Project-Innovate-GroupF\\PotCastPl
 base.3=C\:\\Users\\catea\\Desktop\\Project 4\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
 base.4=C\:\\Users\\catea\\Desktop\\Project 4\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 base.5=C\:\\Users\\catea\\Desktop\\Project 4\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+=======
+#Wed Jun 14 11:44:52 CEST 2023
+base.0=C\:\\Users\\clari\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\clari\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\clari\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.3=C\:\\Users\\clari\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.4=C\:\\Users\\clari\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.5=C\:\\Users\\clari\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+>>>>>>> 4b59306ab6be328a30f20e26edbb00e98451c327
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=3/classes.dex

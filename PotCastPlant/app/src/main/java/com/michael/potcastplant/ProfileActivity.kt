@@ -37,9 +37,20 @@ class ProfileActivity : Fragment() {
         var sharedPreferences: SharedPreferences = requireContext().getSharedPreferences("MyPref",Context.MODE_PRIVATE)
         val uid = sharedPreferences.getString("uid", null) ?: ""
 
-        val name = binding.nameText.text.toString()
-        val profilePic = binding.profileImage
-        val email = binding.emailText.text.toString()
+        val document = firestore.collection("users").document(uid)
+        document.get().addOnSuccessListener {documentSnapshot ->
+            if(documentSnapshot.exists()) {
+                val firstName = documentSnapshot.getString("firstName")
+                val lastName = documentSnapshot.getString("lastName")
+                //val email = documentSnapshot.getString("email")
+                val plantNr = documentSnapshot.getLong("potId")
+
+                binding.nameText.setText(firstName.toString())
+                binding.nameText.setText(lastName.toString())
+                binding.plantNumberTextView.setText(plantNr.toString())
+                binding.profileImage
+                // val email = binding.emailText.text.toString()
+            }
 
         binding.editProfileButton.setOnClickListener {
             // Edit profile button click
