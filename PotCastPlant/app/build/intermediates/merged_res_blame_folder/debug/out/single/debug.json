@@ -20,12 +20,17 @@
         "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\xml\\backup_rules.xml"
     },
     {
+<<<<<<< HEAD
+        "merged": "C:\\Users\\clari\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\clari\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+=======
         "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_ic_home_black_24dp.xml.flat",
         "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\ic_home_black_24dp.xml"
     },
     {
         "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-mdpi_potcast_logo.png.flat",
         "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-mdpi\\potcast_logo.png"
+>>>>>>> 9de9e977513bab7e6e1945303874a9bb286b11b5
     },
     {
         "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_gradient_green.xml.flat",
@@ -220,8 +225,17 @@
         "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_edit_profile.xml"
     },
     {
+<<<<<<< HEAD
+        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_add_post.xml.flat",
+        "source": "com.michael.potcastplant.app-main-50:/layout/activity_add_post.xml"
+    },
+    {
+        "merged": "C:\\Users\\clari\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_splash_screen.xml.flat",
+        "source": "C:\\Users\\clari\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_splash_screen.xml"
+=======
         "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+>>>>>>> 9de9e977513bab7e6e1945303874a9bb286b11b5
     },
     {
         "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_grass_24.xml.flat",

@@ -17,9 +17,15 @@ class PasswordResetActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPasswordResetBinding
     private lateinit var auth: FirebaseAuth
+<<<<<<< HEAD
+    private lateinit var firestore: FirebaseFirestore}
+/*
+   override fun onCreate(savedInstanceState: Bundle?) {
+=======
     private lateinit var firestore: FirebaseFirestore
 
     fun onCreateView(savedInstanceState: Bundle?) {
+>>>>>>> 9de9e977513bab7e6e1945303874a9bb286b11b5
         super.onCreate(savedInstanceState)
         binding = ActivityPasswordResetBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -45,3 +51,4 @@ class PasswordResetActivity : AppCompatActivity() {
         }
     }
 }
+*/
