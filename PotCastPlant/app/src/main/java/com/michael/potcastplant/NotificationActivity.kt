@@ -19,8 +19,8 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.michael.potcastplant.databinding.ActivityNotificationBinding
 
-class NotificationActivity : Fragment() {
-
+class NotificationActivity : Fragment() {}
+/*
     private lateinit var binding: ActivityNotificationBinding
     private lateinit var notificationManager: NotificationManager
     private lateinit var notificationChannel: NotificationChannel
@@ -75,4 +75,9 @@ class NotificationActivity : Fragment() {
 
         return binding.root
     }
+<<<<<<< HEAD
 }
+*/
+=======
+}
+>>>>>>> 9de9e977513bab7e6e1945303874a9bb286b11b5
