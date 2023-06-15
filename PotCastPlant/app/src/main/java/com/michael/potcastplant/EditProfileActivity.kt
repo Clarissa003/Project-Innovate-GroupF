@@ -113,6 +113,9 @@ class EditProfileActivity : AppCompatActivity() {
                                 .show()
                             binding.buttonConfirm.isEnabled = false
                             binding.imageViewPreview.visibility = android.view.View.GONE
+
+                            val intent = Intent(this, NavigationHostActivity::class.java)
+                            startActivity(intent)
                         }
                         .addOnFailureListener { e ->
                             Toast

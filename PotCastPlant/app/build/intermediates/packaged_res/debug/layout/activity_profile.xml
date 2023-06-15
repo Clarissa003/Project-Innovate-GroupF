@@ -2,6 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -20,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Michael Naga"
+        tools:text="Michael Naga"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -31,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="michael@nhlstenden.com"
+        tools:text="michael@nhlstenden.com"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:layout_gravity="center_horizontal" />
@@ -81,7 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="33dp"
                 android:layout_marginTop="15dp"
-                android:text="3"
+                tools:text="3"
                 android:textAlignment="center"
                 android:textColor="#044304"
                 android:textSize="15sp"
