@@ -5,9 +5,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -39,37 +36,43 @@ class FeedActivity : Fragment() {
 
         binding.recyclerViewFeed.layoutManager = LinearLayoutManager(requireContext())
 
-        val posts = arrayOf(
+     /*   val posts = arrayOf(
             FeedsPostClass("Michael", R.drawable.baseline_person_24, R.drawable.plants, "This is a very nice flower, I would love to have some soon", "1 day ago"),
             FeedsPostClass("Naga", R.drawable.baseline_person_24, R.drawable.ic_launcher_background, "Nothing to post here... haha, you wish", "3 days ago"),
             FeedsPostClass("Michael", R.drawable.baseline_person_24, R.drawable.potcast_logo, "Bla bla bla, our logo", "4 min ago")
-        )
+        )*/
 
         // Retrieve all posts from the database
-     /*   firestore.collection("posts")
+        firestore.collection("posts")
             .get()
             .addOnSuccessListener { result ->
+                val posts = mutableListOf<FeedsPostClass>()
+
                 for (document in result) {
-                    val allPlants = Plant(
+                    val imageUrl = document.getString("imageUrl") ?: ""
+                    val description = document.getString("description") ?: ""
+                    val timestamp = document.getString("timestamp") ?: ""
+                    val uid = document.getString("uid") ?: ""
 
 
-                    )
-                    posts.add(allPosts)
+                    firestore
+
+
+
+                    val post = FeedsPostClass(postImage, description, timestamp, uid)
+                    posts.add(post)
                 }
 
-                val adapter = ArrayAdapter(
-                    this,
-                    android.R.layout.simple_spinner_dropdown_item,
-                    plants.map { it.plant_name }
-                )
-                binding.spinnerPlants.adapter = adapter
+                val adapter = FeedsAdapter(posts)
+                binding.recyclerViewFeed.adapter = adapter
             }
             .addOnFailureListener { e: Exception ->
-                println("Error retrieving plants: ${e.message}")
+                println("Error retrieving posts: ${e.message}")
             }
-        */
-        val adapter = FeedsAdapter(posts)
-        binding.recyclerViewFeed.adapter = adapter
+
+
+        
+
 
         binding.floatingButtonAddPost.setOnClickListener {
             val intent = Intent(this.requireContext(), AddPostActivity::class.java)
@@ -77,7 +80,7 @@ class FeedActivity : Fragment() {
         }
     }
 
-    private inner class FeedsAdapter(private val posts: Array<FeedsPostClass>) :
+    private inner class FeedsAdapter(private val posts: MutableList<FeedsPostClass>) :
         RecyclerView.Adapter<FeedsAdapter.ViewHolder>() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

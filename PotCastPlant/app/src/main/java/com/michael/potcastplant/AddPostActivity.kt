@@ -14,6 +14,7 @@ import android.widget.Toast
 import com.google.firebase.firestore.FirebaseFirestore
 import com.michael.potcastplant.databinding.ActivityAddPostBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.michael.potcastplant.EditProfileActivity
 import java.io.ByteArrayOutputStream
@@ -50,6 +51,7 @@ class AddPostActivity : AppCompatActivity() {
         val uid = sharedPreferences.getString("uid", null) ?: ""
         auth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
+        storageRef = FirebaseStorage.getInstance().reference
 
         // Find views by their IDs
         etDescription = binding.etDescription
@@ -122,14 +124,16 @@ class AddPostActivity : AppCompatActivity() {
                 val timestamp = "today"
 
                 // Set the image URL under the user's document in Firestore
-                val userRef = firestore.collection("posts").document()
+                val userRef = firestore.collection("posts")
+                val uid = sharedPreferences.getString("uid", null) ?: ""
 
                 val post = hashMapOf<String, Any>(
                     "description" to description,
                     "timestamp" to timestamp,
-                    "imageUrl" to imageUrl
+                    "imageUrl" to imageUrl,
+                    "uid" to uid
                 )
-                userRef.update(post)
+                userRef.add(post)
                     .addOnSuccessListener {
                         Toast
                             .makeText(this, "Post Uploaded Successfully", Toast.LENGTH_SHORT)
@@ -142,7 +146,7 @@ class AddPostActivity : AppCompatActivity() {
                     }
             } else {
                 Toast
-                    .makeText(this, "FAILED to Upload", Toast.LENGTH_SHORT)
+                    .makeText(this, "FAILED..... to Upload", Toast.LENGTH_SHORT)
                     .show()
             }
         }
