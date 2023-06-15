@@ -3562,6 +3562,7 @@ id peekHeight
 id percent
 id pin
 id plant_image
+id plant_number_text_view
 id pooling_container_listener_holder_tag
 id position
 id postLayout
@@ -3993,6 +3994,7 @@ menu bottom_nav
 menu menu_dashboard
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap potcast_logo
 plurals mtrl_badge_content_description
 raw firebase_common_keep
 string abc_action_bar_home_description

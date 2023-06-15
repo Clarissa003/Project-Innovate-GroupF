@@ -81,6 +81,7 @@ id navigation_myplant
 id navigation_notification
 id navigation_profile
 id plant_image
+id plant_number_text_view
 id profile_image
 id recycler_view_feed
 id recycler_view_plants
@@ -129,6 +130,7 @@ menu bottom_nav
 menu menu_dashboard
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap potcast_logo
 string app_name
 string default_web_client_id
 string feeds

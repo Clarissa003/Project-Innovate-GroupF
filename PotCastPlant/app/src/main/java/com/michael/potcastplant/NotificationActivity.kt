@@ -26,7 +26,7 @@ class NotificationActivity : Fragment() {}
     private lateinit var notificationChannel: NotificationChannel
     private lateinit var builder: Notification.Builder
     private val channelId = "i.apps.notifications"
-    private val description = "Test notification"}
+    private val description = "Test notification"
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreateView(
@@ -48,7 +48,8 @@ class NotificationActivity : Fragment() {}
         binding.rvNotification.adapter = adapterNotification
 
         // How to tell the user that something has happened in the background.
-       // notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        val notificationManager =
+            requireContext().getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             notificationChannel = NotificationChannel(channelId, description, NotificationManager.IMPORTANCE_HIGH)
@@ -57,18 +58,26 @@ class NotificationActivity : Fragment() {}
             notificationChannel.enableVibration(false)
             notificationManager.createNotificationChannel(notificationChannel)
 
-            builder = Notification.Builder(this, channelId)
+            builder = Notification.Builder(this.context, channelId)
                 .setSmallIcon(R.drawable.ic_launcher_background)
                 .setLargeIcon(BitmapFactory.decodeResource(this.resources, R.drawable.ic_launcher_background))
+                .setContentTitle("Hello")
+                .setContentText("Your plants need attention")
         }
         else {
-            builder = Notification.Builder(this)
+            builder = Notification.Builder(this.context)
                 .setSmallIcon(R.drawable.ic_launcher_background)
                 .setLargeIcon(BitmapFactory.decodeResource(this.resources, R.drawable.ic_launcher_background))
+                .setContentTitle("Hello")
+                .setContentText("Your plants need attention")
         }
         notificationManager.notify(1234, builder.build())
 
         return binding.root
     }
+<<<<<<< HEAD
 }
 */
+=======
+}
+>>>>>>> 9de9e977513bab7e6e1945303874a9bb286b11b5
