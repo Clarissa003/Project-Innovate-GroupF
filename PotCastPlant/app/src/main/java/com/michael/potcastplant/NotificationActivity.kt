@@ -5,6 +5,7 @@ import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.os.Build
@@ -17,6 +18,8 @@ import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.michael.potcastplant.databinding.ActivityNotificationBinding
 
 class NotificationActivity : Fragment() {
@@ -27,6 +30,11 @@ class NotificationActivity : Fragment() {
     private lateinit var builder: Notification.Builder
     private val channelId = "i.apps.notifications"
     private val description = "Test notification"
+    private lateinit var auth: FirebaseAuth
+    private lateinit var firestore: FirebaseFirestore
+    private val sharedPreferences: SharedPreferences by lazy { requireContext().getSharedPreferences("myPref", Context.MODE_PRIVATE) }
+    //private var waterLevel = Long
+    //private var moisture = Long
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreateView(
@@ -39,40 +47,129 @@ class NotificationActivity : Fragment() {
         binding.rvNotification.layoutManager = LinearLayoutManager(requireContext())
 
         val notifications = arrayOf(
-            NotificationClass("Bay Leaves", "The water level in the reservoir is low, fill it up.", "30.05.2023"),
-            NotificationClass("Rose Flowers", "Your plants needs more sunlight, the average sunlight level is low, you might want to place your plant in a position to receive more sunlight", "28.05.2023"),
-            NotificationClass("Mahogany", "Your plant moisture level is low, please water your plant or turn on automatic watering feature for your plant", "25.05.2023"),
+            NotificationClass(
+                "Bay Leaves",
+                "The water level in the reservoir is low, fill it up.",
+                "30.05.2023"
+            ),
+            NotificationClass(
+                "Rose Flowers",
+                "Your plants needs more sunlight, the average sunlight level is low, you might want to place your plant in a position to receive more sunlight",
+                "28.05.2023"
+            ),
+            NotificationClass(
+                "Mahogany",
+                "Your plant moisture level is low, please water your plant or turn on automatic watering feature for your plant",
+                "25.05.2023"
+            ),
         )
 
-        val adapterNotification = NotificationAdapter(notifications)
-        binding.rvNotification.adapter = adapterNotification
+        auth = FirebaseAuth.getInstance()
+        firestore = FirebaseFirestore.getInstance()
 
-        // How to tell the user that something has happened in the background.
-        val notificationManager =
-            requireContext().getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        val pid = sharedPreferences.getString("pid", null) ?: ""
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            notificationChannel = NotificationChannel(channelId, description, NotificationManager.IMPORTANCE_HIGH)
-            notificationChannel.enableLights(true)
-            notificationChannel.lightColor = Color.GREEN
-            notificationChannel.enableVibration(false)
-            notificationManager.createNotificationChannel(notificationChannel)
+        /*
+        val document = firestore.collection("pots").document(pid)
+        document.get().addOnSuccessListener { documentSnapshot ->
+            if (documentSnapshot.exists()) {
+                document.get().addOnSuccessListener { documentSnapshot ->
+                    if (documentSnapshot.exists()) {
+                        waterLevel = documentSnapshot.getLong("waterlevel")
+                        moisture = documentSnapshot.getLong("moisture")
 
-            builder = Notification.Builder(this.context, channelId)
-                .setSmallIcon(R.drawable.ic_launcher_background)
-                .setLargeIcon(BitmapFactory.decodeResource(this.resources, R.drawable.ic_launcher_background))
-                .setContentTitle("Hello")
-                .setContentText("Your plants need attention")
+
+                    }
+         */
+                    val adapterNotification = NotificationAdapter(notifications)
+                    binding.rvNotification.adapter = adapterNotification
+
+                    // How to tell the user that something has happened in the background.
+                    val notificationManager =
+                        requireContext().getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+
+                    /*if (/*waterLevel <= 20*/) {
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                            notificationChannel = NotificationChannel(
+                                channelId,
+                                description,
+                                NotificationManager.IMPORTANCE_HIGH
+                            )
+                            notificationChannel.enableLights(true)
+                            notificationChannel.lightColor = Color.GREEN
+                            notificationChannel.enableVibration(false)
+                            notificationManager.createNotificationChannel(notificationChannel)
+
+                            builder = Notification.Builder(this.context, channelId)
+                                .setSmallIcon(R.drawable.ic_launcher_background)
+                                .setLargeIcon(
+                                    BitmapFactory.decodeResource(
+                                        this.resources,
+                                        R.drawable.ic_launcher_background
+                                    )
+                                )
+                                .setContentTitle("Critical water level")
+                                .setContentText("Your water tank is empty, please fill it up")
+                        } else {
+                            builder = Notification.Builder(this.context)
+                                .setSmallIcon(R.drawable.ic_launcher_background)
+                                .setLargeIcon(
+                                    BitmapFactory.decodeResource(
+                                        this.resources,
+                                        R.drawable.ic_launcher_background
+                                    )
+                                )
+                                .setContentTitle("Critical water level")
+                                .setContentText("Your water tank is empty, please fill it up")
+                        }
+                        notificationManager.notify(1234, builder.build())
+                    }
+
+                    if (/*moisture <= 10*/) {
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                            notificationChannel = NotificationChannel(
+                                channelId,
+                                description,
+                                NotificationManager.IMPORTANCE_HIGH
+                            )
+                            notificationChannel.enableLights(true)
+                            notificationChannel.lightColor = Color.GREEN
+                            notificationChannel.enableVibration(false)
+                            notificationManager.createNotificationChannel(notificationChannel)
+
+                            builder = Notification.Builder(this.context, channelId)
+                                .setSmallIcon(R.drawable.ic_launcher_background)
+                                .setLargeIcon(
+                                    BitmapFactory.decodeResource(
+                                        this.resources,
+                                        R.drawable.ic_launcher_background
+                                    )
+                                )
+                                .setContentTitle("Critical moisture level")
+                                .setContentText("Your plant is thirsty, please go water it")
+                        } else {
+                            builder = Notification.Builder(this.context)
+                                .setSmallIcon(R.drawable.ic_launcher_background)
+                                .setLargeIcon(
+                                    BitmapFactory.decodeResource(
+                                        this.resources,
+                                        R.drawable.ic_launcher_background
+                                    )
+                                )
+                                .setContentTitle("Critical moisture level")
+                                .setContentText("Your plant is thirsty, please go water it")
+                        }
+                        notificationManager.notify(1234, builder.build())
+                    }
+
+                     */
+        return binding.root
+                }
+            }
+/*
         }
-        else {
-            builder = Notification.Builder(this.context)
-                .setSmallIcon(R.drawable.ic_launcher_background)
-                .setLargeIcon(BitmapFactory.decodeResource(this.resources, R.drawable.ic_launcher_background))
-                .setContentTitle("Hello")
-                .setContentText("Your plants need attention")
-        }
-        notificationManager.notify(1234, builder.build())
-
         return binding.root
     }
 }
+
+ */
