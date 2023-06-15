@@ -1,262 +1,266 @@
 [
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable-nodpi_plants.png.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable-nodpi/plants.png"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_navigation_host.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_navigation_host.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_baseline_grass_24.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/baseline_grass_24.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_wb_sunny_24.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\baseline_wb_sunny_24.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_baseline_person_24.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/baseline_person_24.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_add_post.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_add_post.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_gradient_green.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/gradient_green.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_splash_screen.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_splash_screen.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\ic_home_black_24dp.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_baseline_wb_sunny_24.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/baseline_wb_sunny_24.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-mdpi_potcast_logo.png.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-mdpi\\potcast_logo.png"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable-nodpi_potcast_logo.png.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable-nodpi/potcast_logo.png"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_gradient_green.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\gradient_green.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_baseline_water_24.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/baseline_water_24.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_splash_screen.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_splash_screen.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_add_plants.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_add_plants.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_gradient_orange.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\gradient_orange.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_background_circle.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/background_circle.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_plant_information.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_plant_information.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_item_plants_dashboard.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/item_plants_dashboard.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable-xxxhdpi_top_background.png.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable-xxxhdpi\\top_background.png"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-xxhdpi_potcast_logo.png.flat",
-        "source": "com.michael.potcastplant.app-main-50:/mipmap-xxhdpi/potcast_logo.png"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\ic_dashboard_black_24dp.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.michael.potcastplant.app-main-50:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_plants_dashboard.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_plants_dashboard.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_password_reset.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_password_reset.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_baseline_air_24.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/baseline_air_24.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_baseline_notifications_24.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/baseline_notifications_24.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_profile.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_baseline_local_florist_24.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/baseline_local_florist_24.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\ic_notifications_black_24dp.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_item_feeds.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/item_feeds.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_severe_cold_24.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\baseline_severe_cold_24.xml"
     },
     {
         "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_profile.xml.flat",
         "source": "com.michael.potcastplant.app-main-50:/layout/activity_profile.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_gradient_lightblue.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/gradient_lightblue.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_feed_24.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\baseline_feed_24.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_plants_dashboard.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_plants_dashboard.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_edit_profile.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_edit_profile.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_gradient_purple.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\gradient_purple.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_gradient_purple.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/gradient_purple.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_login.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.michael.potcastplant.app-main-50:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-xxxhdpi_potcast_logo.png.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-xxxhdpi\\potcast_logo.png"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.michael.potcastplant.app-main-50:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-xhdpi_potcast_logo.png.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-xhdpi\\potcast_logo.png"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_feed.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_feed.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_notification.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_notification.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.michael.potcastplant.app-main-50:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_background_plants_dashboard.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\background_plants_dashboard.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.michael.potcastplant.app-main-50:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\menu_menu_dashboard.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\menu\\menu_dashboard.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/menu_bottom_nav.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/menu/bottom_nav.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable-nodpi_logo.png.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable-nodpi\\logo.png"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_gradient_blue.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\gradient_blue.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_notification.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_notification.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_add_plants.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_add_plants.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_baseline_severe_cold_24.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/baseline_severe_cold_24.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_add_24.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\baseline_add_24.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_item_notification.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\item_notification.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/menu_menu_dashboard.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/menu/menu_dashboard.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_arrow_forward_24.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\baseline_arrow_forward_24.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable-nodpi_logo.png.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable-nodpi/logo.png"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_password_reset.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_password_reset.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable-xhdpi_top_background.png.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable-xhdpi/top_background.png"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_water_24.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\baseline_water_24.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-mdpi_potcast_logo.png.flat",
-        "source": "com.michael.potcastplant.app-main-50:/mipmap-mdpi/potcast_logo.png"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.michael.potcastplant.app-main-50:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_gradient_orange.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/gradient_orange.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_gradient_lightblue.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\gradient_lightblue.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.michael.potcastplant.app-main-50:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_registration.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_registration.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_ic_notifications_black_24dp.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/ic_notifications_black_24dp.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_background_circle.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\background_circle.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/xml_backup_rules.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable-nodpi_potcast_logo.png.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable-nodpi\\potcast_logo.png"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-xxxhdpi_potcast_logo.png.flat",
-        "source": "com.michael.potcastplant.app-main-50:/mipmap-xxxhdpi/potcast_logo.png"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_air_24.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\baseline_air_24.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_ic_home_black_24dp.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/ic_home_black_24dp.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_item_plants_dashboard.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\item_plants_dashboard.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_registration.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_registration.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-hdpi_potcast_logo.png.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-hdpi\\potcast_logo.png"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_plant_information.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_plant_information.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable-nodpi_plants.png.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable-nodpi\\plants.png"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-xhdpi_potcast_logo.png.flat",
-        "source": "com.michael.potcastplant.app-main-50:/mipmap-xhdpi/potcast_logo.png"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable-xhdpi_top_background.png.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable-xhdpi\\top_background.png"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_background_plants_dashboard.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/background_plants_dashboard.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.michael.potcastplant.app-main-50:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_navigation_host.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_navigation_host.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.michael.potcastplant.app-main-50:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-hdpi_potcast_logo.png.flat",
-        "source": "com.michael.potcastplant.app-main-50:/mipmap-hdpi/potcast_logo.png"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_add_post.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_add_post.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_edit_profile.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_edit_profile.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_gradient_blue.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/gradient_blue.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.michael.potcastplant.app-main-50:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_grass_24.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\baseline_grass_24.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_item_notification.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/item_notification.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_feed.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_feed.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_baseline_add_24.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/baseline_add_24.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_item_feeds.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\item_feeds.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_login.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_login.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_notifications_24.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\baseline_notifications_24.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/xml_data_extraction_rules.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable-xxxhdpi_top_background.png.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable-xxxhdpi/top_background.png"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-xxhdpi_potcast_logo.png.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-xxhdpi\\potcast_logo.png"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_local_florist_24.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\baseline_local_florist_24.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_baseline_arrow_forward_24.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/baseline_arrow_forward_24.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_ic_dashboard_black_24dp.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/ic_dashboard_black_24dp.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\baseline_person_24.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_baseline_feed_24.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/baseline_feed_24.xml"
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\menu_bottom_nav.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\menu\\bottom_nav.xml"
     }
 ]

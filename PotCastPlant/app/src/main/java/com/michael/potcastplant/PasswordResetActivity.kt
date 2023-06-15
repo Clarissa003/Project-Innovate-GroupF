@@ -17,7 +17,7 @@ class PasswordResetActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPasswordResetBinding
     private lateinit var auth: FirebaseAuth
-<<<<<<< HEAD
+
     private lateinit var firestore: FirebaseFirestore}
 /*
    override fun onCreate(savedInstanceState: Bundle?) {

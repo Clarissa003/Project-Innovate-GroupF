@@ -78,6 +78,3 @@ class NotificationActivity : Fragment() {}
 <<<<<<< HEAD
 }
 */
-=======
-}
->>>>>>> 9de9e977513bab7e6e1945303874a9bb286b11b5
