@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.edit
 import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.michael.potcastplant.databinding.ActivityProfileBinding
@@ -47,6 +48,7 @@ class ProfileActivity : Fragment() {
                         val lastName = documentSnapshot.getString("lastName")
                         val email = documentSnapshot.getString("email")
                         val potNumber = documentSnapshot.get("potId") as ArrayList<*>
+                        val profilePic = documentSnapshot.getString("profileUrl")
 
                         val potNumbers = potNumber.size
                         val fullName = "$firstName $lastName"
@@ -54,6 +56,9 @@ class ProfileActivity : Fragment() {
                         binding.nameText.setText(fullName)
                         binding.emailText.setText(email)
                         binding.plantNumberTextView.setText(potNumbers.toString())
+                        Glide.with(this)
+                            .load(profilePic)
+                            .into(binding.profileImage)
                     }
 
                     binding.editProfileButton.setOnClickListener {

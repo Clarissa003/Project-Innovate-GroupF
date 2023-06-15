@@ -66,6 +66,7 @@ class RegistrationActivity : AppCompatActivity() {
                         val userData = hashMapOf(
                             "firstName" to firstName,
                             "lastName" to lastName,
+                            "email" to email,
                             "profileUrl" to profileUrl,
                             "potId" to potIdArray
                         )

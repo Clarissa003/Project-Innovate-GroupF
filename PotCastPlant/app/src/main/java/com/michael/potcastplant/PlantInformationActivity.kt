@@ -99,10 +99,10 @@ class PlantInformationActivity : AppCompatActivity() {
                 val humidity = documentSnapshot.getLong("humidity")
                 val automaticWatering = documentSnapshot.getString("automaticWatering")
 
-                binding.textViewHumidity.setText(humidity.toString())
+                binding.textViewHumidity.setText(humidity.toString().plus("%"))
                 binding.textViewWaterLevel.setText(waterlevel.toString().plus("%"))
                 binding.textViewTemperature.setText(temperature.toString().plus("\u2103"))
-                binding.textViewSoilMoisture.setText(moisture.toString())
+                binding.textViewSoilMoisture.setText(moisture.toString().plus("%"))
 
                 if (automaticWatering != null) {
                     binding.switch1.isChecked = automaticWatering.toBoolean()

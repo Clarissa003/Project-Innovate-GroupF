@@ -76,5 +76,9 @@ class NotificationActivity : Fragment() {}
         return binding.root
     }
 }
+<<<<<<< HEAD
 
 
+=======
+*/
+>>>>>>> 1e8b12d39fd8a8aa84eb073ee4289b765f69f2a1

@@ -58,7 +58,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun performLogin() {
 
-        binding.buttonLogin.isEnabled = false
+
         val email = binding.editTextEmail.text.toString()
         val password = binding.editTextPassword.text.toString()
 
@@ -67,6 +67,7 @@ class LoginActivity : AppCompatActivity() {
             return
         }
 
+        binding.buttonLogin.isEnabled = false
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {

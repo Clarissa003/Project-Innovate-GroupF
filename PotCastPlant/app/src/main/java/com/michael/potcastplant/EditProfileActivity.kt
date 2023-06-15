@@ -13,6 +13,7 @@ import android.widget.Toast
 import androidx.core.content.ContentProviderCompat.requireContext
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.michael.potcastplant.databinding.ActivityEditProfileBinding
 import java.io.ByteArrayOutputStream
@@ -33,6 +34,7 @@ class EditProfileActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
+        storageRef = FirebaseStorage.getInstance().reference
 
         displayInfo()
 
@@ -145,7 +147,7 @@ class EditProfileActivity : AppCompatActivity() {
             bitmap.compress(Bitmap.CompressFormat.JPEG, 100, outputStream)
             imageBytes = outputStream.toByteArray()
 
-            binding.buttonUpload.isEnabled = true
+            binding.buttonConfirm.isEnabled = true
         }
     }
 

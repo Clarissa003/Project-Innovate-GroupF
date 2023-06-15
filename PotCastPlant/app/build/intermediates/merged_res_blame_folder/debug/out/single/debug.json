@@ -20,12 +20,21 @@
         "source": "com.michael.potcastplant.app-main-50:/drawable/gradient_green.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_splash_screen.xml.flat",
         "source": "com.michael.potcastplant.app-main-50:/layout/activity_splash_screen.xml"
     },
     {
         "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_baseline_wb_sunny_24.xml.flat",
         "source": "com.michael.potcastplant.app-main-50:/drawable/baseline_wb_sunny_24.xml"
+=======
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-mdpi_potcast_logo.png.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-mdpi\\potcast_logo.png"
+>>>>>>> 1e8b12d39fd8a8aa84eb073ee4289b765f69f2a1
     },
     {
         "merged": "com.michael.potcastplant.app-merged_res-48:/drawable-nodpi_potcast_logo.png.flat",
@@ -212,12 +221,21 @@
         "source": "com.michael.potcastplant.app-main-50:/mipmap-hdpi/potcast_logo.png"
     },
     {
+<<<<<<< HEAD
         "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_add_post.xml.flat",
         "source": "com.michael.potcastplant.app-main-50:/layout/activity_add_post.xml"
     },
     {
         "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_gradient_blue.xml.flat",
         "source": "com.michael.potcastplant.app-main-50:/drawable/gradient_blue.xml"
+=======
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_edit_profile.xml.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_edit_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+>>>>>>> 1e8b12d39fd8a8aa84eb073ee4289b765f69f2a1
     },
     {
         "merged": "com.michael.potcastplant.app-merged_res-48:/mipmap-mdpi_ic_launcher_round.webp.flat",
