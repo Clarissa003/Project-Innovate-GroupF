@@ -48,7 +48,8 @@ class NotificationActivity : Fragment() {
         binding.rvNotification.adapter = adapterNotification
 
         // How to tell the user that something has happened in the background.
-        requireContext().getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        val notificationManager =
+            requireContext().getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             notificationChannel = NotificationChannel(channelId, description, NotificationManager.IMPORTANCE_HIGH)
@@ -60,11 +61,15 @@ class NotificationActivity : Fragment() {
             builder = Notification.Builder(this.context, channelId)
                 .setSmallIcon(R.drawable.ic_launcher_background)
                 .setLargeIcon(BitmapFactory.decodeResource(this.resources, R.drawable.ic_launcher_background))
+                .setContentTitle("Hello")
+                .setContentText("Your plants need attention")
         }
         else {
             builder = Notification.Builder(this.context)
                 .setSmallIcon(R.drawable.ic_launcher_background)
                 .setLargeIcon(BitmapFactory.decodeResource(this.resources, R.drawable.ic_launcher_background))
+                .setContentTitle("Hello")
+                .setContentText("Your plants need attention")
         }
         notificationManager.notify(1234, builder.build())
 

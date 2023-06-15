@@ -79,13 +79,13 @@
             <TextView
                 android:id="@+id/plant_number_text_view"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="3"
-                android:textColor="#044304"
-                android:textStyle="bold"
-                android:textAlignment="center"
+                android:layout_height="33dp"
                 android:layout_marginTop="15dp"
-                android:textSize="15sp"/>
+                android:text="3"
+                android:textAlignment="center"
+                android:textColor="#044304"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
         </androidx.cardview.widget.CardView>
 
