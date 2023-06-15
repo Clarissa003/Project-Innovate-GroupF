@@ -36,16 +36,12 @@
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_plants_dashboard.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/spinner_item.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/spinner_item.xml"
-    },
-    {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-mergeDebugResources-47:\\layout\\activity_splash_screen.xml",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_splash_screen.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_add_plants.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_add_plants.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_edit_profile.xml",
+        "source": "com.michael.potcastplant.app-main-50:/layout/activity_edit_profile.xml"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-mergeDebugResources-47:\\layout\\item_plants_dashboard.xml",
@@ -70,6 +66,10 @@
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-mergeDebugResources-47:\\layout\\activity_navigation_host.xml",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_navigation_host.xml"
+    },
+    {
+        "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-mergeDebugResources-47:\\layout\\spinner_item.xml",
+        "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\spinner_item.xml"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-mergeDebugResources-47:\\layout\\activity_login.xml",
