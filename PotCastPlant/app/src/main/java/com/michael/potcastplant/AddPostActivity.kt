@@ -31,13 +31,7 @@ class AddPostActivity : AppCompatActivity() {
     private lateinit var auth : FirebaseAuth
     private lateinit var firestore : FirebaseFirestore
 
-    /*private val getContent =
-        registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
-            uri?.let {
-                selectedImageUri = uri
-                imageView.setImageURI(uri)
-            }
-        }*/
+
 
     @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,8 +39,7 @@ class AddPostActivity : AppCompatActivity() {
         binding = ActivityAddPostBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Add this line to initialize Firebase
-       // FirebaseApp.initializeApp(this)
+
 
         val uid = sharedPreferences.getString("uid", null) ?: ""
         auth = FirebaseAuth.getInstance()
@@ -71,7 +64,6 @@ class AddPostActivity : AppCompatActivity() {
     }
 
     private fun pickImageFromGallery() {
-       // getContent.launch("image/*")
         val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
         startActivityForResult(intent, PICK_IMAGE_REQUEST)
     }
@@ -95,17 +87,6 @@ class AddPostActivity : AppCompatActivity() {
         private const val PICK_IMAGE_REQUEST = 1
     }
 
-
-    /*fun createPost(username: String, profilePic: Int, postImage: Int, description: String): FeedsPostClass {
-        val timestamp = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(Date())
-        return FeedsPostClass(username, profilePic, postImage, description, timestamp)
-    }
-    fun main() {
-        val post = createPost("JohnDoe", R.drawable.profile_pic, R.drawable.post_image, "Check out this amazing app!")
-        println(post)
-    }
-
-    */
 
     private fun uploadPostToDatabase(description: String) {
 
@@ -151,35 +132,7 @@ class AddPostActivity : AppCompatActivity() {
             }
         }
     }
-
-    /*
-        val firestore = FirebaseFirestore.getInstance()
-        val postsCollection = firestore.collection("posts")
-
-        val documentPost = firestore.collection("posts").document(postId)
-
-        val post = hashMapOf(
-            "username" to imageUri.toString(),
-            "description" to description
-        )
-
-        postsCollection.add(post)
-            .addOnSuccessListener {
-                // Post uploaded successfully
-                showToast(applicationContext, "Post uploaded successfully")
-                finish()
-            }
-            .addOnFailureListener {
-                // Handle upload failure
-                showToast(applicationContext, "Post failed to upload")
-            }
-    }
-
-    private fun showToast(context: Context, message: String) {
-        Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
-    }
-*/
-
+    
 }
 
 
