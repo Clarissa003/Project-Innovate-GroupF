@@ -1,99 +1,111 @@
 package com.michael.potcastplant
 
-import AddPostActivity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.Recycler
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.michael.potcastplant.databinding.ActivityFeedBinding
+import com.michael.potcastplant.databinding.ItemFeedsBinding
 
 class FeedActivity : Fragment() {
 
-    private lateinit var binding : ActivityFeedBinding
-
-    private lateinit var auth : FirebaseAuth
-    private lateinit var firestore : FirebaseFirestore
-
+    private lateinit var binding: ActivityFeedBinding
+    private lateinit var auth: FirebaseAuth
+    private lateinit var firestore: FirebaseFirestore
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = ActivityFeedBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
-        binding.recyclerViewFeed.layoutManager = LinearLayoutManager(requireContext())
-
-        val posts = arrayOf(
-            FeedsPostClass("Michael", R.drawable.baseline_person_24, R.drawable.plants, "This is a very nice flower, I will love to have some soon", "1 days ago"),
-            FeedsPostClass("Naga", R.drawable.baseline_person_24, R.drawable.ic_launcher_background, "Nothing to post here.. haha, you wis", "3 days ago"),
-            FeedsPostClass("Michael", R.drawable.baseline_person_24, R.drawable.potcast_logo, "Bla bla bla, our logo", "4 min ago")
-        )
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         auth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
 
+        binding.recyclerViewFeed.layoutManager = LinearLayoutManager(requireContext())
+
+        val posts = arrayOf(
+            FeedsPostClass("Michael", R.drawable.baseline_person_24, R.drawable.plants, "This is a very nice flower, I would love to have some soon", "1 day ago"),
+            FeedsPostClass("Naga", R.drawable.baseline_person_24, R.drawable.ic_launcher_background, "Nothing to post here... haha, you wish", "3 days ago"),
+            FeedsPostClass("Michael", R.drawable.baseline_person_24, R.drawable.potcast_logo, "Bla bla bla, our logo", "4 min ago")
+        )
+
+        // Retrieve all posts from the database
+     /*   firestore.collection("posts")
+            .get()
+            .addOnSuccessListener { result ->
+                for (document in result) {
+                    val allPlants = Plant(
+
+
+                    )
+                    posts.add(allPosts)
+                }
+
+                val adapter = ArrayAdapter(
+                    this,
+                    android.R.layout.simple_spinner_dropdown_item,
+                    plants.map { it.plant_name }
+                )
+                binding.spinnerPlants.adapter = adapter
+            }
+            .addOnFailureListener { e: Exception ->
+                println("Error retrieving plants: ${e.message}")
+            }
+        */
         val adapter = FeedsAdapter(posts)
         binding.recyclerViewFeed.adapter = adapter
 
-        return binding.root
-    }
-
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        setOnClickListener()
-    }
-
-    private fun setOnClickListener() {
         binding.floatingButtonAddPost.setOnClickListener {
-            val intent = Intent(this.context, AddPostActivity::class.java)
+            val intent = Intent(this.requireContext(), AddPostActivity::class.java)
             startActivity(intent)
         }
-
     }
 
-// Placeholder for FeedsAdapter class
-    private class FeedsAdapter(private val posts: Array<FeedsPostClass>) :
+    private inner class FeedsAdapter(private val posts: Array<FeedsPostClass>) :
         RecyclerView.Adapter<FeedsAdapter.ViewHolder>() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-            // Create and return the ViewHolder
             val view = LayoutInflater.from(parent.context).inflate(R.layout.item_feeds, parent, false)
             return ViewHolder(view)
         }
 
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-            // Bind data to the ViewHolder
             val post = posts[position]
-            // Set the values to the corresponding views in the item_feed layout
-            // holder.textViewUsername.text = post.username
-            // holder.imageViewProfilePic.setImageResource(post.profilePic)
-            // holder.imageViewPostImg.setImageResource(post.postImg)
-            // holder.textViewDescription.text = post.description
-            // holder.textViewTimestamp.text = post.timestamp
+            holder.bind(post)
         }
 
         override fun getItemCount(): Int {
-            // Return the number of items in the data set
             return posts.size
         }
 
         inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-            // Define the views in the item_feed layout here
-            // val textViewUsername: TextView = itemView.findViewById(R.id.text_view_username)
-            // val imageViewProfilePic: ImageView = itemView.findViewById(R.id.image_view_profile_pic)
-            // val imageViewPostImg: ImageView = itemView.findViewById(R.id.image_view_post_img)
-            // val textViewDescription: TextView = itemView.findViewById(R.id.text_view_description)
-            // val textViewTimestamp: TextView = itemView.findViewById(R.id.text_view_timestamp)
+            private val binding: ItemFeedsBinding = ItemFeedsBinding.bind(itemView)
+
+            fun bind(post: FeedsPostClass) {
+                binding.textViewUsername.text = post.username
+                binding.imageViewProfilePic.setImageResource(post.profilePic)
+                binding.imageViewPostImg.setImageResource(post.postImage)
+                binding.textViewDescription.text = post.description
+                binding.textViewTimestamp.text = post.timestamp
+            }
         }
     }
+
+
 }

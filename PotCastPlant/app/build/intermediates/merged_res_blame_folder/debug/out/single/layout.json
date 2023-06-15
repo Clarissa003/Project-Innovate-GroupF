@@ -16,6 +16,10 @@
         "source": "C:\\Users\\clari\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_plant_information.xml"
     },
     {
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_add_post.xml",
+        "source": "com.michael.potcastplant.app-main-50:/layout/activity_add_post.xml"
+    },
+    {
         "merged": "C:\\Users\\clari\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-mergeDebugResources-47:\\layout\\activity_edit_profile.xml",
         "source": "C:\\Users\\clari\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_edit_profile.xml"
     },
@@ -30,10 +34,6 @@
     {
         "merged": "C:\\Users\\clari\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-mergeDebugResources-47:\\layout\\activity_add_plants.xml",
         "source": "C:\\Users\\clari\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_add_plants.xml"
-    },
-    {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_add_plants.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_add_plants.xml"
     },
     {
         "merged": "C:\\Users\\clari\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-mergeDebugResources-47:\\layout\\activity_plants_dashboard.xml",
