@@ -1,6 +1,5 @@
 package com.michael.potcastplant
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
 import android.content.SharedPreferences
@@ -8,12 +7,14 @@ import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
+import android.view.View
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import com.google.firebase.firestore.FirebaseFirestore
 import com.michael.potcastplant.databinding.ActivityAddPostBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.michael.potcastplant.EditProfileActivity
 import java.io.ByteArrayOutputStream
@@ -30,26 +31,18 @@ class AddPostActivity : AppCompatActivity() {
     private lateinit var auth : FirebaseAuth
     private lateinit var firestore : FirebaseFirestore
 
-    /*private val getContent =
-        registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
-            uri?.let {
-                selectedImageUri = uri
-                imageView.setImageURI(uri)
-            }
-        }*/
 
-    @SuppressLint("SuspiciousIndentation")
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAddPostBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Add this line to initialize Firebase
-       // FirebaseApp.initializeApp(this)
-
         val uid = sharedPreferences.getString("uid", null) ?: ""
         auth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
+        storageRef = FirebaseStorage.getInstance().reference
 
         // Find views by their IDs
         etDescription = binding.etDescription
@@ -64,12 +57,11 @@ class AddPostActivity : AppCompatActivity() {
         // Set click listener for upload button
         binding.btnUpload.setOnClickListener {
             val description = etDescription.text.toString()
-                uploadPostToDatabase(description)
+            uploadPostToDatabase(description)
         }
     }
 
     private fun pickImageFromGallery() {
-       // getContent.launch("image/*")
         val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
         startActivityForResult(intent, PICK_IMAGE_REQUEST)
     }
@@ -81,6 +73,7 @@ class AddPostActivity : AppCompatActivity() {
             val imageUri: Uri? = data?.data
             val bitmap: Bitmap = MediaStore.Images.Media.getBitmap(contentResolver, imageUri)
 
+            binding.imageView.visibility = View.VISIBLE
             binding.imageView.setImageBitmap(bitmap)
 
             val outputStream = ByteArrayOutputStream()
@@ -93,17 +86,6 @@ class AddPostActivity : AppCompatActivity() {
         private const val PICK_IMAGE_REQUEST = 1
     }
 
-
-    /*fun createPost(username: String, profilePic: Int, postImage: Int, description: String): FeedsPostClass {
-        val timestamp = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(Date())
-        return FeedsPostClass(username, profilePic, postImage, description, timestamp)
-    }
-    fun main() {
-        val post = createPost("JohnDoe", R.drawable.profile_pic, R.drawable.post_image, "Check out this amazing app!")
-        println(post)
-    }
-
-    */
 
     private fun uploadPostToDatabase(description: String) {
 
@@ -119,21 +101,25 @@ class AddPostActivity : AppCompatActivity() {
         }.addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 val imageUrl = task.result.toString()
-                val timestamp = "today"
+                val timestamp = com.google.firebase.Timestamp.now()
 
                 // Set the image URL under the user's document in Firestore
-                val userRef = firestore.collection("posts").document()
+                val userRef = firestore.collection("posts")
+                val uid = sharedPreferences.getString("uid", null) ?: ""
 
                 val post = hashMapOf<String, Any>(
                     "description" to description,
                     "timestamp" to timestamp,
-                    "imageUrl" to imageUrl
+                    "imageUrl" to imageUrl,
+                    "uid" to uid
                 )
-                userRef.update(post)
+                userRef.add(post)
                     .addOnSuccessListener {
                         Toast
                             .makeText(this, "Post Uploaded Successfully", Toast.LENGTH_SHORT)
                             .show()
+                        val intent = Intent(this, NavigationHostActivity::class.java)
+                        startActivity(intent)
                     }
                     .addOnFailureListener { e ->
                         Toast
@@ -142,40 +128,11 @@ class AddPostActivity : AppCompatActivity() {
                     }
             } else {
                 Toast
-                    .makeText(this, "FAILED to Upload", Toast.LENGTH_SHORT)
+                    .makeText(this, "FAILED..... to Upload", Toast.LENGTH_SHORT)
                     .show()
             }
         }
     }
 
-    /*
-        val firestore = FirebaseFirestore.getInstance()
-        val postsCollection = firestore.collection("posts")
-
-        val documentPost = firestore.collection("posts").document(postId)
-
-        val post = hashMapOf(
-            "username" to imageUri.toString(),
-            "description" to description
-        )
-
-        postsCollection.add(post)
-            .addOnSuccessListener {
-                // Post uploaded successfully
-                showToast(applicationContext, "Post uploaded successfully")
-                finish()
-            }
-            .addOnFailureListener {
-                // Handle upload failure
-                showToast(applicationContext, "Post failed to upload")
-            }
-    }
-
-    private fun showToast(context: Context, message: String) {
-        Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
-    }
-*/
-
 }
-
 

@@ -33,6 +33,10 @@ class ProfileActivity : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+    }
+
+    override fun onResume() {
+        super.onResume()
         auth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
 
@@ -58,6 +62,7 @@ class ProfileActivity : Fragment() {
                         binding.plantNumberTextView.setText(potNumbers.toString())
                         Glide.with(requireContext())
                             .load(profilePic)
+                            .circleCrop()
                             .placeholder(R.drawable.baseline_person_24)
                             .into(binding.profileImage)
                     }

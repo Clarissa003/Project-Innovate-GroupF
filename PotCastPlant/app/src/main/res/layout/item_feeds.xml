@@ -38,14 +38,14 @@
                 android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Michael" />
+                tools:text="Michael" />
 
             <TextView
                 android:id="@+id/text_view_timestamp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10/06/2023"
-                android:textSize="8dp"/>
+                tools:text="10/06/2023"
+                android:textSize="12dp"/>
             </LinearLayout>
 
         </LinearLayout>

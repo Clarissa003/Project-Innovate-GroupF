@@ -1,9 +1,9 @@
 package com.michael.potcastplant
 
 data class FeedsPostClass(
-    var username: String,
-    var profilePic: Int,
-    var postImage: Int,
+    var firstName: String?,
+    var profileUrl: String,
+    var imageUrl: String,
     var description: String,
-    var timestamp: String
+    var timestamp: com.google.firebase.Timestamp
     )

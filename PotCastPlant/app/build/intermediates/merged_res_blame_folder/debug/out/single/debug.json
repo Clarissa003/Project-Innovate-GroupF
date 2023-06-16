@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_plant_information.xml.flat",
@@ -32,28 +32,28 @@
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_add_plants.xml.flat",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_add_plants.xml"
     },
     {
-        "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_gradient_orange.xml.flat",
-        "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\gradient_orange.xml"
+        "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_gradient_lightblue.xml.flat",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\gradient_lightblue.xml"
     },
     {
-        "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_gradient_orange.xml.flat",
+        "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\gradient_orange.xml"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_air_24.xml.flat",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\baseline_air_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\layout_activity_notification.xml.flat",
@@ -88,8 +88,8 @@
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable-nodpi\\logo.png"
     },
     {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_profile.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_profile.xml"
+        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_item_feeds.xml.flat",
+        "source": "com.michael.potcastplant.app-main-50:/layout/item_feeds.xml"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable-xhdpi_top_background.png.flat",
@@ -114,6 +114,10 @@
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_notifications_24.xml.flat",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\baseline_notifications_24.xml"
+    },
+    {
+        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_edit_profile.xml.flat",
+        "source": "com.michael.potcastplant.app-main-50:/layout/activity_edit_profile.xml"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_baseline_local_florist_24.xml.flat",
@@ -230,6 +234,10 @@
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_ic_notifications_black_24dp.xml.flat",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\drawable\\ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_add_post.xml.flat",
+        "source": "com.michael.potcastplant.app-main-50:/layout/activity_add_post.xml"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-merged_res-48:\\drawable_ic_dashboard_black_24dp.xml.flat",

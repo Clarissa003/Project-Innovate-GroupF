@@ -8,6 +8,10 @@
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_password_reset.xml"
     },
     {
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_add_post.xml",
+        "source": "com.michael.potcastplant.app-main-50:/layout/activity_add_post.xml"
+    },
+    {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-mergeDebugResources-47:\\layout\\activity_feed.xml",
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_feed.xml"
     },
@@ -40,8 +44,12 @@
         "source": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_splash_screen.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_profile.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_profile.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_edit_profile.xml",
+        "source": "com.michael.potcastplant.app-main-50:/layout/activity_edit_profile.xml"
+    },
+    {
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/item_feeds.xml",
+        "source": "com.michael.potcastplant.app-main-50:/layout/item_feeds.xml"
     },
     {
         "merged": "C:\\Users\\Naga\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-mergeDebugResources-47:\\layout\\item_plants_dashboard.xml",

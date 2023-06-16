@@ -1,18 +1,18 @@
 package com.michael.potcastplant
 
+import android.content.ClipDescription
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.Query
 import com.michael.potcastplant.databinding.ActivityFeedBinding
 import com.michael.potcastplant.databinding.ItemFeedsBinding
 
@@ -21,6 +21,8 @@ class FeedActivity : Fragment() {
     private lateinit var binding: ActivityFeedBinding
     private lateinit var auth: FirebaseAuth
     private lateinit var firestore: FirebaseFirestore
+    private lateinit var posts : MutableList<FeedsPostClass>
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,76 +38,58 @@ class FeedActivity : Fragment() {
 
         auth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
-
         binding.recyclerViewFeed.layoutManager = LinearLayoutManager(requireContext())
 
-        val posts = arrayOf(
-            FeedsPostClass("Michael", R.drawable.baseline_person_24, R.drawable.plants, "This is a very nice flower, I would love to have some soon", "1 day ago"),
-            FeedsPostClass("Naga", R.drawable.baseline_person_24, R.drawable.ic_launcher_background, "Nothing to post here... haha, you wish", "3 days ago"),
-            FeedsPostClass("Michael", R.drawable.baseline_person_24, R.drawable.potcast_logo, "Bla bla bla, our logo", "4 min ago")
-        )
-
-        // Retrieve all posts from the database
-     /*   firestore.collection("posts")
-            .get()
-            .addOnSuccessListener { result ->
-                for (document in result) {
-                    val allPlants = Plant(
-
-
-                    )
-                    posts.add(allPosts)
-                }
-
-                val adapter = ArrayAdapter(
-                    this,
-                    android.R.layout.simple_spinner_dropdown_item,
-                    plants.map { it.plant_name }
-                )
-                binding.spinnerPlants.adapter = adapter
-            }
-            .addOnFailureListener { e: Exception ->
-                println("Error retrieving plants: ${e.message}")
-            }
-        */
-        val adapter = FeedsAdapter(posts)
-        binding.recyclerViewFeed.adapter = adapter
+        fetchPosts { posts ->
+            bind(posts)
+        }
 
         binding.floatingButtonAddPost.setOnClickListener {
-            val intent = Intent(this.requireContext(), AddPostActivity::class.java)
+            val intent = Intent(requireContext(), AddPostActivity::class.java)
             startActivity(intent)
         }
+
     }
 
-    private inner class FeedsAdapter(private val posts: Array<FeedsPostClass>) :
-        RecyclerView.Adapter<FeedsAdapter.ViewHolder>() {
+    private fun fetchPosts(callback: (MutableList<FeedsPostClass>) -> Unit) {
+        firestore.collection("posts")
+            .orderBy("timestamp", Query.Direction.DESCENDING)
+            .get()
+            .addOnSuccessListener { result ->
+                val posts = mutableListOf<FeedsPostClass>()
+                val documentCount = result.size()
 
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-            val view = LayoutInflater.from(parent.context).inflate(R.layout.item_feeds, parent, false)
-            return ViewHolder(view)
-        }
+                for (document in result) {
+                    val imageUrl = document.getString("imageUrl") ?: ""
+                    val description = document.getString("description") ?: ""
+                    val timestamp = document.getTimestamp("timestamp")
+                    val uid = document.getString("uid") ?: ""
 
-        override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-            val post = posts[position]
-            holder.bind(post)
-        }
+                    firestore.collection("users").document(uid)
+                        .get()
+                        .addOnSuccessListener { userResult ->
+                            val firstName = userResult.getString("firstName") ?: ""
+                            val profileUrl = userResult.getString("profileUrl") ?: ""
 
-        override fun getItemCount(): Int {
-            return posts.size
-        }
+                            val post = FeedsPostClass(firstName, profileUrl, imageUrl, description, timestamp!!)
+                            posts.add(post)
 
-        inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-            private val binding: ItemFeedsBinding = ItemFeedsBinding.bind(itemView)
-
-            fun bind(post: FeedsPostClass) {
-                binding.textViewUsername.text = post.username
-                binding.imageViewProfilePic.setImageResource(post.profilePic)
-                binding.imageViewPostImg.setImageResource(post.postImage)
-                binding.textViewDescription.text = post.description
-                binding.textViewTimestamp.text = post.timestamp
+                            // Check if all documents have been processed
+                            if (posts.size == documentCount) {
+                                callback(posts) // Invoke the callback with the retrieved posts
+                            }
+                        }
+                }
             }
-        }
+            .addOnFailureListener { e: Exception ->
+                println("Error retrieving posts: ${e.message}")
+            }
     }
 
 
+    private fun bind(posts : MutableList<FeedsPostClass>) {
+        val adapter = FeedsAdapter(posts)
+        binding.recyclerViewFeed.adapter = adapter
+        adapter.notifyDataSetChanged()
+    }
 }
