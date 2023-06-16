@@ -12,21 +12,12 @@
         "source": "com.michael.potcastplant.app-main-50:/layout/activity_splash_screen.xml"
     },
     {
-<<<<<<< HEAD
         "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_add_post.xml",
         "source": "com.michael.potcastplant.app-main-50:/layout/activity_add_post.xml"
     },
     {
         "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_plant_information.xml",
         "source": "com.michael.potcastplant.app-main-50:/layout/activity_plant_information.xml"
-=======
-        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-mergeDebugResources-47:\\layout\\activity_add_plants.xml",
-        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_add_plants.xml"
-    },
-    {
-        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-mergeDebugResources-47:\\layout\\item_feeds.xml",
-        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\item_feeds.xml"
->>>>>>> 1e8b12d39fd8a8aa84eb073ee4289b765f69f2a1
     },
     {
         "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_login.xml",
@@ -41,21 +32,12 @@
         "source": "com.michael.potcastplant.app-main-50:/layout/activity_registration.xml"
     },
     {
-<<<<<<< HEAD
         "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/item_notification.xml",
         "source": "com.michael.potcastplant.app-main-50:/layout/item_notification.xml"
     },
     {
         "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_navigation_host.xml",
         "source": "com.michael.potcastplant.app-main-50:/layout/activity_navigation_host.xml"
-=======
-        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-mergeDebugResources-47:\\layout\\activity_navigation_host.xml",
-        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_navigation_host.xml"
-    },
-    {
-        "merged": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-mergeDebugResources-47:\\layout\\activity_add_post.xml",
-        "source": "C:\\Users\\catea\\.gradle\\daemon\\8.0\\com.michael.potcastplant.app-main-50:\\layout\\activity_add_post.xml"
->>>>>>> 1e8b12d39fd8a8aa84eb073ee4289b765f69f2a1
     },
     {
         "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_edit_profile.xml",

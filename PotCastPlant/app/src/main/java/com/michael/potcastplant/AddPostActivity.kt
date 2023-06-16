@@ -1,6 +1,5 @@
 package com.michael.potcastplant
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
 import android.content.SharedPreferences
@@ -33,13 +32,11 @@ class AddPostActivity : AppCompatActivity() {
 
 
 
-    @SuppressLint("SuspiciousIndentation")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAddPostBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
 
         val uid = sharedPreferences.getString("uid", null) ?: ""
         auth = FirebaseAuth.getInstance()
@@ -59,7 +56,7 @@ class AddPostActivity : AppCompatActivity() {
         // Set click listener for upload button
         binding.btnUpload.setOnClickListener {
             val description = etDescription.text.toString()
-                uploadPostToDatabase(description)
+            uploadPostToDatabase(description)
         }
     }
 
@@ -132,7 +129,6 @@ class AddPostActivity : AppCompatActivity() {
             }
         }
     }
-    
-}
 
+}
 
