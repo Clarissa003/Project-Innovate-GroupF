@@ -13,7 +13,7 @@ import com.michael.potcastplant.databinding.ActivityLoginBinding
 import com.michael.potcastplant.databinding.ActivityPasswordResetBinding
 import com.michael.potcastplant.databinding.ActivityProfileBinding
 
-class PasswordResetActivity : AppCompatActivity() {}
+class PasswordResetActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPasswordResetBinding
     private lateinit var auth: FirebaseAuth

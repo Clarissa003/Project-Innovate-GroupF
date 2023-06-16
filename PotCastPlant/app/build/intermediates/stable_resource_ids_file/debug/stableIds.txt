@@ -2072,12 +2072,6 @@ com.michael.potcastplant:dimen/material_clock_display_width = 0x7f06020e
 com.michael.potcastplant:anim/m3_bottom_sheet_slide_in = 0x7f010021
 com.michael.potcastplant:attr/searchPrefixText = 0x7f0303cf
 com.michael.potcastplant:dimen/material_bottom_sheet_max_width = 0x7f06020b
-<<<<<<< Updated upstream
-com.michael.potcastplant:dimen/mtrl_navigation_rail_text_bottom_margin = 0x7f0602bc
-com.michael.potcastplant:attr/shapeAppearanceLargeComponent = 0x7f0303e2
-com.michael.potcastplant:dimen/m3_sys_state_hover_state_layer_opacity = 0x7f060206
-=======
->>>>>>> Stashed changes
 com.michael.potcastplant:dimen/m3_comp_primary_navigation_tab_inactive_focus_state_layer_opacity = 0x7f060157
 com.michael.potcastplant:dimen/mtrl_switch_track_height = 0x7f0602e2
 com.michael.potcastplant:dimen/m3_sys_state_dragged_state_layer_opacity = 0x7f060204

@@ -55,17 +55,7 @@ class FeedActivity : Fragment() {
                     val timestamp = document.getString("timestamp") ?: ""
                     val uid = document.getString("uid") ?: ""
 
-<<<<<<< Updated upstream
                     fetchFirstNameAndLastName(imageUrl, description, timestamp, uid)
-=======
-
-                    firestore
-
-
-
-                     val post = FeedsPostClass(postImage, description, timestamp, uid)
-                     posts.add(post)
->>>>>>> Stashed changes
                 }
 
                 val adapter = FeedsAdapter(posts)

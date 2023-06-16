@@ -1,20 +1,10 @@
-<<<<<<< Updated upstream
-#Fri Jun 16 15:23:08 CEST 2023
-base.0=C\:\\Users\\clari\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\clari\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\clari\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
-base.3=C\:\\Users\\clari\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
-base.4=C\:\\Users\\clari\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.5=C\:\\Users\\clari\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
-=======
-#Fri Jun 16 15:27:20 CEST 2023
+#Fri Jun 16 15:41:29 CEST 2023
 base.0=C\:\\Users\\catea\\Desktop\\Project 4\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\catea\\Desktop\\Project 4\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\catea\\Desktop\\Project 4\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
 base.3=C\:\\Users\\catea\\Desktop\\Project 4\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
 base.4=C\:\\Users\\catea\\Desktop\\Project 4\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 base.5=C\:\\Users\\catea\\Desktop\\Project 4\\Project-Innovate-GroupF\\PotCastPlant\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
->>>>>>> Stashed changes
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=3/classes.dex

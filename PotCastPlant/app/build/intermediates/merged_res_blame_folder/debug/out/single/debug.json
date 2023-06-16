@@ -20,14 +20,6 @@
         "source": "com.michael.potcastplant.app-main-53:/drawable/gradient_green.xml"
     },
     {
-<<<<<<< Updated upstream
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_splash_screen.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_splash_screen.xml"
-    },
-    {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_baseline_wb_sunny_24.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/baseline_wb_sunny_24.xml"
-=======
         "merged": "com.michael.potcastplant.app-merged_res-51:/layout_item_plants_dashboard.xml.flat",
         "source": "com.michael.potcastplant.app-main-53:/layout/item_plants_dashboard.xml"
     },
@@ -38,7 +30,6 @@
     {
         "merged": "com.michael.potcastplant.app-merged_res-51:/drawable_baseline_notifications_24.xml.flat",
         "source": "com.michael.potcastplant.app-main-53:/drawable/baseline_notifications_24.xml"
->>>>>>> Stashed changes
     },
     {
         "merged": "com.michael.potcastplant.app-merged_res-51:/drawable_baseline_air_24.xml.flat",
@@ -225,14 +216,6 @@
         "source": "com.michael.potcastplant.app-main-53:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-<<<<<<< Updated upstream
-        "merged": "com.michael.potcastplant.app-merged_res-48:/layout_activity_add_post.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_add_post.xml"
-    },
-    {
-        "merged": "com.michael.potcastplant.app-merged_res-48:/drawable_gradient_blue.xml.flat",
-        "source": "com.michael.potcastplant.app-main-50:/drawable/gradient_blue.xml"
-=======
         "merged": "com.michael.potcastplant.app-merged_res-51:/drawable_baseline_arrow_forward_24.xml.flat",
         "source": "com.michael.potcastplant.app-main-53:/drawable/baseline_arrow_forward_24.xml"
     },
@@ -243,7 +226,6 @@
     {
         "merged": "com.michael.potcastplant.app-merged_res-51:/menu_bottom_nav.xml.flat",
         "source": "com.michael.potcastplant.app-main-53:/menu/bottom_nav.xml"
->>>>>>> Stashed changes
     },
     {
         "merged": "com.michael.potcastplant.app-merged_res-51:/layout_activity_splash_screen.xml.flat",
