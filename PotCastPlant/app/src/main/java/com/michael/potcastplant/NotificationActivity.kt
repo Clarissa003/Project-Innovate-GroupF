@@ -14,6 +14,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -21,7 +22,7 @@ import com.michael.potcastplant.databinding.ActivityNotificationBinding
 
 class NotificationActivity : Fragment() {
 
-   private lateinit var binding: ActivityNotificationBinding
+    private lateinit var binding: ActivityNotificationBinding
     private lateinit var notificationManager: NotificationManager
     private lateinit var notificationChannel: NotificationChannel
     private lateinit var builder: Notification.Builder
@@ -29,7 +30,7 @@ class NotificationActivity : Fragment() {
     private val description = "Test notification"
 
     @RequiresApi(Build.VERSION_CODES.O)
-    override fun onCreateView(
+     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
