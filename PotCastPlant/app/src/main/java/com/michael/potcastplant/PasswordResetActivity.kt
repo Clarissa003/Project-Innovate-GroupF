@@ -26,22 +26,24 @@ class PasswordResetActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
-        val email = binding.editTextEmail.text.toString()
-        Log.d("email", email)
 
         fun setOnClickListeners() {
             binding.buttonLogin.setOnClickListener {
-                auth!!.sendPasswordResetEmail(email).addOnCompleteListener {
-                    Toast.makeText(this, "Done sent", Toast.LENGTH_LONG).show();
+                val email = binding.editTextEmail.text.toString()
+
+                auth.sendPasswordResetEmail(email).addOnCompleteListener { task->
+                    if (task.isSuccessful) {
+                        Toast.makeText(this, "Reset email sent", Toast.LENGTH_LONG).show()
+                    } else {
+                        Toast.makeText(this, "Failed to send reset email", Toast.LENGTH_LONG).show()
+                    }
                 }
                     .addOnFailureListener { exception ->
                         Toast.makeText(
-                            this@PasswordResetActivity,
-                            "Error Occurred",
-                            Toast.LENGTH_LONG
-                        ).show()
+                            this@PasswordResetActivity, "Error Occurred", Toast.LENGTH_LONG).show()
                     }
             }
         }
+       setOnClickListeners()
     }
 }
