@@ -1,11 +1,19 @@
 package com.michael.potcastplant
 
+import android.app.Notification
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.content.Context
+import android.content.SharedPreferences
+import android.graphics.BitmapFactory
 import android.graphics.Color
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
 import com.github.mikephil.charting.components.XAxis
@@ -17,17 +25,27 @@ import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
 import com.google.common.io.Resources
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.michael.potcastplant.databinding.ActivityNotificationBinding
 import com.michael.potcastplant.databinding.ActivityPlantInformationBinding
 import io.grpc.internal.SharedResourceHolder.Resource
 
 class PlantInformationActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPlantInformationBinding
-
+    private lateinit var notificationManager: NotificationManager
+    private lateinit var notificationChannel: NotificationChannel
+    private lateinit var builder: Notification.Builder
+    private val channelId = "i.apps.notifications"
+    private val description = "Test notification"
+    private var threshold = 20
+    private val sharedPreferences: SharedPreferences by lazy {
+        getSharedPreferences("myPref", Context.MODE_PRIVATE) }
     private lateinit var auth : FirebaseAuth
     private lateinit var firestore: FirebaseFirestore
     private lateinit var plantInfo: PlantDashboardClass
     private lateinit var potId : String
+    private lateinit var plantName : String
+
     var entries = ArrayList<Entry>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,9 +60,9 @@ class PlantInformationActivity : AppCompatActivity() {
 
         potId = plantInfo.potId.toString()
         val imageUrl = plantInfo.image_url
-        val title = plantInfo.title
+        plantName = plantInfo.title
 
-        binding.nameText.setText(title)
+        binding.nameText.setText(plantName)
         Glide.with(this)
             .load(imageUrl)
             .into(binding.plantImage)
@@ -104,6 +122,55 @@ class PlantInformationActivity : AppCompatActivity() {
                 binding.textViewTemperature.setText(temperature.toString().plus("\u2103"))
                 binding.textViewSoilMoisture.setText(moisture.toString().plus("%"))
 
+
+                val notificationManager =
+                    getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    notificationChannel = NotificationChannel(
+                        channelId,
+                        description,
+                        NotificationManager.IMPORTANCE_HIGH
+                    )
+                    notificationChannel.enableLights(true)
+                    notificationChannel.lightColor = Color.GREEN
+                    notificationChannel.enableVibration(false)
+                    notificationManager.createNotificationChannel(notificationChannel)
+
+                    // Create the notification builder
+                    builder = Notification.Builder(this, channelId)
+
+                    // Set notification properties
+                    builder.setSmallIcon(R.drawable.ic_launcher_background)
+                        .setLargeIcon(
+                            BitmapFactory.decodeResource(
+                                this.resources,
+                                R.drawable.ic_launcher_background
+                            )
+                        )
+
+                    if (waterlevel != null && waterlevel.compareTo(threshold) < 0) {
+                        var title = "Critical water level"
+                        var text = "Your water tank is almost empty, please fill it up"
+                        builder.setContentTitle(title)
+                            .setContentText(text)
+                        uploadNotificationToDatabase(title, text)
+                    }
+
+                    if (moisture != null && moisture.compareTo(threshold) < 0) {
+                        var title = "Critical moisture Level"
+                        var text = "Your plant needs water"
+                        builder.setContentTitle(title)
+                            .setContentText(text)
+                        uploadNotificationToDatabase(title, text)
+                    }
+
+                    val notification = builder.build()
+
+                }
+                notificationManager.notify(1234, builder.build())
+
+
                 if (automaticWatering != null) {
                     binding.switch1.isChecked = automaticWatering.toBoolean()
                 }
@@ -111,6 +178,27 @@ class PlantInformationActivity : AppCompatActivity() {
         }
 
         readSunlightDataFromFirestore()
+    }
+
+    private fun uploadNotificationToDatabase(title: String, text: String) {
+        val notificationRef = firestore.collection("notifications")
+        val uid = sharedPreferences.getString("uid", null) ?: ""
+        val notification = hashMapOf<String, Any>(
+            "title" to title,
+            "message" to text,
+            "timestamp" to "Today",
+            "potId" to potId,
+            "userId" to uid,
+            "plantName" to plantName
+        )
+        notificationRef.add(notification)
+            .addOnSuccessListener {
+                Log.d("success", "notification was uploaded successfully")
+            }
+            .addOnFailureListener{
+                Log.d("fail", "notification was not uploaded")
+            }
+
     }
 
     private fun setLineChart(sunlightArray: ArrayList<Float>) {

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.michael.potcastplant.app-mergeDebugResources-46:/values-ja/values-ja.xml",
+            "outputFile": "com.michael.potcastplant.app-mergeDebugResources-47:/values-ja/values-ja.xml",
             "map": [
                 {
                     "source": "C:\\Users\\catea\\.gradle\\caches\\transforms-3\\8c7f5eba82acb6a628b0f3bc2c0d7159\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-ja\\values.xml",

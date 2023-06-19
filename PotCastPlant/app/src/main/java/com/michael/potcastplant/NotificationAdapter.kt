@@ -9,22 +9,22 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
-class NotificationAdapter(private var notification: Array<NotificationClass>) : RecyclerView.Adapter<NotificationAdapter.ViewHolder>() {
+class NotificationAdapter(private var notification: MutableList<NotificationClass>) : RecyclerView.Adapter<NotificationAdapter.ViewHolder>() {
 
     override fun getItemCount(): Int {
         return notification.size
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NotificationAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_notification, parent, false)
-        return NotificationAdapter.ViewHolder(view)
+        return ViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: NotificationAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val NotificationClass = notification[position]
-        holder.title.setText(NotificationClass.title)
-        holder.text.setText(NotificationClass.text)
-        holder.date.setText(NotificationClass.date)
+        holder.title.setText(NotificationClass.plantName)
+        holder.text.setText(NotificationClass.message)
+        holder.date.setText(NotificationClass.timestamp)
     }
 
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {

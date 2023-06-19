@@ -25,6 +25,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 //import androidx.work.OneTimeWorkRequestBuilder
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.Query
 import com.michael.potcastplant.databinding.ActivityNotificationBinding
 
 class NotificationActivity : Fragment() {
@@ -40,108 +41,58 @@ class NotificationActivity : Fragment() {
     private lateinit var firestore: FirebaseFirestore
     private val sharedPreferences: SharedPreferences by lazy { requireContext().getSharedPreferences("myPref", Context.MODE_PRIVATE) }
 
-
     @RequiresApi(Build.VERSION_CODES.O)
      override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = ActivityNotificationBinding.inflate(inflater, container, false)
+        return binding.root
+     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         binding.rvNotification.layoutManager = LinearLayoutManager(requireContext())
-
-        val notifications = arrayOf(
-            NotificationClass("Bay Leaves", "The water level in the reservoir is low, fill it up.", "30.05.2023"),
-            NotificationClass("Rose Flowers", "Your plants needs more sunlight, the average sunlight level is low, you might want to place your plant in a position to receive more sunlight", "28.05.2023"),
-            NotificationClass("Mahogany", "Your plant moisture level is low, please water your plant or turn on automatic watering feature for your plant", "25.05.2023"),
-        )
-
-        val adapterNotification = NotificationAdapter(notifications)
-        binding.rvNotification.adapter = adapterNotification
 
         auth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
 
+        fetchNotifications { notifications ->
+            bind(notifications)
+        }
+    }
+
+    private fun fetchNotifications(callback: (MutableList<NotificationClass>) -> Unit) {
         val uid = sharedPreferences.getString("uid", null) ?: ""
+        val document = firestore.collection("notifications")
 
-        val document = firestore.collection("pots").document(uid)
-        document.get().addOnSuccessListener { documentSnapshot ->
-            if (documentSnapshot.exists()) {
-                document.get().addOnSuccessListener { documentSnapshot ->
-                    if (documentSnapshot.exists()) {
+        document
+            .whereEqualTo("uid", uid)
+            .orderBy("timestamp", Query.Direction.DESCENDING)
+            .get().addOnSuccessListener {result ->
+                val notifications = mutableListOf<NotificationClass>()
+                val documentCount = result.size()
 
-                        val waterLevel = documentSnapshot.getLong("waterlevel")
-                        val moistureLevel = documentSnapshot.getLong("moisture")
+                for (document in result){
+                    val plantName = document.getString("plantName") ?: ""
+                    val message = document.getString("message") ?: ""
+                    val timestamp = document.getString("timestamp") ?: ""
 
-                        // How to tell the user that something has happened in the background.
-                        val notificationManager =
-                            requireContext().getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+                    val notification = NotificationClass(plantName, message, timestamp!!)
+                    notifications.add(notification)
+                }
 
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                            notificationChannel = NotificationChannel(
-                                channelId,
-                                description,
-                                NotificationManager.IMPORTANCE_HIGH
-                            )
-                            notificationChannel.enableLights(true)
-                            notificationChannel.lightColor = Color.GREEN
-                            notificationChannel.enableVibration(false)
-                            notificationManager.createNotificationChannel(notificationChannel)
-
-                            if (waterLevel != null && waterLevel.compareTo(threshold) < 0) {
-                                val notificationManager = requireContext().getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-
-                                val notificationId = 1  // Unique identifier for the notification
-
-                                // Create the notification
-                                val notification = builder.build()
-
-                                // Build your notification using NotificationCompat.Builder
-                                builder = Notification.Builder(this.context, channelId)
-                                    .setSmallIcon(R.drawable.ic_launcher_background)
-                                    .setLargeIcon(
-                                        BitmapFactory.decodeResource(
-                                            this.resources,
-                                            R.drawable.ic_launcher_background
-                                        )
-                                    )
-                                    .setContentTitle("Critical water level")
-                                    .setContentText("Your water tank is almost empty, please fill it up")
-
-                                // Send the notification
-                                notificationManager.notify(notificationId, notification)
-                            }
-
-                            if (moistureLevel != null && moistureLevel.compareTo(threshold) < 0) {
-                                val notificationManager = requireContext().getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-
-                                val notificationId = 1  // Unique identifier for the notification
-
-                                // Create the notification
-                                val notification = builder.build()
-
-                                // Build your notification using NotificationCompat.Builder
-                                builder = Notification.Builder(this.context, channelId)
-                                    .setSmallIcon(R.drawable.ic_launcher_background)
-                                    .setLargeIcon(
-                                        BitmapFactory.decodeResource(
-                                            this.resources,
-                                            R.drawable.ic_launcher_background
-                                        )
-                                    )
-                                    .setContentTitle("Critical moisture Level")
-                                    .setContentText("Your plant needs water")
-
-                                // Send the notification
-                                notificationManager.notify(notificationId, notification)
-                            }
-                        }
-                        notificationManager.notify(1234, builder.build())
-                    }
+                if (notifications.size == documentCount) {
+                    callback(notifications)
                 }
             }
-        }
-        return binding.root
-     }
+    }
+
+    private fun bind(notifications: MutableList<NotificationClass>) {
+        val adapterNotification = NotificationAdapter(notifications)
+        binding.rvNotification.adapter = adapterNotification
+        adapterNotification.notifyDataSetChanged()
+    }
 }

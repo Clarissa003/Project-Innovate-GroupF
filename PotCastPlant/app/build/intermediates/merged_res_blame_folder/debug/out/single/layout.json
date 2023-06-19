@@ -1,66 +1,66 @@
 [
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/item_plants_dashboard.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/item_plants_dashboard.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-48:/layout/item_plants_dashboard.xml",
+        "source": "com.michael.potcastplant.app-main-51:/layout/item_plants_dashboard.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_notification.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_notification.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-48:/layout/activity_plant_information.xml",
+        "source": "com.michael.potcastplant.app-main-51:/layout/activity_plant_information.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_splash_screen.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_splash_screen.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-48:/layout/item_notification.xml",
+        "source": "com.michael.potcastplant.app-main-51:/layout/item_notification.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_add_post.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_add_post.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-48:/layout/item_feeds.xml",
+        "source": "com.michael.potcastplant.app-main-51:/layout/item_feeds.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_plant_information.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_plant_information.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-48:/layout/activity_notification.xml",
+        "source": "com.michael.potcastplant.app-main-51:/layout/activity_notification.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_login.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_login.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-48:/layout/activity_registration.xml",
+        "source": "com.michael.potcastplant.app-main-51:/layout/activity_registration.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_feed.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_feed.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-48:/layout/activity_navigation_host.xml",
+        "source": "com.michael.potcastplant.app-main-51:/layout/activity_navigation_host.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_registration.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_registration.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-48:/layout/activity_add_post.xml",
+        "source": "com.michael.potcastplant.app-main-51:/layout/activity_add_post.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/item_notification.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/item_notification.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-48:/layout/activity_password_reset.xml",
+        "source": "com.michael.potcastplant.app-main-51:/layout/activity_password_reset.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_navigation_host.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_navigation_host.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-48:/layout/activity_edit_profile.xml",
+        "source": "com.michael.potcastplant.app-main-51:/layout/activity_edit_profile.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_edit_profile.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_edit_profile.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-48:/layout/activity_plants_dashboard.xml",
+        "source": "com.michael.potcastplant.app-main-51:/layout/activity_plants_dashboard.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_profile.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_profile.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-48:/layout/activity_login.xml",
+        "source": "com.michael.potcastplant.app-main-51:/layout/activity_login.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_add_plants.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_add_plants.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-48:/layout/activity_splash_screen.xml",
+        "source": "com.michael.potcastplant.app-main-51:/layout/activity_splash_screen.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/item_feeds.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/item_feeds.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-48:/layout/activity_add_plants.xml",
+        "source": "com.michael.potcastplant.app-main-51:/layout/activity_add_plants.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_password_reset.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_password_reset.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-48:/layout/activity_feed.xml",
+        "source": "com.michael.potcastplant.app-main-51:/layout/activity_feed.xml"
     },
     {
-        "merged": "com.michael.potcastplant.app-mergeDebugResources-47:/layout/activity_plants_dashboard.xml",
-        "source": "com.michael.potcastplant.app-main-50:/layout/activity_plants_dashboard.xml"
+        "merged": "com.michael.potcastplant.app-mergeDebugResources-48:/layout/activity_profile.xml",
+        "source": "com.michael.potcastplant.app-main-51:/layout/activity_profile.xml"
     }
 ]

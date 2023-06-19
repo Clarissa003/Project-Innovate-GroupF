@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.michael.potcastplant.app-mergeDebugResources-46:/values-de/values-de.xml",
+            "outputFile": "com.michael.potcastplant.app-mergeDebugResources-47:/values-de/values-de.xml",
             "map": [
                 {
                     "source": "C:\\Users\\catea\\.gradle\\caches\\transforms-3\\a1da96ebf18481422e98e1224462b070\\transformed\\preference-1.2.0\\res\\values-de\\values-de.xml",
