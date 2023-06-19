@@ -21,8 +21,8 @@ import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.work.NetworkType
-import androidx.work.OneTimeWorkRequestBuilder
+//import androidx.work.NetworkType
+//import androidx.work.OneTimeWorkRequestBuilder
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.michael.potcastplant.databinding.ActivityNotificationBinding
