@@ -44,9 +44,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvText"
+                android:layout_alignRight="@+id/tvText"
                 android:layout_marginTop="15dp"
-                android:layout_marginLeft="250dp"
-                android:text="30.05.2023"
+                tools:text="30.05.2023"
                 android:textColor="@color/black"
                 android:textSize="11sp" />
 

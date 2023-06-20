@@ -1,6 +1,7 @@
 package com.michael.potcastplant
 
 import android.content.Intent
+import android.text.format.DateUtils
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,10 +22,16 @@ class NotificationAdapter(private var notification: MutableList<NotificationClas
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val NotificationClass = notification[position]
-        holder.title.setText(NotificationClass.plantName)
-        holder.text.setText(NotificationClass.message)
-        holder.date.setText(NotificationClass.timestamp)
+        val notificationItem = notification[position]
+        holder.title.text = notificationItem.plantName
+        holder.text.text = notificationItem.message
+
+        val currentTimeMillis = System.currentTimeMillis()
+        val timestampMillis = notificationItem.timestamp.toDate().time
+        val timeDifference = currentTimeMillis - timestampMillis
+
+        val relativeTime = DateUtils.getRelativeTimeSpanString(timestampMillis, currentTimeMillis, DateUtils.MINUTE_IN_MILLIS)
+        holder.date.text = relativeTime
     }
 
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {

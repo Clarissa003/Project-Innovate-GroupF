@@ -183,10 +183,12 @@ class PlantInformationActivity : AppCompatActivity() {
     private fun uploadNotificationToDatabase(title: String, text: String) {
         val notificationRef = firestore.collection("notifications")
         val uid = sharedPreferences.getString("uid", null) ?: ""
+        val timestamp = com.google.firebase.Timestamp.now()
+
         val notification = hashMapOf<String, Any>(
             "title" to title,
             "message" to text,
-            "timestamp" to "Today",
+            "timestamp" to timestamp,
             "potId" to potId,
             "userId" to uid,
             "plantName" to plantName

@@ -12,6 +12,7 @@
         android:id="@+id/text_view_title"
         android:layout_width="wrap_content"
         android:paddingStart="32dp"
+        android:layout_marginTop="16dp"
         android:layout_height="wrap_content"
         android:text="My Plants"
         android:textColor="@color/dark_green"
