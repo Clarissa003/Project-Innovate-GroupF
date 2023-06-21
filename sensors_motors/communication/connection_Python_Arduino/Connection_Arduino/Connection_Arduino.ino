@@ -9,9 +9,9 @@ void setup() {
 
 void loop() {
     if (SerialUART.available()) {
-        String data = SerialUART.readStringUntil('\n');
+        String data = SerialUART.readStringUntil('Hallo');
         Serial.print("Received: ");
         Serial.println(data);
-        SerialUART.println("Sending");
+        SerialUART.println("Hallllo");
     }
 }

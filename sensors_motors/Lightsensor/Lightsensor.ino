@@ -1,5 +1,6 @@
 #include "Si115X.h"
-
+#include <Arduino.h>
+#define SerialUART Serial1
 Si115X si1151;
 
 /**
@@ -11,6 +12,7 @@ void setup()
 
     Wire.begin();
     Serial.begin(9600);
+    SerialUART.begin(9600);
     if (!si1151.Begin())
         Serial.println("Si1151 is not ready!");
     else
@@ -23,11 +25,13 @@ void setup()
  */
 void loop()
 {
-    Serial.print("IR: ");
+  // if (SerialUART.available()) {
+    String data = SerialUART.readStringUntil('\n');
+    Serial.println("IR: ");
     Serial.println(si1151.ReadHalfWord());
-    Serial.print("VISIBLE: ");
+    Serial.println("VISIBLE: ");
     Serial.println(si1151.ReadHalfWord_VISIBLE());
-    Serial.print("UV: ");
+    Serial.println("UV: ");
     Serial.println(si1151.ReadHalfWord_UV());
-    delay(1000);
+  // }
 }
