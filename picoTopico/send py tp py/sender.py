@@ -4,7 +4,7 @@ from easy_comms import Easy_comms
 from time import sleep
 from machine import Pin
 import json
-import allPythonSensors
+# import allPythonSensors
 
 com1 = Easy_comms(0,9600)
 
@@ -32,5 +32,11 @@ def soilmoisture():
         com1.send(str(json.dumps(command)))
         sleep(10)
         
-soilmoisture()
+def motor_boolean():
+    output = 3
+    command = output
+    com1.send(str(json.dumps(command)))
+        
+#soilmoisture()
 #tempAndHumidity()
+motor_boolean()

@@ -8,5 +8,6 @@ while True:
         data = uart.read()
         print("Received:", data.decode())
     uart.write("light")
-    #uart.write("water")
+    time.sleep(5)
+    uart.write("water")
     time.sleep(5)
