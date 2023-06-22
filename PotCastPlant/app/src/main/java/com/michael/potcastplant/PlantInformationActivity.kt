@@ -111,16 +111,19 @@ class PlantInformationActivity : AppCompatActivity() {
         val document = firestore.collection("pots").document(potId)
         document.get().addOnSuccessListener {documentSnapshot ->
             if(documentSnapshot.exists()) {
-                val temperature = documentSnapshot.getLong("temperature")
-                val moisture = documentSnapshot.getLong("moisture")
-                val waterlevel = documentSnapshot.getLong("waterlevel")
-                val humidity = documentSnapshot.getLong("humidity")
-                val automaticWatering = documentSnapshot.getString("automaticWatering")
+                val temperature = documentSnapshot.getLong("temperature") ?: 0
+                val moisture = documentSnapshot.getLong("moisture") ?: 0
+                val waterlevel = documentSnapshot.getLong("waterlevel") ?: 0
+                val humidity = documentSnapshot.getLong("humidity") ?: 0
+                val plantId = documentSnapshot.getLong("plantId") ?: 0
+                val automaticWatering = documentSnapshot.getBoolean("automaticWatering")
 
                 binding.textViewHumidity.setText(humidity.toString().plus("%"))
                 binding.textViewWaterLevel.setText(waterlevel.toString().plus("%"))
                 binding.textViewTemperature.setText(temperature.toString().plus("\u2103"))
                 binding.textViewSoilMoisture.setText(moisture.toString().plus("%"))
+
+                updateStatus(potId, plantId, temperature, moisture, waterlevel, humidity)
 
 
                 val notificationManager =
@@ -150,16 +153,16 @@ class PlantInformationActivity : AppCompatActivity() {
                         )
 
                     if (waterlevel != null && waterlevel.compareTo(threshold) < 0) {
-                        var title = "Critical water level"
-                        var text = "Your water tank is almost empty, please fill it up"
+                        val title = "Critical water level"
+                        val text = "Your water tank is almost empty, please fill it up"
                         builder.setContentTitle(title)
                             .setContentText(text)
                         uploadNotificationToDatabase(title, text)
                     }
 
                     if (moisture != null && moisture.compareTo(threshold) < 0) {
-                        var title = "Critical moisture Level"
-                        var text = "Your plant needs water"
+                        val title = "Critical moisture Level"
+                        val text = "Your plant needs water"
                         builder.setContentTitle(title)
                             .setContentText(text)
                         uploadNotificationToDatabase(title, text)
@@ -168,11 +171,13 @@ class PlantInformationActivity : AppCompatActivity() {
                     val notification = builder.build()
 
                 }
+
                 notificationManager.notify(1234, builder.build())
 
 
+
                 if (automaticWatering != null) {
-                    binding.switch1.isChecked = automaticWatering.toBoolean()
+                    binding.switch1.isChecked = automaticWatering
                 }
             }
         }
@@ -206,7 +211,7 @@ class PlantInformationActivity : AppCompatActivity() {
     private fun setLineChart(sunlightArray: ArrayList<Float>) {
         val lineChart = binding.lineChart
 
-        val xAxisLabels = arrayOf("24hrs", "20hrs", "16hrs", "12hrs", "8hrs", "4hrs", "0hr")
+        val xAxisLabels = arrayOf("6hr", "5hr", "4hr", "3hr", "2hr", "1hr", "0hr")
 
         for (i in 0 until 7) {
             val xValue = i
@@ -268,13 +273,102 @@ class PlantInformationActivity : AppCompatActivity() {
             .get()
             .addOnSuccessListener { document ->
                 if (document != null && document.exists()) {
-                        val sunlightArray= document.get("sunlight") as ArrayList<Float>
+                    val sunlightArray= document.get("sunlight") as ArrayList<Float>
                     setLineChart(sunlightArray)
+
+
                 }
             }
             .addOnFailureListener {exception ->
                 // Handle any errors that occur during data retrieval
             }
+    }
+
+    private fun updateStatus(potId : String, plantId : Long, temperature : Long, moisture : Long, waterlevel : Long, humidity : Long) {
+        val id = plantId.toString()
+
+        val document = firestore.collection("plants").document(id)
+        document.get().addOnSuccessListener { documentSnapshot ->
+            if (documentSnapshot.exists()) {
+                val temperatureMax = documentSnapshot.getLong("temperatureMax") ?: 0
+                val temperatureMin = documentSnapshot.getLong("temperatureMin") ?: 0
+                val moistureMax = documentSnapshot.getLong("moistureMax") ?: 0
+                val moistureMin = documentSnapshot.getLong("moistureMin") ?: 0
+                val description = documentSnapshot.getString("description")
+                val humidityMax = documentSnapshot.getLong("humidityMax") ?: 0
+                val humidityMin = documentSnapshot.getLong("humidityMin") ?: 0
+                val sunlightMax = documentSnapshot.getLong("sunlightMax") ?: 0
+                val sunlightMin = documentSnapshot.getLong("sunlightMin") ?: 0
+                val name = documentSnapshot.getString("name")
+
+                    if (temperature in temperatureMin..temperatureMax) {
+                        binding.imgStatusTemperature.setImageResource(R.drawable.baseline_gpp_good_24)
+                        val status = "Good"
+                        binding.textStatusTemperature.text = status
+                    } else {
+                        binding.imgStatusTemperature.setImageResource(R.drawable.baseline_gpp_bad_24)
+                        val status = "Bad"
+                        binding.textStatusTemperature.text = status
+                    }
+
+                if (moisture in moistureMin..moistureMax) {
+                    binding.imgStatusMoisture.setImageResource(R.drawable.baseline_gpp_good_24)
+                    val status = "Good"
+                    binding.textStatusMoisture.text = status
+                } else {
+                    binding.imgStatusMoisture.setImageResource(R.drawable.baseline_gpp_bad_24)
+                    val status = "Bad"
+                    binding.textStatusMoisture.text = status
+                }
+
+                if (humidity in humidityMin..humidityMax) {
+                    binding.imgStatusHumidity.setImageResource(R.drawable.baseline_gpp_good_24)
+                    val status = "Good"
+                    binding.textStatusHumidity.text = status
+                } else {
+                    binding.imgStatusHumidity.setImageResource(R.drawable.baseline_gpp_bad_24)
+                    val status = "Bad"
+                    binding.textStatusHumidity.text = status
+                }
+
+                if (waterlevel >= 20) {
+                    binding.imgStatusWaterLevel.setImageResource(R.drawable.baseline_gpp_good_24)
+                    val status = "Good"
+                    binding.textStatusWaterLevel.text = status
+                } else {
+                    binding.imgStatusWaterLevel.setImageResource(R.drawable.baseline_gpp_bad_24)
+                    val status = "Bad"
+                    binding.textStatusWaterLevel.text = status
+                }
+
+                firestore.collection("pots")
+                    .document(potId)
+                    .get()
+                    .addOnSuccessListener { document ->
+                        if (document != null && document.exists()) {
+                            val sunlightArray= document.get("sunlight") as ArrayList<Float>
+                            val sum = sunlightArray.sum()
+                            val count = sunlightArray.size
+                            val mean = sum.toLong() / count.toLong()
+
+                            if (mean in sunlightMin..sunlightMax) {
+                                binding.imgStatusSunlight.setImageResource(R.drawable.baseline_gpp_good_24)
+                                val status = "Good"
+                                binding.textStatusSunlight.text = status
+                            } else {
+                                binding.imgStatusSunlight.setImageResource(R.drawable.baseline_gpp_bad_24)
+                                val status = "Bad"
+                                binding.textStatusSunlight.text = status
+                            }
+                        }
+                    }
+
+                val fullName = "Information about $name"
+                binding.textViewNameBelow.text = fullName
+                binding.textViewDescription.text = description
+
+            }
+        }
     }
 
 }

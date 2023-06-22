@@ -3016,6 +3016,8 @@ int drawable baseline_add_24 0x7f07007c
 int drawable baseline_air_24 0x7f07007d
 int drawable baseline_arrow_forward_24 0x7f07007e
 int drawable baseline_feed_24 0x7f07007f
+int drawable baseline_gpp_bad_24 0x7f070115
+int drawable baseline_gpp_good_24 0x7f070116
 int drawable baseline_grass_24 0x7f070080
 int drawable baseline_local_florist_24 0x7f070081
 int drawable baseline_notifications_24 0x7f070082
@@ -3430,6 +3432,11 @@ int id image_view_plant 0x7f080105
 int id image_view_post_img 0x7f080106
 int id image_view_preview 0x7f080107
 int id image_view_profile_pic 0x7f080108
+int id img_status_humidity 0x7f080253
+int id img_status_moisture 0x7f080254
+int id img_status_sunlight 0x7f080255
+int id img_status_temperature 0x7f080256
+int id img_status_water_level 0x7f080257
 int id immediateStop 0x7f080109
 int id included 0x7f08010a
 int id indeterminate 0x7f08010b
@@ -3694,9 +3701,15 @@ int id textTop 0x7f08020d
 int id text_input_end_icon 0x7f08020e
 int id text_input_error_icon 0x7f08020f
 int id text_input_start_icon 0x7f080210
+int id text_status_humidity 0x7f080258
+int id text_status_moisture 0x7f080259
+int id text_status_sunlight 0x7f08025a
+int id text_status_temperature 0x7f08025b
+int id text_status_water_level 0x7f08025c
 int id text_view_description 0x7f080211
 int id text_view_forgot_password 0x7f080212
 int id text_view_humidity 0x7f080213
+int id text_view_name_below 0x7f08025d
 int id text_view_no_plants_yet 0x7f080214
 int id text_view_register_redirect 0x7f080215
 int id text_view_soil_moisture 0x7f080216

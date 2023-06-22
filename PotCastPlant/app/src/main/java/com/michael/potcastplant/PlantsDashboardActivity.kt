@@ -91,14 +91,15 @@ class PlantsDashboardActivity : Fragment() {
                     if (plantId != null) {
                         // Call a function to retrieve plant details using the plantId
                         Log.d("retrieving Plant", "retrieving the plant")
+                        Log.d("PotId", id)
                         retrievePlantDetails(plantId, potId)
                     }
                 } else {
-                   Toast.makeText(this.context, "Unable to Retrieve Plant details", Toast.LENGTH_SHORT).show()
+//                   Toast.makeText(this.context, "Unable to Retrieve Pot Id", Toast.LENGTH_SHORT).show()
                 }
             }.addOnFailureListener { exception ->
                 // Handle exceptions
-                Toast.makeText(this.context, "Unable to Retrieve Plant details", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this.context, "Unable to Retrieve Pot Id 2", Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -128,11 +129,11 @@ class PlantsDashboardActivity : Fragment() {
             } else {
                 // Handle plant document not found or other errors
                 Log.d("error", "document not found")
-                Toast.makeText(this.context, "Unable to Retrieve Plant details", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this.context, "Unable to Retrieve Plant details 1", Toast.LENGTH_SHORT).show()
             }
         }.addOnFailureListener { exception ->
             // Handle exceptions
-            Toast.makeText(this.context, "Unable to Retrieve Plant details", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this.context, "Unable to Retrieve Plant details 2", Toast.LENGTH_SHORT).show()
         }
     }
 

@@ -27,6 +27,21 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
   public final CardView humidity;
 
   @NonNull
+  public final ImageView imgStatusHumidity;
+
+  @NonNull
+  public final ImageView imgStatusMoisture;
+
+  @NonNull
+  public final ImageView imgStatusSunlight;
+
+  @NonNull
+  public final ImageView imgStatusTemperature;
+
+  @NonNull
+  public final ImageView imgStatusWaterLevel;
+
+  @NonNull
   public final LineChart lineChart;
 
   @NonNull
@@ -48,7 +63,28 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
   public final CardView temperature;
 
   @NonNull
+  public final TextView textStatusHumidity;
+
+  @NonNull
+  public final TextView textStatusMoisture;
+
+  @NonNull
+  public final TextView textStatusSunlight;
+
+  @NonNull
+  public final TextView textStatusTemperature;
+
+  @NonNull
+  public final TextView textStatusWaterLevel;
+
+  @NonNull
+  public final TextView textViewDescription;
+
+  @NonNull
   public final TextView textViewHumidity;
+
+  @NonNull
+  public final TextView textViewNameBelow;
 
   @NonNull
   public final TextView textViewSoilMoisture;
@@ -66,13 +102,24 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
   public final CardView wlevel;
 
   private ActivityPlantInformationBinding(@NonNull ScrollView rootView, @NonNull CardView humidity,
-      @NonNull LineChart lineChart, @NonNull CardView moisture, @NonNull TextView nameText,
-      @NonNull ImageView plantImage, @NonNull CardView sunlight, @NonNull SwitchMaterial switch1,
-      @NonNull CardView temperature, @NonNull TextView textViewHumidity,
+      @NonNull ImageView imgStatusHumidity, @NonNull ImageView imgStatusMoisture,
+      @NonNull ImageView imgStatusSunlight, @NonNull ImageView imgStatusTemperature,
+      @NonNull ImageView imgStatusWaterLevel, @NonNull LineChart lineChart,
+      @NonNull CardView moisture, @NonNull TextView nameText, @NonNull ImageView plantImage,
+      @NonNull CardView sunlight, @NonNull SwitchMaterial switch1, @NonNull CardView temperature,
+      @NonNull TextView textStatusHumidity, @NonNull TextView textStatusMoisture,
+      @NonNull TextView textStatusSunlight, @NonNull TextView textStatusTemperature,
+      @NonNull TextView textStatusWaterLevel, @NonNull TextView textViewDescription,
+      @NonNull TextView textViewHumidity, @NonNull TextView textViewNameBelow,
       @NonNull TextView textViewSoilMoisture, @NonNull TextView textViewTemperature,
       @NonNull TextView textViewWaterLevel, @NonNull TextView watering, @NonNull CardView wlevel) {
     this.rootView = rootView;
     this.humidity = humidity;
+    this.imgStatusHumidity = imgStatusHumidity;
+    this.imgStatusMoisture = imgStatusMoisture;
+    this.imgStatusSunlight = imgStatusSunlight;
+    this.imgStatusTemperature = imgStatusTemperature;
+    this.imgStatusWaterLevel = imgStatusWaterLevel;
     this.lineChart = lineChart;
     this.moisture = moisture;
     this.nameText = nameText;
@@ -80,7 +127,14 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
     this.sunlight = sunlight;
     this.switch1 = switch1;
     this.temperature = temperature;
+    this.textStatusHumidity = textStatusHumidity;
+    this.textStatusMoisture = textStatusMoisture;
+    this.textStatusSunlight = textStatusSunlight;
+    this.textStatusTemperature = textStatusTemperature;
+    this.textStatusWaterLevel = textStatusWaterLevel;
+    this.textViewDescription = textViewDescription;
     this.textViewHumidity = textViewHumidity;
+    this.textViewNameBelow = textViewNameBelow;
     this.textViewSoilMoisture = textViewSoilMoisture;
     this.textViewTemperature = textViewTemperature;
     this.textViewWaterLevel = textViewWaterLevel;
@@ -118,6 +172,36 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
       id = R.id.humidity;
       CardView humidity = ViewBindings.findChildViewById(rootView, id);
       if (humidity == null) {
+        break missingId;
+      }
+
+      id = R.id.img_status_humidity;
+      ImageView imgStatusHumidity = ViewBindings.findChildViewById(rootView, id);
+      if (imgStatusHumidity == null) {
+        break missingId;
+      }
+
+      id = R.id.img_status_moisture;
+      ImageView imgStatusMoisture = ViewBindings.findChildViewById(rootView, id);
+      if (imgStatusMoisture == null) {
+        break missingId;
+      }
+
+      id = R.id.img_status_sunlight;
+      ImageView imgStatusSunlight = ViewBindings.findChildViewById(rootView, id);
+      if (imgStatusSunlight == null) {
+        break missingId;
+      }
+
+      id = R.id.img_status_temperature;
+      ImageView imgStatusTemperature = ViewBindings.findChildViewById(rootView, id);
+      if (imgStatusTemperature == null) {
+        break missingId;
+      }
+
+      id = R.id.img_status_water_level;
+      ImageView imgStatusWaterLevel = ViewBindings.findChildViewById(rootView, id);
+      if (imgStatusWaterLevel == null) {
         break missingId;
       }
 
@@ -163,9 +247,51 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.text_status_humidity;
+      TextView textStatusHumidity = ViewBindings.findChildViewById(rootView, id);
+      if (textStatusHumidity == null) {
+        break missingId;
+      }
+
+      id = R.id.text_status_moisture;
+      TextView textStatusMoisture = ViewBindings.findChildViewById(rootView, id);
+      if (textStatusMoisture == null) {
+        break missingId;
+      }
+
+      id = R.id.text_status_sunlight;
+      TextView textStatusSunlight = ViewBindings.findChildViewById(rootView, id);
+      if (textStatusSunlight == null) {
+        break missingId;
+      }
+
+      id = R.id.text_status_temperature;
+      TextView textStatusTemperature = ViewBindings.findChildViewById(rootView, id);
+      if (textStatusTemperature == null) {
+        break missingId;
+      }
+
+      id = R.id.text_status_water_level;
+      TextView textStatusWaterLevel = ViewBindings.findChildViewById(rootView, id);
+      if (textStatusWaterLevel == null) {
+        break missingId;
+      }
+
+      id = R.id.text_view_description;
+      TextView textViewDescription = ViewBindings.findChildViewById(rootView, id);
+      if (textViewDescription == null) {
+        break missingId;
+      }
+
       id = R.id.text_view_humidity;
       TextView textViewHumidity = ViewBindings.findChildViewById(rootView, id);
       if (textViewHumidity == null) {
+        break missingId;
+      }
+
+      id = R.id.text_view_name_below;
+      TextView textViewNameBelow = ViewBindings.findChildViewById(rootView, id);
+      if (textViewNameBelow == null) {
         break missingId;
       }
 
@@ -199,8 +325,11 @@ public final class ActivityPlantInformationBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPlantInformationBinding((ScrollView) rootView, humidity, lineChart,
-          moisture, nameText, plantImage, sunlight, switch1, temperature, textViewHumidity,
+      return new ActivityPlantInformationBinding((ScrollView) rootView, humidity, imgStatusHumidity,
+          imgStatusMoisture, imgStatusSunlight, imgStatusTemperature, imgStatusWaterLevel,
+          lineChart, moisture, nameText, plantImage, sunlight, switch1, temperature,
+          textStatusHumidity, textStatusMoisture, textStatusSunlight, textStatusTemperature,
+          textStatusWaterLevel, textViewDescription, textViewHumidity, textViewNameBelow,
           textViewSoilMoisture, textViewTemperature, textViewWaterLevel, watering, wlevel);
     }
     String missingId = rootView.getResources().getResourceName(id);

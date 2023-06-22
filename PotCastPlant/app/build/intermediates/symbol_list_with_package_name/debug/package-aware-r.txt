@@ -3017,6 +3017,8 @@ drawable baseline_add_24
 drawable baseline_air_24
 drawable baseline_arrow_forward_24
 drawable baseline_feed_24
+drawable baseline_gpp_bad_24
+drawable baseline_gpp_good_24
 drawable baseline_grass_24
 drawable baseline_local_florist_24
 drawable baseline_notifications_24
@@ -3431,6 +3433,11 @@ id image_view_plant
 id image_view_post_img
 id image_view_preview
 id image_view_profile_pic
+id img_status_humidity
+id img_status_moisture
+id img_status_sunlight
+id img_status_temperature
+id img_status_water_level
 id immediateStop
 id included
 id indeterminate
@@ -3695,9 +3702,15 @@ id textTop
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
+id text_status_humidity
+id text_status_moisture
+id text_status_sunlight
+id text_status_temperature
+id text_status_water_level
 id text_view_description
 id text_view_forgot_password
 id text_view_humidity
+id text_view_name_below
 id text_view_no_plants_yet
 id text_view_register_redirect
 id text_view_soil_moisture
