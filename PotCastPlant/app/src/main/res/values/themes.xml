@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PotCastPlant" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+
+    <style name="Base.Theme.PotCastPlantActionBar" parent="Theme.AppCompat.Light">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:colorPrimaryDark">@color/dark_green</item>
+        <item name="colorPrimaryDark">@color/dark_green</item>
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorAccent">@color/light_green</item>
+    </style>
+
+    <style name="Theme.PotCastPlant" parent="Base.Theme.PotCastPlant">
+
+        <item name="android:colorPrimaryDark">@color/dark_green</item>
+        <item name="colorPrimaryDark">@color/dark_green</item>
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorAccent">@color/light_green</item>
+
+    </style>
+
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorPrimaryDark">#ffffff</item>
+    </style>
+
+</resources>
