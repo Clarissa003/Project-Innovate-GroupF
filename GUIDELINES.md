@@ -80,12 +80,6 @@ The IDE used will be Android Studio only.
 
 ## Git
 ### Contribution
-#### Branches
-Each issue should have their own separate branch. 
-  
-Name of the branch should be: ```issue[github issue]```  
-Example would be ```issue01``` for issue #1  
-
 #### Commits
 Only rule for the commits is to put a short, accurate description of the changes.
 
